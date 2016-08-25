@@ -1,0 +1,133 @@
+;; Object linux/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linux/"
+  :tables
+  (list
+    (semanticdb-table "kernel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_KERNEL_H" variable (:constant-flag t) nil [33 48])
+            ("SI_LOAD_SHIFT" variable (:constant-flag t) nil [131 144])
+            ("sysinfo" type
+               (:members 
+                  ( ("uptime" variable (:type "long") (reparse-symbol classsubparts) [166 178])
+                    ("loads" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [207 230])
+                    ("totalram" variable (:type "unsigned long") (reparse-symbol classsubparts) [273 296])
+                    ("freeram" variable (:type "unsigned long") (reparse-symbol classsubparts) [335 357])
+                    ("sharedram" variable (:type "unsigned long") (reparse-symbol classsubparts) [388 412])
+                    ("bufferram" variable (:type "unsigned long") (reparse-symbol classsubparts) [444 468])
+                    ("totalswap" variable (:type "unsigned long") (reparse-symbol classsubparts) [499 523])
+                    ("freeswap" variable (:type "unsigned long") (reparse-symbol classsubparts) [553 576])
+                    ("procs" variable (:type "unsigned short") (reparse-symbol classsubparts) [612 633])
+                    ("pad" variable (:type "unsigned short") (reparse-symbol classsubparts) [670 689])
+                    ("totalhigh" variable (:type "unsigned long") (reparse-symbol classsubparts) [724 748])
+                    ("freehigh" variable (:type "unsigned long") (reparse-symbol classsubparts) [779 802])
+                    ("mem_unit" variable (:type "unsigned int") (reparse-symbol classsubparts) [838 860])
+                    ("_f" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [895 934]))                  
+                :type "struct")
+                nil [148 970])
+            ("BUILD_BUG_ON" variable (:constant-flag t) nil [1033 1045])
+            ("MAYBE_BUILD_BUG_ON" variable (:constant-flag t) nil [1169 1187])
+            ("BUILD_BUG_ON_NOT_POWER_OF_2" variable (:constant-flag t) nil [1319 1346])
+            ("BUILD_BUG_ON_ZERO" variable (:constant-flag t) nil [1653 1670])
+            ("BUILD_BUG_ON_NULL" variable (:constant-flag t) nil [1715 1732])
+            ("__FUNCTION__" variable (:constant-flag t) nil [1837 1849])
+            ("NUMA_BUILD" variable (:constant-flag t) nil [1964 1974])
+            ("COMPACTION_BUILD" variable (:constant-flag t) nil [2102 2118])
+            ("module" type
+               (:prototype t
+                :type "struct")
+                nil [2273 2287])
+            ("mark_hardware_unsupported" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2320 2336]))                  
+                :type "void")
+                nil [2289 2337])
+            ("mark_tech_preview" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2361 2377])
+                    ("mod" variable
+                       (:pointer 1
+                        :type ("module" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2378 2397]))                  
+                :type "void")
+                nil [2338 2398]))          
+      :file "kernel.h"
+      :pointmax 2458
+      :fsize 2457
+      :lastmodtime '(22405 15171 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUILD_BUG_ON_NULL" (spp-arg-list ("e") 1732 . 1735) . ((semantic-list "((void *)sizeof(struct { int:-!!(e); }))" 1736 . 1776)))
+          ("MAYBE_BUILD_BUG_ON" (spp-arg-list ("cond") 1187 . 1193) . ((semantic-list "((void)sizeof(char[1 - 2 * !!(cond)]))" 1194 . 1232)))
+          ("BUILD_BUG_ON_NOT_POWER_OF_2" (spp-arg-list ("n") 1346 . 1349) . ((symbol "BUILD_BUG_ON" 1355 . 1367) (semantic-list "((n) == 0 || (((n) & ((n) - 1)) != 0))" 1367 . 1405)))
+          ("SI_LOAD_SHIFT" . ((number "16" 145 . 147)))
+          ("BUILD_BUG_ON" (spp-arg-list ("condition") 1045 . 1056) . ((semantic-list "((void)BUILD_BUG_ON_ZERO(condition))" 1057 . 1093)))
+          ("__FUNCTION__" . ((semantic-list "(__func__)" 1850 . 1860)))
+          ("BUILD_BUG_ON_ZERO" (spp-arg-list ("e") 1670 . 1673) . ((semantic-list "(sizeof(struct { int:-!!(e); }))" 1674 . 1706)))
+          ("NUMA_BUILD" . ((number "0" 1975 . 1976)))
+          ("COMPACTION_BUILD" . ((number "0" 2119 . 2120)))
+          ("_LINUX_KERNEL_H")
+          )
+)
+    (semanticdb-table "limits.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LINUX_LIMITS_H" variable (:constant-flag t) nil [33 48])
+            ("NR_OPEN" variable (:constant-flag t) nil [58 65])
+            ("NGROUPS_MAX" variable (:constant-flag t) nil [88 99])
+            ("ARG_MAX" variable (:constant-flag t) nil [160 167])
+            ("LINK_MAX" variable (:constant-flag t) nil [232 240])
+            ("MAX_CANON" variable (:constant-flag t) nil [291 300])
+            ("MAX_INPUT" variable (:constant-flag t) nil [360 369])
+            ("NAME_MAX" variable (:constant-flag t) nil [425 433])
+            ("PATH_MAX" variable (:constant-flag t) nil [483 491])
+            ("PIPE_BUF" variable (:constant-flag t) nil [555 563])
+            ("XATTR_NAME_MAX" variable (:constant-flag t) nil [624 638])
+            ("XATTR_SIZE_MAX" variable (:constant-flag t) nil [697 711])
+            ("XATTR_LIST_MAX" variable (:constant-flag t) nil [774 788])
+            ("RTSIG_MAX" variable (:constant-flag t) nil [852 861]))          
+      :file "limits.h"
+      :pointmax 875
+      :fsize 874
+      :lastmodtime '(22405 15171 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NR_OPEN" . ((number "1024" 74 . 78)))
+          ("MAX_INPUT" . ((number "255" 377 . 380)))
+          ("XATTR_SIZE_MAX" . ((number "65536" 712 . 717)))
+          ("XATTR_LIST_MAX" . ((number "65536" 789 . 794)))
+          ("PIPE_BUF" . ((number "4096" 571 . 575)))
+          ("ARG_MAX" . ((number "131072" 174 . 180)))
+          ("MAX_CANON" . ((number "255" 308 . 311)))
+          ("XATTR_NAME_MAX" . ((number "255" 641 . 644)))
+          ("NAME_MAX" . ((number "255" 442 . 445)))
+          ("PATH_MAX" . ((number "4096" 499 . 503)))
+          ("_LINUX_LIMITS_H")
+          ("LINK_MAX" . ((number "127" 249 . 252)))
+          ("RTSIG_MAX" . ((number "32" 864 . 866)))
+          ("NGROUPS_MAX" . ((number "65536" 103 . 108)))
+          )
+))
+  :file "!usr!include!linux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

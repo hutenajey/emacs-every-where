@@ -1,0 +1,959 @@
+;; Object telepresence/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "telepresence/"
+  :tables
+  (list
+    (semanticdb-table "OTEngine.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OPENTELEPRESENCE_ENGINE_H" variable (:constant-flag t) nil [43 68])
+            ("OpenTelepresenceConfig.h" include nil nil [70 105])
+            ("OTObject.h" include nil nil [107 128])
+            ("OTBridge.h" include nil nil [129 150])
+            ("OTWrap.h" include nil nil [151 170])
+            ("OTMutex.h" include nil nil [171 191])
+            ("OTProcess.h" include nil nil [192 214])
+            ("cfg/OTCfg.h" include nil nil [215 237])
+            ("map" include (:system-flag t) nil [268 282])
+            ("list" include (:system-flag t) nil [283 298])
+            ("string" include (:system-flag t) nil [299 316])
+            ("protobuf/cfgsvr_server.pb.h" include nil nil [317 355])
+            ("OTEngine" type
+               (:prototype t
+                :type "class")
+                nil [358 373])
+            ("OTMonitor" type
+               (:prototype t
+                :type "class")
+                nil [374 390])
+            ("OTRedisReport" type
+               (:prototype t
+                :type "class")
+                nil [391 411])
+            ("OTEngineInfo" type
+               (:superclasses 
+                  ( ("OTObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("OTSipCallback" friend nil (reparse-symbol classsubparts) [452 478])
+                    ("OTEngine" friend nil (reparse-symbol classsubparts) [481 502])
+                    ("OTBridgeInfo" friend nil (reparse-symbol classsubparts) [505 530])
+                    ("public" label nil (reparse-symbol classsubparts) [532 539])
+                    ("OTEngineInfo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [554 567]))                          
+                        :type ("OTEngineInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [541 659])
+                    ("OTEngineInfo" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [661 686])
+                    ("getObjectId" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [706 758])
+                    ("getId" function (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [779 813])
+                    ("private" label nil (reparse-symbol classsubparts) [815 823])
+                    ("m_uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [825 840])
+                    ("m_bAcceptIncomingSipReg" variable (:type "bool") (reparse-symbol classsubparts) [842 871]))                  
+                :type "class")
+                nil [412 874])
+            ("OTEngine" type
+               (:superclasses 
+                  ( ("OTObject" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("OTSipCallback" friend nil (reparse-symbol classsubparts) [912 938])
+                    ("OTMonitor" friend nil (reparse-symbol classsubparts) [944 966])
+                    ("OTRedisReport" friend nil (reparse-symbol classsubparts) [972 998])
+                    ("protected" label nil (reparse-symbol classsubparts) [1000 1010])
+                    ("OTEngine" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("OTEngine" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1012 1023])
+                    ("public" label nil (reparse-symbol classsubparts) [1024 1031])
+                    ("OTEngine" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1033 1053])
+                    ("getObjectId" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [1073 1121])
+                    ("isStarted" function (:type "bool") (reparse-symbol classsubparts) [1141 1179])
+                    ("getInfo" function (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTEngineInfo" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1199 1258])
+                    ("start" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1261 1282])
+                    ("stop" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1284 1304])
+                    ("getBridge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("strId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1344 1362]))                          
+                        :type ("OTObjectWrapper" type
+                             (:template-specifier 
+                                ( ("OTBridge" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1307 1363])
+                    ("setDebugLevel" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pcLevel" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1393 1413]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1366 1414])
+                    ("addTransport" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pcTransport" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1442 1466])
+                            ("nLocalPort" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1467 1487])
+                            ("pcLocalIP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "tsk_null"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1488 1520])
+                            ("pcIPVersion" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "tsk_null"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1522 1556]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1416 1558])
+                    ("setAcceptIncomingSipReg" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("bAcceptIncomingSipReg" variable (:type "bool") (reparse-symbol arg-sub-list) [1597 1624]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1560 1625])
+                    ("setMaxCallNumber" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("maxCallNumber" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1661 1683]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1630 1684])
+                    ("setLocalIP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("localIP" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1714 1734]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1690 1735])
+                    ("getLocalIP" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1740 1774])
+                    ("setLocalPort" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("localPort" variable (:type "int") (reparse-symbol arg-sub-list) [1805 1819]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1779 1820])
+                    ("getLocalPort" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1825 1852])
+                    ("setConfFile" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pcConfFileFullPath" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1884 1915]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1859 1916])
+                    ("setConfByCfgSvc" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("cfgPb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("YouMeProtocol::CfgSvrInfoResponse" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1950 1997]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1921 1998])
+                    ("getEngine" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2046 2059]))                          
+                        :type ("OTObjectWrapper" type
+                             (:template-specifier 
+                                ( ("OTEngine" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2002 2060])
+                    ("getBridge" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("uEngineId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2106 2125])
+                            ("strBridgeId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2126 2150]))                          
+                        :type ("OTObjectWrapper" type
+                             (:template-specifier 
+                                ( ("OTBridge" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2062 2151])
+                    ("New" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type ("OTObjectWrapper" type
+                             (:template-specifier 
+                                ( ("OTEngine" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2153 2193])
+                    ("getBridgeSessionMgr" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("bridgeid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2237 2265]))                          
+                        :type ("BridgeSessionMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2199 2266])
+                    ("protected" label nil (reparse-symbol classsubparts) [2268 2278])
+                    ("isValid" function
+                       (:typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2283 2319])
+                    ("setStarted" function
+                       (:arguments 
+                          ( ("bStarted" variable (:type "bool") (reparse-symbol arg-sub-list) [2362 2376]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2346 2402])
+                    ("private" label nil (reparse-symbol classsubparts) [2404 2412])
+                    ("OTCfgParserOnNewCfg" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("oCfg" variable (:type ("OTObjectWrapper" type
+                                 (:template-specifier 
+                                    ( ("OTCfg" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2446 2475])
+                            ("pcCallbackData" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2476 2503]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2414 2504])
+                    ("public" label nil (reparse-symbol classsubparts) [2506 2513])
+                    ("m_oSipCallback" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTSipCallback" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2522 2569])
+                    ("protected" label nil (reparse-symbol classsubparts) [2571 2581])
+                    ("m_oBridgeSessions" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("BridgeSessionMgr" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2586 2645])
+                    ("private" label nil (reparse-symbol classsubparts) [2685 2693])
+                    ("g_bInitialized" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2695 2722])
+                    ("g_uId" variable
+                       (:typemodifiers ("static")
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2724 2746])
+                    ("g_oEngines" variable
+                       (:typemodifiers ("static")
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("uint64_t" type nil nil nil)
+                                  ("OTEngine" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2748 2797])
+                    ("m_uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2871 2886])
+                    ("m_oBridges" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("OTObjectWrapper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2888 2950])
+                    ("m_oBridgeCfgs" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("OTMapOfCfgParams" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2987 3041])
+                    ("m_oMutex" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTMutex" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3127 3162])
+                    ("m_oCurrCfgSection" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTCfgSection" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3165 3214])
+                    ("m_oCfgSections" variable (:type ("std::list" type
+                         (:template-specifier 
+                            ( ("OTObjectWrapper" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3216 3275])
+                    ("m_oProcessPresShare3rdApp" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTProcess" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3278 3332])
+                    ("m_oInfo" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTEngineInfo" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3335 3374])
+                    ("m_bStarted" variable (:type "bool") (reparse-symbol classsubparts) [3377 3393])
+                    ("m_sLocalIP" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3399 3422])
+                    ("m_iLocalPort" variable (:type "int") (reparse-symbol classsubparts) [3427 3444]))                  
+                :type "class")
+                nil [876 3447]))          
+      :file "OTEngine.h"
+      :pointmax 3490
+      :fsize 3610
+      :lastmodtime '(22404 41805 499234 0)
+      :unmatched-syntax '((symbol 2336 . 2345) (VIRTUAL 2328 . 2335) (symbol 1189 . 1198) (VIRTUAL 1181 . 1188) (symbol 1131 . 1140) (VIRTUAL 1123 . 1130) (symbol 1063 . 1072) (VIRTUAL 1055 . 1062) (punctuation 998 . 999) (punctuation 966 . 967) (punctuation 938 . 939) (symbol 769 . 778) (VIRTUAL 761 . 768) (symbol 696 . 705) (VIRTUAL 688 . 695) (punctuation 530 . 531) (punctuation 502 . 503) (punctuation 478 . 479))
+      :lexical-table 
+        '(("OPENTELEPRESENCE_ENGINE_H")
+          )
+)
+    (semanticdb-table "OpenTelepresenceConfig.h"
+      :file "OpenTelepresenceConfig.h"
+      :fsize 3153
+      :lastmodtime '(22396 56065 440442 400000))
+    (semanticdb-table "OTObject.h"
+      :file "OTObject.h"
+      :fsize 5054
+      :lastmodtime '(22396 56065 438437 500000))
+    (semanticdb-table "OTBridge.h"
+      :file "OTBridge.h"
+      :fsize 3024
+      :lastmodtime '(22405 45367 936237 300000))
+    (semanticdb-table "OTWrap.h"
+      :file "OTWrap.h"
+      :fsize 3738
+      :lastmodtime '(22396 56065 439438 200000))
+    (semanticdb-table "OTMutex.h"
+      :file "OTMutex.h"
+      :fsize 691
+      :lastmodtime '(22396 56065 463460 600000))
+    (semanticdb-table "OTProcess.h"
+      :file "OTProcess.h"
+      :fsize 894
+      :lastmodtime '(22396 56065 646141 300000))
+    (semanticdb-table "OTCommon.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OPENTELEPRESENCE_COMMON_H" variable (:constant-flag t) nil [43 68])
+            ("OpenTelepresenceConfig.h" include nil nil [70 105])
+            ("OT_CAT_" variable (:constant-flag t) nil [115 122])
+            ("OT_CAT" variable (:constant-flag t) nil [144 150])
+            ("OT_STRING_" variable (:constant-flag t) nil [179 189])
+            ("OT_STRING" variable (:constant-flag t) nil [204 213])
+            ("OT_SAFE_DELETE_CPP" variable (:constant-flag t) nil [274 292])
+            ("OT_ASSERT" variable (:constant-flag t) nil [437 446])
+            ("OTNetFd" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [468 492])
+            ("OTNetFd_IsValid" variable (:constant-flag t) nil [501 516])
+            ("kOTNetFdInvalid" variable (:constant-flag t) nil [544 559])
+            ("kOTMobuleNameCfg" variable (:constant-flag t) nil [574 590])
+            ("kOTMobuleNameWebM" variable (:constant-flag t) nil [605 622])
+            ("kOTMobuleNameOpenAL" variable (:constant-flag t) nil [638 657])
+            ("kOTMobuleNameFFmpegRecorder" variable (:constant-flag t) nil [680 707])
+            ("kOTMobuleNameFFmpegOverlay" variable (:constant-flag t) nil [733 759])
+            ("kOTMobuleNameFFmpegFilter" variable (:constant-flag t) nil [784 809])
+            ("kOTMobuleNameFFmpegResampler" variable (:constant-flag t) nil [834 862])
+            ("kOTMobuleNameDocStreamer" variable (:constant-flag t) nil [889 913])
+            ("kOTMobuleNameDocStreamerOpenOffice" variable (:constant-flag t) nil [936 970])
+            ("kOTMobuleNameExperimental" variable (:constant-flag t) nil [1003 1028])
+            ("kOTMobuleNameNetTransport" variable (:constant-flag t) nil [1052 1077])
+            ("kOTMobuleNameHttpTransport" variable (:constant-flag t) nil [1101 1127])
+            ("kJsonContentType" variable (:constant-flag t) nil [1153 1169])
+            ("kFileContentType" variable (:constant-flag t) nil [1197 1213])
+            ("kOTSipHeaderServer" variable (:constant-flag t) nil [1276 1294])
+            ("OTSessionState_e" type
+               (:members 
+                  ( ("OTSessionState_None" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1379 1399])
+                    ("OTSessionState_Connecting" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1401 1427])
+                    ("OTSessionState_Connected" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1429 1454])
+                    ("OTSessionState_Terminated" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1456 1483]))                  
+                :type "enum")
+                nil [1346 1501])
+            ("OTSessionState_t" type
+               (:typedef ("OTSessionState_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1346 1501])
+            ("OTMediaType_e" type
+               (:members 
+                  ( ("OTMediaType_None" variable
+                       (:constant-flag t
+                        :default-value (1552 1556)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1533 1556])
+                    ("OTMediaType_Audio" variable
+                       (:constant-flag t
+                        :default-value (1579 1588)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1559 1588])
+                    ("OTMediaType_Video" variable
+                       (:constant-flag t
+                        :default-value (1611 1620)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1591 1620])
+                    ("OTMediaType_AudioVideo" variable
+                       (:constant-flag t
+                        :default-value (1648 1687)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1623 1687])
+                    ("OTMediaType_All" variable
+                       (:constant-flag t
+                        :default-value (1709 1733)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1691 1733]))                  
+                :type "enum")
+                nil [1503 1751])
+            ("OTMediaType_t" type
+               (:typedef ("OTMediaType_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1503 1751])
+            ("OTDimension_e" type
+               (:members 
+                  ( ("OTDimension_None" variable
+                       (:constant-flag t
+                        :default-value (1802 1806)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1783 1806])
+                    ("OTDimension_2D" variable
+                       (:constant-flag t
+                        :default-value (1826 1830)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1809 1830])
+                    ("OTDimension_3D" variable
+                       (:constant-flag t
+                        :default-value (1853 1857)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1836 1857]))                  
+                :type "enum")
+                nil [1753 1877])
+            ("OTDimension_t" type
+               (:typedef ("OTDimension_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1753 1877])
+            ("OTPatternType_e" type
+               (:members 
+                  ( ("OTPatternType_None" variable
+                       (:constant-flag t
+                        :default-value (1932 1938)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1911 1938])
+                    ("OTPatternType_Hangout" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1943 1965])
+                    ("OTPatternType_WebEx" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1967 1987]))                  
+                :type "enum")
+                nil [1879 2006])
+            ("OTPatternType_t" type
+               (:typedef ("OTPatternType_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1879 2006])
+            ("OT3f_s" type
+               (:members 
+                  ( ("x" variable (:type "float") (reparse-symbol classsubparts) [2033 2041])
+                    ("y" variable (:type "float") (reparse-symbol classsubparts) [2043 2051])
+                    ("z" variable (:type "float") (reparse-symbol classsubparts) [2053 2061]))                  
+                :type "struct")
+                nil [2008 2071])
+            ("OT3f_t" type
+               (:typedef ("OT3f_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2008 2071])
+            ("OTRect_s" type
+               (:members 
+                  ( ("nLeft" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2103 2119])
+                    ("nTop" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2124 2139])
+                    ("nRight" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2144 2161])
+                    ("nBottom" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2166 2184]))                  
+                :type "struct")
+                nil [2073 2197])
+            ("OTRect_t" type
+               (:typedef ("OTRect_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2073 2197])
+            ("OTRectWidth" variable (:constant-flag t) nil [2206 2217])
+            ("OTRectHeight" variable (:constant-flag t) nil [2254 2266])
+            ("OTRatio_s" type
+               (:members 
+                  ( ("nNumerator" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2327 2345])
+                    ("nDenominator" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2350 2370]))                  
+                :type "struct")
+                nil [2296 2383])
+            ("OTRatio_t" type
+               (:typedef ("OTRatio_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2296 2383])
+            ("OTDocStreamerState_e" type
+               (:members 
+                  ( ("OTDocStreamerState_None" variable
+                       (:constant-flag t
+                        :default-value (2448 2452)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2422 2452])
+                    ("OTDocStreamerState_Opening" variable
+                       (:constant-flag t
+                        :default-value (2484 2495)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2455 2495])
+                    ("OTDocStreamerState_Opened" variable
+                       (:constant-flag t
+                        :default-value (2526 2537)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2498 2537])
+                    ("OTDocStreamerState_Exporting" variable
+                       (:constant-flag t
+                        :default-value (2571 2610)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2540 2610])
+                    ("OTDocStreamerState_Exported" variable
+                       (:constant-flag t
+                        :default-value (2643 2682)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2613 2682])
+                    ("OTDocStreamerState_Closed" variable
+                       (:constant-flag t
+                        :default-value (2713 2724)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2685 2724]))                  
+                :type "enum")
+                nil [2385 2748])
+            ("OTDocStreamerState_t" type
+               (:typedef ("OTDocStreamerState_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [2385 2748])
+            ("OTDocStreamerType_e" type
+               (:members 
+                  ( ("OTDocStreamerType_None" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2786 2809])
+                    ("OTDocStreamerType_OpenOffice" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2811 2841]))                  
+                :type "enum")
+                nil [2750 2862])
+            ("OTDocStreamerType_t" type
+               (:typedef ("OTDocStreamerType_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [2750 2862])
+            ("OTNetTransporType_e" type
+               (:members 
+                  ( ("OTNetTransporType_None" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2900 2923])
+                    ("OTNetTransporType_TCP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2925 2947])
+                    ("OTNetTransporType_TLS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2949 2972]))                  
+                :type "enum")
+                nil [2864 2993])
+            ("OTNetTransporType_t" type
+               (:typedef ("OTNetTransporType_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [2864 2993])
+            ("OTHttpActionType_e" type
+               (:members 
+                  ( ("OTHttpActionType_None" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3225 3247])
+                    ("OTHttpActionType_UploadPresensation" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3249 3286]))                  
+                :type "enum")
+                nil [3190 3306])
+            ("OTHttpActionType_t" type
+               (:typedef ("OTHttpActionType_e" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [3190 3306]))          
+      :file "OTCommon.h"
+      :pointmax 3347
+      :fsize 3499
+      :lastmodtime '(22396 56065 665161 800000)
+      :unmatched-syntax '((number 1859 . 1860) (punctuation 1858 . 1859) (punctuation 1857 . 1858) (number 1832 . 1833) (punctuation 1831 . 1832) (punctuation 1830 . 1831))
+      :lexical-table 
+        '(("OT_CAT_" (spp-arg-list ("A" "B") 122 . 128) . ((spp-symbol-merge ((symbol "A" 129 . 130) (symbol "B" 134 . 135)) 129 . 135)))
+          ("kOTMobuleNameFFmpegResampler" . ((string "\"FFmpegResampler\"" 863 . 880)))
+          ("kOTMobuleNameDocStreamer" . ((string "\"DocStreamer\"" 914 . 927)))
+          ("kOTSipHeaderServer" . ((string "\"Doubango Telepresence \"" 1295 . 1319) (symbol "OT_VERSION_STRING" 1320 . 1337)))
+          ("OT_ASSERT" (spp-arg-list ("x") 446 . 449) . ((symbol "assert" 450 . 456) (semantic-list "(x)" 456 . 459)))
+          ("kJsonContentType" . ((string "\"application/json\"" 1170 . 1188)))
+          ("OT_CAT" (spp-arg-list ("A" "B") 150 . 156) . ((symbol "OT_CAT_" 157 . 164) (semantic-list "(A, B)" 164 . 170)))
+          ("OPENTELEPRESENCE_COMMON_H")
+          ("kOTMobuleNameFFmpegFilter" . ((string "\"FFmpegOverlay\"" 810 . 825)))
+          ("kOTMobuleNameDocStreamerOpenOffice" . ((string "\"DocStreamerOpenOffice\"" 971 . 994)))
+          ("kOTMobuleNameWebM" . ((string "\"WebM\"" 623 . 629)))
+          ("OT_STRING" (spp-arg-list ("A") 213 . 216) . ((symbol "OT_STRING_" 217 . 227) (semantic-list "(A)" 227 . 230)))
+          ("OTNetFd_IsValid" (spp-arg-list ("self") 516 . 522) . ((semantic-list "((self) > 0)" 523 . 535)))
+          ("OTRectHeight" (spp-arg-list ("r") 2266 . 2269) . ((semantic-list "((r).nBottom - (r).nTop)" 2270 . 2294)))
+          ("kOTMobuleNameCfg" . ((string "\"CFG\"" 591 . 596)))
+          ("kOTMobuleNameHttpTransport" . ((string "\"HttpTransport\"" 1128 . 1143)))
+          ("kOTNetFdInvalid" . ((punctuation "-" 562 . 563) (number "1" 563 . 564)))
+          ("kOTMobuleNameFFmpegOverlay" . ((string "\"FFmpegOverlay\"" 760 . 775)))
+          ("kFileContentType" . ((string "\"application/file\"" 1214 . 1232)))
+          ("kOTMobuleNameNetTransport" . ((string "\"NetTransport\"" 1078 . 1092)))
+          ("OT_SAFE_DELETE_CPP" (spp-arg-list ("cpp_obj") 292 . 301) . 
+              ((IF "if" 302 . 304) (semantic-list "(cpp_obj)" 304 . 313) (DELETE "delete" 314 . 320) (semantic-list "(cpp_obj)" 321 . 330) (punctuation "," 330 . 331) (semantic-list "(cpp_obj)" 332 . 341) (punctuation "=" 342 . 343) (symbol "NULL" 344 . 348) (punctuation ";" 348 . 349)))
+          ("kOTMobuleNameOpenAL" . ((string "\"OpenAL Soft\"" 658 . 671)))
+          ("kOTMobuleNameFFmpegRecorder" . ((string "\"FFmpegRecorder\"" 708 . 724)))
+          ("kOTMobuleNameExperimental" . ((string "\"Experimental\"" 1029 . 1043)))
+          ("OTRectWidth" (spp-arg-list ("r") 2217 . 2220) . ((semantic-list "((r).nRight - (r).nLeft)" 2221 . 2245)))
+          ("OT_STRING_" (spp-arg-list ("A") 189 . 192) . ((punctuation "#" 193 . 194) (symbol "A" 194 . 195)))
+          )
+)
+    (semanticdb-table "OTEngine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OTEngine.h" include nil nil [227 248])
+            ("platforms/generic/OTEngineGen.h" include nil nil [249 291])
+            ("OTMonitor.h" include nil nil [292 314])
+            ("cfg/OTCfgParser.h" include nil nil [315 343])
+            ("tsk_debug.h" include nil nil [344 366])
+            ("tsk_string.h" include nil nil [367 390])
+            ("algorithm" include (:system-flag t) nil [391 411])
+            ("assert.h" include (:system-flag t) nil [412 431])
+            ("functional" include (:system-flag t) nil [432 453])
+            ("protobuf/cfgsvr_server.pb.h" include nil nil [454 492])
+            ("cfg/OTCfgMgr.h" include nil nil [493 518])
+            ("OTRedisReport.h" include nil nil [519 545])
+            ("OTEngine::g_bInitialized" variable
+               (:default-value "false"
+                :type "bool")
+                nil [547 585])
+            ("OTEngine::g_uId" variable
+               (:default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [586 615])
+            ("OTEngine::g_oEngines" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("uint64_t" type nil nil nil)
+                      ("OTEngine" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [616 668])
+            ("OT_SIP_REALM" variable (:constant-flag t) nil [705 717])
+            ("OT_SIP_IMPI" variable (:constant-flag t) nil [775 786])
+            ("OT_SIP_IMPU" variable (:constant-flag t) nil [837 848])
+            ("ot_list_count" variable (:constant-flag t) nil [900 913])
+            ("ot_str_is" variable (:constant-flag t) nil [972 981])
+            ("ot_str_is_star" variable (:constant-flag t) nil [1043 1057])
+            ("ot_str_is_yes" variable (:constant-flag t) nil [1094 1107])
+            ("ot_str_is_null_or_empty" variable (:constant-flag t) nil [1146 1169])
+            ("g_sampleSessionID" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1204 1233])
+            ("g_rcvTrpPackets" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1234 1261])
+            ("g_rcvTrpDataSize" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1262 1290])
+            ("FindParamByName" type
+               (:superclasses 
+                  ( ("std::binary_function" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("oParam" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OTObjectWrapper" type
+                                     (:template-specifier 
+                                        ( ("OTCfgParam" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1419 1463])
+                            ("pcName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1464 1483]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1402 1561]))                  
+                :type "struct")
+                nil [1292 1564])
+            ("OTEngine" function
+               (:constructor-flag t
+                :parent "OTEngine"
+                :type ("OTEngine" type (:type "class") nil nil))
+                nil [1566 2097])
+            ("OTEngine" function
+               (:destructor-flag t
+                :parent "OTEngine"
+                :type "void")
+                nil [2099 2237])
+            ("start" function
+               (:parent "OTEngine"
+                :type "bool")
+                nil [2239 2747])
+            ("stop" function
+               (:parent "OTEngine"
+                :type "bool")
+                nil [2749 3548])
+            ("getBridge" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("strId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3599 3617]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTBridge" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3550 3813])
+            ("setDebugLevel" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcLevel" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3845 3865]))                  
+                :type "bool")
+                nil [3815 4507])
+            ("addTransport" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcTransport" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4538 4562])
+                    ("nLocalPort" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4563 4583])
+                    ("pcLocalIP" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4584 4621])
+                    ("pcIPVersion" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4622 4661]))                  
+                :type "bool")
+                nil [4509 4803])
+            ("setAcceptIncomingSipReg" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("bAcceptIncomingSipReg" variable (:type "bool") (reparse-symbol arg-sub-list) [4847 4874]))                  
+                :type "bool")
+                nil [4807 4957])
+            ("setMaxCallNumber" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("maxCallNumber" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4992 5014]))                  
+                :type "bool")
+                nil [4959 5368])
+            ("setLocalIP" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("localIP" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5396 5416]))                  
+                :type "void")
+                nil [5370 5446])
+            ("getLocalIP" function
+               (:parent "OTEngine"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5448 5510])
+            ("setLocalPort" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("localPort" variable (:type "int") (reparse-symbol arg-sub-list) [5540 5554]))                  
+                :type "void")
+                nil [5512 5588])
+            ("getLocalPort" function
+               (:parent "OTEngine"
+                :type "int")
+                nil [5590 5647])
+            ("setConfByCfgSvc" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("cfgPb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("YouMeProtocol::CfgSvrInfoResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5681 5728]))                  
+                :type "bool")
+                nil [5650 8624])
+            ("setConfFile" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcConfFileFullPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8654 8685]))                  
+                :type "bool")
+                nil [8626 18407])
+            ("OTCfgParserOnNewCfg" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("oCfg" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTCfg" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [18445 18475])
+                    ("pcCallbackData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18476 18503]))                  
+                :type "bool")
+                nil [18409 19777])
+            ("getEngine" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19828 19841]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTEngine" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19779 20022])
+            ("getBridge" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("uEngineId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20073 20092])
+                    ("strBridgeId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20093 20117]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTBridge" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20024 20291])
+            ("New" function
+               (:parent "OTEngine"
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTEngine" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20293 20544])
+            ("getBridgeSessionMgr" function
+               (:pointer 1
+                :parent "OTEngine"
+                :arguments 
+                  ( ("bridgeid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20594 20622]))                  
+                :type ("BridgeSessionMgr" type (:type "class") nil nil))
+                nil [20546 20859]))          
+      :file "OTEngine.cpp"
+      :pointmax 20860
+      :fsize 21510
+      :lastmodtime '(22404 59650 197267 300000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ot_str_is_yes" (spp-arg-list ("str") 1107 . 1112) . ((symbol "ot_str_is" 1113 . 1122) (semantic-list "((str), \"yes\")" 1123 . 1137)))
+          ("ot_str_is_null_or_empty" (spp-arg-list ("str") 1169 . 1174) . ((symbol "tsk_strnullORempty" 1175 . 1193) (semantic-list "((str))" 1194 . 1201)))
+          ("OT_SIP_REALM" . ((string "\"conf-call.org\"" 718 . 733)))
+          ("OT_SIP_IMPU" . 
+              ((string "\"sip\"" 849 . 854) (symbol "OT_SIP_IMPI" 855 . 866) (string "\"@\"" 867 . 870) (symbol "OT_SIP_REALM" 871 . 883)))
+          ("OT_SIP_IMPI" . ((string "\"engine\"" 787 . 795)))
+          ("ot_str_is_star" (spp-arg-list ("str") 1057 . 1062) . ((symbol "ot_str_is" 1063 . 1072) (semantic-list "((str), \"*\")" 1073 . 1085)))
+          ("ot_list_count" (spp-arg-list ("list") 913 . 919) . ((symbol "tsk_list_count" 920 . 934) (semantic-list "((list), tsk_null, tsk_null)" 935 . 963)))
+          ("ot_str_is" (spp-arg-list ("str" "val") 981 . 991) . ((symbol "tsk_striequals" 992 . 1006) (semantic-list "((const char *) (str), val)" 1007 . 1034)))
+          )
+)
+    (semanticdb-table "OTMonitor.h"
+      :file "OTMonitor.h"
+      :fsize 958
+      :lastmodtime '(22396 56065 461459 200000))
+    (semanticdb-table "OTRedisReport.h"
+      :file "OTRedisReport.h"
+      :fsize 1332
+      :lastmodtime '(22396 56065 670196 400000))
+    (semanticdb-table "mcu_predefine.h"
+      :file "mcu_predefine.h"
+      :fsize 2211
+      :lastmodtime '(22396 56065 669191 200000)))
+  :file "!mnt!hgfs!svn!client_mcu1.0!src!telepresence!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

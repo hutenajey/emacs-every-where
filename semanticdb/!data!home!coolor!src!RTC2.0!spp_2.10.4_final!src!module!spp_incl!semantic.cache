@@ -1,0 +1,272 @@
+;; Object spp_incl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spp_incl/"
+  :tables
+  (list
+    (semanticdb-table "tcommu.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_TBASE_TCOMMU_H_" variable (:constant-flag t) nil [34 50])
+            ("unistd.h" include (:system-flag t) nil [51 70])
+            ("string.h" include (:system-flag t) nil [71 90])
+            ("sys/time.h" include (:system-flag t) nil [91 112])
+            ("COMMU_ERR_OVERLOAD_PKG" variable (:constant-flag t) nil [123 145])
+            ("COMMU_ERR_OVERLOAD_CONN" variable (:constant-flag t) nil [161 184])
+            ("SOCK_TYPE_TCP" variable (:constant-flag t) nil [228 241])
+            ("SOCK_TYPE_UDP" variable (:constant-flag t) nil [264 277])
+            ("SOCK_TYPE_UNIX" variable (:constant-flag t) nil [300 314])
+            ("SOCK_TYPE_NOTIFY" variable (:constant-flag t) nil [336 352])
+            ("SOCK_MAX_BIND" variable (:constant-flag t) nil [372 385])
+            ("tbase" type
+               (:members 
+                  ( ("tcommu" type
+                       (:members 
+                          ( ("cb_type" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("CB_CONNECTED" variable
+                                             (:constant-flag t
+                                              :default-value (514 515)
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [499 515])
+                                          ("CB_DISCONNECT" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [529 543])
+                                          ("CB_RECVDATA" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [556 568])
+                                          ("CB_RECVERROR" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [581 594])
+                                          ("CB_RECVDONE" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [607 619])
+                                          ("CB_SENDDATA" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [632 644])
+                                          ("CB_SENDERROR" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [657 670])
+                                          ("CB_SENDDONE" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [683 695])
+                                          ("CB_HANGUP" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [708 718])
+                                          ("CB_OVERLOAD" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [731 743])
+                                          ("CB_TIMEOUT" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [756 767]))                                        
+                                      :type "enum")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [472 786])
+                            ("ctrl_type" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("CT_DISCONNECT" variable
+                                             (:constant-flag t
+                                              :default-value (854 855)
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [838 855])
+                                          ("CT_CLOSE" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [883 892])
+                                          ("CT_STAT" variable
+                                             (:constant-flag t
+                                              :type "int")
+                                              (reparse-symbol enumsubparts) [920 928]))                                        
+                                      :type "enum")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [811 964])
+                            ("cb_func" function
+                               (:prototype-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1116 1130])
+                                    ("arg1" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [1131 1142])
+                                    ("arg2" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [1143 1154]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1101 1155])
+                            ("blob_type" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("len" variable (:type "int") (reparse-symbol classsubparts) [1211 1219])
+                                          ("data" variable
+                                             (:pointer 1
+                                              :type "char")
+                                              (reparse-symbol classsubparts) [1240 1251])
+                                          ("owner" variable
+                                             (:pointer 1
+                                              :type "void")
+                                              (reparse-symbol classsubparts) [1273 1285])
+                                          ("extdata" variable
+                                             (:pointer 1
+                                              :type "void")
+                                              (reparse-symbol classsubparts) [1305 1319]))                                        
+                                      :type "struct")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1182 1360])
+                            ("TConnExtInfo" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("fd_" variable (:type "int") (reparse-symbol classsubparts) [1439 1447])
+                                          ("type_" variable (:type "int") (reparse-symbol classsubparts) [1469 1479])
+                                          ("localip_" variable (:type "unsigned int") (reparse-symbol classsubparts) [1535 1553])
+                                          ("localport_" variable (:type "unsigned short") (reparse-symbol classsubparts) [1579 1605])
+                                          ("remoteip_" variable (:type "unsigned int") (reparse-symbol classsubparts) [1631 1650])
+                                          ("remoteport_" variable (:type "unsigned short") (reparse-symbol classsubparts) [1677 1704])
+                                          ("recvtime_" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1722 1740])
+                                          ("tv_usec" variable (:type ("suseconds_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1769 1789]))                                        
+                                      :type "struct")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1410 1835])
+                            ("CTCommu" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1895 1902])
+                                    ("CTCommu" function
+                                       (:constructor-flag t
+                                        :type ("CTCommu" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1915 2086])
+                                    ("CTCommu" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2099 2120])
+                                    ("init" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("config" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2206 2225]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2189 2230])
+                                    ("poll" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("block" variable
+                                               (:default-value "false"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [2328 2346]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2311 2352])
+                                    ("sendto" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2505 2519])
+                                            ("arg1" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2520 2531])
+                                            ("arg2" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2532 2543]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2486 2548])
+                                    ("ctrl" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2729 2743])
+                                            ("type" variable (:type ("ctrl_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2744 2759])
+                                            ("arg1" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2760 2771])
+                                            ("arg2" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2772 2783]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2712 2788])
+                                    ("reg_cb" function
+                                       (:typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("type" variable (:type ("cb_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2940 2953])
+                                            ("func" variable (:type ("cb_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2954 2967])
+                                            ("args" variable
+                                               (:pointer 1
+                                                :default-value "NULL"
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [2968 2985]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2921 3238])
+                                    ("clear" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3272 3296])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3306 3316])
+                                    ("func_list_" variable
+                                       (:dereference 1
+                                        :type ("cb_func" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3329 3364])
+                                    ("func_args_" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3377 3410])
+                                    ("fini" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3443 3467]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1863 3478]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [423 3484]))                  
+                :type "namespace")
+                nil [401 3486]))          
+      :file "tcommu.h"
+      :pointmax 3494
+      :fsize 4141
+      :lastmodtime '(22440 34315 233495 895000)
+      :unmatched-syntax '((TYPEDEF 1093 . 1100))
+      :lexical-table 
+        '(("COMMU_ERR_OVERLOAD_CONN" . ((punctuation "-" 186 . 187) (number "200" 187 . 190)))
+          ("SOCK_TYPE_NOTIFY" . ((number "0x8" 360 . 363)))
+          ("_TBASE_TCOMMU_H_")
+          ("SOCK_MAX_BIND" . ((number "300" 396 . 399)))
+          ("SOCK_TYPE_UDP" . ((number "0x2" 288 . 291)))
+          ("SOCK_TYPE_TCP" . ((number "0x1" 252 . 255)))
+          ("COMMU_ERR_OVERLOAD_PKG" . ((punctuation "-" 148 . 149) (number "100" 149 . 152)))
+          ("SOCK_TYPE_UNIX" . ((number "0x4" 324 . 327)))
+          )
+))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!src!module!spp_incl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

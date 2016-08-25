@@ -1,0 +1,227 @@
+;; Object comm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comm/"
+  :tables
+  (list
+    (semanticdb-table "singleton.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SINGLE_TON_H" variable (:constant-flag t) nil [31 44])
+            ("stdlib.h" include (:system-flag t) nil [46 65])
+            ("spp" type
+               (:members 
+                  ( ("singleton" type
+                       (:members 
+                          ( ("CreateNew" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [175 182])
+                                    ("Instance" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("Proto" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [214 223]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [195 269])
+                                    ("Destroy" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("obj" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [302 309]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [282 353]))                                  )
+                                (reparse-symbol namespacesubparts) [122 364])
+                            ("CreateByProto" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [432 439])
+                                    ("Instance" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("Proto" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [471 480]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [452 526])
+                                    ("Destroy" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("obj" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [560 567]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [540 607]))                                  )
+                                (reparse-symbol namespacesubparts) [375 618])
+                            ("SingleTon" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [734 741])
+                                    ("Instance" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [755 961])
+                                    ("Destroy" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [975 1065])
+                                    ("SetProto" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("proto" variable
+                                               (:pointer 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1100 1109]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1079 1234])
+                                    ("Instance_" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1248 1269])
+                                    ("ProtoInstance_" variable
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1282 1308])
+                                    ("private" label nil (reparse-symbol classsubparts) [1317 1325])
+                                    ("SingleTon" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1348 1353]))                                          
+                                        :type ("SingleTon" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1338 1354])
+                                    ("SingleTon" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("SingleTon" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1377 1394]))                                          
+                                        :type ("SingleTon" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1367 1395])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("SingleTon" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1430 1447]))                                          
+                                        :type ("SingleTon" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1408 1448]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [699 1459])
+                            ("SingleTon::Instance_" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1536 1588])
+                            ("SingleTon::ProtoInstance_" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1664 1721]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [87 1727]))                  
+                :type "namespace")
+                nil [66 1729]))          
+      :file "singleton.h"
+      :pointmax 1739
+      :fsize 1738
+      :lastmodtime '(22440 34315 17495 894000)
+      :unmatched-syntax '((punctuation 1654 . 1655) (symbol 1640 . 1654) (CLASS 1634 . 1639) (punctuation 1632 . 1633) (CLASS 1627 . 1632) (punctuation 1626 . 1627) (TEMPLATE 1617 . 1625) (punctuation 1615 . 1616) (symbol 1614 . 1615) (CLASS 1608 . 1613) (punctuation 1607 . 1608) (TEMPLATE 1598 . 1606) (punctuation 1526 . 1527) (symbol 1512 . 1526) (CLASS 1506 . 1511) (punctuation 1504 . 1505) (CLASS 1499 . 1504) (punctuation 1498 . 1499) (TEMPLATE 1489 . 1497) (punctuation 1487 . 1488) (symbol 1486 . 1487) (CLASS 1480 . 1485) (punctuation 1479 . 1480) (TEMPLATE 1470 . 1478) (punctuation 697 . 698) (symbol 686 . 695) (punctuation 684 . 685) (symbol 671 . 683) (CLASS 665 . 670) (punctuation 663 . 664) (CLASS 658 . 663) (punctuation 657 . 658) (TEMPLATE 649 . 657) (punctuation 647 . 648) (symbol 646 . 647) (CLASS 640 . 645) (punctuation 638 . 639) (TEMPLATE 629 . 637))
+      :lexical-table 
+        '(("_SINGLE_TON_H")
+          )
+)
+    (semanticdb-table "serverbase.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("serverbase.h" include nil nil [1 24])
+            ("global.h" include nil nil [25 44])
+            ("spp_version.h" include nil nil [45 69])
+            ("stdio.h" include (:system-flag t) nil [70 88])
+            ("malloc.h" include (:system-flag t) nil [89 108])
+            ("spp::comm" using (:type ("spp::comm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [110 136])
+            ("spp::global" using (:type ("spp::global" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [137 165])
+            ("CServerBase::flag_" variable
+               (:default-value "0"
+                :type "unsigned char")
+                nil [167 204])
+            ("CServerBase" function
+               (:constructor-flag t
+                :parent "CServerBase"
+                :type ("CServerBase" type (:type "class") nil nil))
+                nil [206 336])
+            ("CServerBase" function
+               (:destructor-flag t
+                :parent "CServerBase"
+                :type "void")
+                nil [338 660])
+            ("run" function
+               (:parent "CServerBase"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [684 693])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [694 707]))                  
+                :type "void")
+                nil [662 2260])
+            ("startup" function
+               (:parent "CServerBase"
+                :arguments 
+                  ( ("bg_run" variable (:type "bool") (reparse-symbol arg-sub-list) [2288 2300]))                  
+                :type "void")
+                nil [2262 3169])
+            ("reload" function
+               (:parent "CServerBase"
+                :type "bool")
+                nil [3170 3332])
+            ("quit" function
+               (:parent "CServerBase"
+                :type "bool")
+                nil [3333 3444])
+            ("sigusr1_handle" function
+               (:parent "CServerBase"
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [3478 3488]))                  
+                :type "void")
+                nil [3445 3570])
+            ("sigusr2_handle" function
+               (:parent "CServerBase"
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [3604 3614]))                  
+                :type "void")
+                nil [3571 3698]))          
+      :file "serverbase.cpp"
+      :pointmax 3700
+      :fsize 3743
+      :lastmodtime '(22440 34315 19495 894000)
+      :unmatched-syntax nil))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!src!comm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

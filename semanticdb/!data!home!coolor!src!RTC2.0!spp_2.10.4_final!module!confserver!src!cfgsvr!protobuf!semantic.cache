@@ -1,0 +1,341 @@
+;; Object protobuf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "protobuf/"
+  :tables
+  (list
+    (semanticdb-table "YouMeServerValidProtocol.pb.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [112 156])
+            ("YouMeServerValidProtocol.pb.h" include nil nil [157 197])
+            ("algorithm" include (:system-flag t) nil [199 219])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [221 262])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [263 302])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [303 347])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [348 397])
+            ("google/protobuf/io/zero_copy_stream_impl_lite.h" include (:system-flag t) nil [398 456])
+            ("YouMeProtocol" type
+               (:members 
+                  ( ("protobuf_ShutdownFile_YouMeServerValidProtocol_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [523 678])
+                    ("protobuf_AddDesc_YouMeServerValidProtocol_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [830 1424])
+                    ("static_descriptor_initializer_YouMeServerValidProtocol_2eproto_" variable (:type ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [1865 2129])
+                    ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type
+                       (:members 
+                          ( ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" function
+                               (:constructor-flag t
+                                :type ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1937 2062]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1865 2129])
+                    ("unnamed" type
+                       (:members 
+                          ( ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [2187 2209])
+                            ("MergeFromFail" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2236 2245]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2210 2299]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2138 2302])
+                    ("ServerValid::kHeadFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2408 2448])
+                    ("ServerValid::kDataFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2449 2489])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2545 2684])
+                    ("InitAsDefaultInstance" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2686 3010])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3068 3235])
+                    ("SharedCtor" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3237 3599])
+                    ("ServerValid" function
+                       (:destructor-flag t
+                        :parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3601 3716])
+                    ("SharedDtor" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3718 30270]))                  
+                :type "namespace")
+                nil [496 30270]))          
+      :file "YouMeServerValidProtocol.pb.cpp"
+      :pointmax 30270
+      :fsize 30269
+      :lastmodtime '(22440 34310 8495 898000)
+      :unmatched-syntax '((punctuation 3067 . 3068) (punctuation 3066 . 3067) (punctuation 3064 . 3065) (semantic-list 3036 . 3061) (symbol 3025 . 3036) (punctuation 3024 . 3025) (punctuation 3023 . 3024) (symbol 3012 . 3023) (punctuation 2544 . 2545) (punctuation 2543 . 2544) (punctuation 2541 . 2542) (semantic-list 2536 . 2538) (symbol 2525 . 2536) (punctuation 2524 . 2525) (punctuation 2523 . 2524) (symbol 2512 . 2523) (semantic-list 2176 . 2186) (symbol 2163 . 2176) (VOID 2158 . 2162) (STATIC 2151 . 2157))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "cfgsvr_server.pb.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [101 145])
+            ("cfgsvr_server.pb.h" include nil nil [146 175])
+            ("algorithm" include (:system-flag t) nil [177 197])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [199 240])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [241 280])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [281 325])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [326 375])
+            ("google/protobuf/io/zero_copy_stream_impl_lite.h" include (:system-flag t) nil [376 434])
+            ("YouMeProtocol" type
+               (:members 
+                  ( ("protobuf_ShutdownFile_cfgsvr_5fserver_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [501 875])
+                    ("protobuf_AddDesc_cfgsvr_5fserver_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [1018 2228])
+                    ("static_descriptor_initializer_cfgsvr_5fserver_2eproto_" variable (:type ("StaticDescriptorInitializer_cfgsvr_5fserver_2eproto" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2633 2861])
+                    ("StaticDescriptorInitializer_cfgsvr_5fserver_2eproto" type
+                       (:members 
+                          ( ("StaticDescriptorInitializer_cfgsvr_5fserver_2eproto" function
+                               (:constructor-flag t
+                                :type ("StaticDescriptorInitializer_cfgsvr_5fserver_2eproto" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2696 2803]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2633 2861])
+                    ("CFGSVR_OPT_TYPE_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2898 2908]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2869 3022])
+                    ("unnamed" type
+                       (:members 
+                          ( ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [3074 3096])
+                            ("MergeFromFail" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [3123 3132]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3097 3186]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3025 3189])
+                    ("CfgSvrNameValue::kNameValueFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3295 3344])
+                    ("CfgSvrNameValue::kOptTypeFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3345 3392])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3456 3599])
+                    ("InitAsDefaultInstance" function
+                       (:parent "CfgSvrNameValue"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3601 3937])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4007 4178])
+                    ("SharedCtor" function
+                       (:parent "CfgSvrNameValue"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4180 4481])
+                    ("CfgSvrNameValue" function
+                       (:destructor-flag t
+                        :parent "CfgSvrNameValue"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4483 4610])
+                    ("SharedDtor" function
+                       (:parent "CfgSvrNameValue"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4612 111421]))                  
+                :type "namespace")
+                nil [474 111421]))          
+      :file "cfgsvr_server.pb.cpp"
+      :pointmax 111421
+      :fsize 111420
+      :lastmodtime '(22440 34310 10495 898000)
+      :unmatched-syntax '((punctuation 4006 . 4007) (punctuation 4005 . 4006) (punctuation 4003 . 4004) (semantic-list 3971 . 4000) (symbol 3956 . 3971) (punctuation 3955 . 3956) (punctuation 3954 . 3955) (symbol 3939 . 3954) (punctuation 3455 . 3456) (punctuation 3454 . 3455) (punctuation 3452 . 3453) (semantic-list 3447 . 3449) (symbol 3432 . 3447) (punctuation 3431 . 3432) (punctuation 3430 . 3431) (symbol 3415 . 3430) (semantic-list 3063 . 3073) (symbol 3050 . 3063) (VOID 3045 . 3049) (STATIC 3038 . 3044))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "cfgsvr_server.pb.h"
+      :file "cfgsvr_server.pb.h"
+      :fsize 71571
+      :lastmodtime '(22440 34310 11495 898000))
+    (semanticdb-table "common.pb.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [94 138])
+            ("common.pb.h" include nil nil [139 161])
+            ("algorithm" include (:system-flag t) nil [163 183])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [185 226])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [227 266])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [267 311])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [312 361])
+            ("google/protobuf/io/zero_copy_stream_impl_lite.h" include (:system-flag t) nil [362 420])
+            ("YouMeProtocol" type
+               (:members 
+                  ( ("protobuf_ShutdownFile_common_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [487 739])
+                    ("protobuf_AddDesc_common_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [873 1692])
+                    ("static_descriptor_initializer_common_2eproto_" variable (:type ("StaticDescriptorInitializer_common_2eproto" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2061 2253])
+                    ("StaticDescriptorInitializer_common_2eproto" type
+                       (:members 
+                          ( ("StaticDescriptorInitializer_common_2eproto" function
+                               (:constructor-flag t
+                                :type ("StaticDescriptorInitializer_common_2eproto" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2115 2204]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2061 2253])
+                    ("Device_Platform_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2290 2300]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2261 2414])
+                    ("NetworkType_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2441 2451]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2416 2565])
+                    ("MSG_TYPE_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2589 2599]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2567 2914])
+                    ("NAME_TYPE_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2939 2949]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2916 3123])
+                    ("unnamed" type
+                       (:members 
+                          ( ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [3175 3197])
+                            ("MergeFromFail" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [3224 3233]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3198 3287]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3126 3290])
+                    ("PacketHead::kMsgtypeFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3396 3438])
+                    ("PacketHead::kMsgversionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3439 3484])
+                    ("PacketHead::kPlatformFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3485 3528])
+                    ("PacketHead::kBrandFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3529 3569])
+                    ("PacketHead::kSysVersionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3570 3615])
+                    ("PacketHead::kYmSdkVersionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3616 3663])
+                    ("PacketHead::kCpuArchFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3664 3706])
+                    ("PacketHead::kPackageNameFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3707 3753])
+                    ("PacketHead::kIdentifyFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3754 3797])
+                    ("PacketHead::kAppKeyFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3798 3839])
+                    ("PacketHead::kSDKNameFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3840 3882])
+                    ("PacketHead::kModelFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3883 3923])
+                    ("PacketHead::kNetworkTypeFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3924 3970])
+                    ("PacketHead::kCPUChipFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3971 4013])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4067 4205])
+                    ("InitAsDefaultInstance" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4207 4251])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4306 4472])
+                    ("SharedCtor" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4474 5646])
+                    ("PacketHead" function
+                       (:destructor-flag t
+                        :parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5648 5760])
+                    ("SharedDtor" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5762 93156]))                  
+                :type "namespace")
+                nil [460 93156]))          
+      :file "common.pb.cpp"
+      :pointmax 93156
+      :fsize 93155
+      :lastmodtime '(22440 34310 9495 898000)
+      :unmatched-syntax '((punctuation 4305 . 4306) (punctuation 4304 . 4305) (punctuation 4302 . 4303) (semantic-list 4275 . 4299) (symbol 4265 . 4275) (punctuation 4264 . 4265) (punctuation 4263 . 4264) (symbol 4253 . 4263) (punctuation 4066 . 4067) (punctuation 4065 . 4066) (punctuation 4063 . 4064) (semantic-list 4058 . 4060) (symbol 4048 . 4058) (punctuation 4047 . 4048) (punctuation 4046 . 4047) (symbol 4036 . 4046) (semantic-list 3164 . 3174) (symbol 3151 . 3164) (VOID 3146 . 3150) (STATIC 3139 . 3145))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "common.pb.h"
+      :file "common.pb.h"
+      :fsize 65090
+      :lastmodtime '(22440 34310 10495 898000)))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!src!cfgsvr!protobuf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

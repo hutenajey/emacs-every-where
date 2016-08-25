@@ -1,0 +1,422 @@
+;; Object cfgsvr_test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cfgsvr_test/"
+  :tables
+  (list
+    (semanticdb-table "cfgsvr_sdk_verify.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_sdk_verify.h" include nil nil [512 542])
+            ("CfgSvrSDKVerify::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [544 595])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrSDKVerify"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [597 750])
+            ("clean_instance" function
+               (:parent "CfgSvrSDKVerify"
+                :type "void")
+                nil [752 871])
+            ("CfgSvrSDKVerify" function
+               (:constructor-flag t
+                :parent "CfgSvrSDKVerify"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [873 968])
+            ("CfgSvrSDKVerify" function
+               (:destructor-flag t
+                :parent "CfgSvrSDKVerify"
+                :type "void")
+                nil [970 1031])
+            ("rsa_generate_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("output_public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1072 1098])
+                    ("output_private_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1099 1126])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1127 1143]))                  
+                :type "int")
+                nil [1034 2324])
+            ("rsa_set_public_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2366 2385])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2386 2402]))                  
+                :type "int")
+                nil [2326 2939])
+            ("rsa_set_private_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3001])
+                    ("private_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3002 3022])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3023 3039]))                  
+                :type "int")
+                nil [2941 3863])
+            ("rsa_public_key_encrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3909 3926])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3927 3947])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3948 3968]))                  
+                :type "int")
+                nil [3865 4375])
+            ("rsa_private_key_encrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4422 4439])
+                    ("iBufferLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4440 4464])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4465 4485]))                  
+                :type "int")
+                nil [4377 5334])
+            ("rsa_public_key_decrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5380 5397])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5398 5418])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5419 5439]))                  
+                :type "int")
+                nil [5336 5880])
+            ("rsa_private_key_decrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5927 5944])
+                    ("iBufferLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5945 5969])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5970 5990]))                  
+                :type "int")
+                nil [5882 6639])
+            ("base64_encode" function
+               (:pointer 1
+                :parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("bindata" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6678 6707])
+                    ("base64" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6708 6721])
+                    ("binlength" variable (:type "int") (reparse-symbol arg-sub-list) [6722 6736]))                  
+                :type "char")
+                nil [6641 7762])
+            ("base64_decode" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("base64" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7799 7818])
+                    ("bindata" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7818 7841]))                  
+                :type "int")
+                nil [7764 8933]))          
+      :file "cfgsvr_sdk_verify.cpp"
+      :pointmax 8934
+      :fsize 9321
+      :lastmodtime '(22440 34309 723495 901000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_sdk_verify.h"
+      :file "cfgsvr_sdk_verify.h"
+      :fsize 2507
+      :lastmodtime '(22440 34309 724495 901000))
+    (semanticdb-table "YouMeServerValidProtocol.pb.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [112 156])
+            ("YouMeServerValidProtocol.pb.h" include nil nil [157 197])
+            ("algorithm" include (:system-flag t) nil [199 219])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [221 262])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [263 302])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [303 347])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [348 397])
+            ("google/protobuf/io/zero_copy_stream_impl_lite.h" include (:system-flag t) nil [398 456])
+            ("YouMeProtocol" type
+               (:members 
+                  ( ("protobuf_ShutdownFile_YouMeServerValidProtocol_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [523 678])
+                    ("protobuf_AddDesc_YouMeServerValidProtocol_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [830 1424])
+                    ("static_descriptor_initializer_YouMeServerValidProtocol_2eproto_" variable (:type ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [1865 2129])
+                    ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type
+                       (:members 
+                          ( ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" function
+                               (:constructor-flag t
+                                :type ("StaticDescriptorInitializer_YouMeServerValidProtocol_2eproto" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1937 2062]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1865 2129])
+                    ("Bussiness_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2160 2170]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2137 2272])
+                    ("unnamed" type
+                       (:members 
+                          ( ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [2324 2346])
+                            ("MergeFromFail" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [2373 2382]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2347 2436]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2275 2439])
+                    ("ServerValid::kHeadFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2545 2585])
+                    ("ServerValid::kDataFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2586 2626])
+                    ("ServerValid::kBussinesFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2627 2671])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2727 2866])
+                    ("InitAsDefaultInstance" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2868 3192])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3250 3417])
+                    ("SharedCtor" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3419 3798])
+                    ("ServerValid" function
+                       (:destructor-flag t
+                        :parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3800 3915])
+                    ("SharedDtor" function
+                       (:parent "ServerValid"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3917 32689]))                  
+                :type "namespace")
+                nil [496 32689]))          
+      :file "YouMeServerValidProtocol.pb.cpp"
+      :pointmax 32689
+      :fsize 32688
+      :lastmodtime '(22440 34309 725495 901000)
+      :unmatched-syntax '((punctuation 3249 . 3250) (punctuation 3248 . 3249) (punctuation 3246 . 3247) (semantic-list 3218 . 3243) (symbol 3207 . 3218) (punctuation 3206 . 3207) (punctuation 3205 . 3206) (symbol 3194 . 3205) (punctuation 2726 . 2727) (punctuation 2725 . 2726) (punctuation 2723 . 2724) (semantic-list 2718 . 2720) (symbol 2707 . 2718) (punctuation 2706 . 2707) (punctuation 2705 . 2706) (symbol 2694 . 2705) (semantic-list 2313 . 2323) (symbol 2300 . 2313) (VOID 2295 . 2299) (STATIC 2288 . 2294))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "YouMeServerValidProtocol.pb.h"
+      :file "YouMeServerValidProtocol.pb.h"
+      :fsize 21738
+      :lastmodtime '(22440 34309 726495 901000))
+    (semanticdb-table "common.pb.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION" variable (:constant-flag t) nil [94 138])
+            ("common.pb.h" include nil nil [139 161])
+            ("algorithm" include (:system-flag t) nil [163 183])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [185 226])
+            ("google/protobuf/stubs/once.h" include (:system-flag t) nil [227 266])
+            ("google/protobuf/io/coded_stream.h" include (:system-flag t) nil [267 311])
+            ("google/protobuf/wire_format_lite_inl.h" include (:system-flag t) nil [312 361])
+            ("google/protobuf/io/zero_copy_stream_impl_lite.h" include (:system-flag t) nil [362 420])
+            ("YouMeProtocol" type
+               (:members 
+                  ( ("protobuf_ShutdownFile_common_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [487 739])
+                    ("protobuf_AddDesc_common_2eproto" function (:type "void") (reparse-symbol namespacesubparts) [873 1692])
+                    ("static_descriptor_initializer_common_2eproto_" variable (:type ("StaticDescriptorInitializer_common_2eproto" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [2061 2253])
+                    ("StaticDescriptorInitializer_common_2eproto" type
+                       (:members 
+                          ( ("StaticDescriptorInitializer_common_2eproto" function
+                               (:constructor-flag t
+                                :type ("StaticDescriptorInitializer_common_2eproto" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2115 2204]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2061 2253])
+                    ("Device_Platform_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2290 2300]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2261 2414])
+                    ("MSG_TYPE_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2438 2448]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2416 2737])
+                    ("NAME_TYPE_IsValid" function
+                       (:arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2762 2772]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2739 2946])
+                    ("unnamed" type
+                       (:members 
+                          ( ("GOOGLE_ATTRIBUTE_COLD" variable (:type "int") (reparse-symbol namespacesubparts) [2998 3020])
+                            ("MergeFromFail" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("line" variable (:type "int") (reparse-symbol arg-sub-list) [3047 3056]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3021 3110]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2949 3113])
+                    ("PacketHead::kMsgtypeFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3219 3261])
+                    ("PacketHead::kMsgversionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3262 3307])
+                    ("PacketHead::kPlatformFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3308 3351])
+                    ("PacketHead::kBrandFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3352 3392])
+                    ("PacketHead::kSysVersionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3393 3438])
+                    ("PacketHead::kYmSdkVersionFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3439 3486])
+                    ("PacketHead::kCpuArchFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3487 3529])
+                    ("PacketHead::kPackageNameFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3530 3576])
+                    ("PacketHead::kIdentifyFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3577 3620])
+                    ("PacketHead::kAppKeyFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3621 3662])
+                    ("PacketHead::kSDKNameFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3663 3705])
+                    ("PacketHead::kModelFieldNumber" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3706 3746])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3800 3938])
+                    ("InitAsDefaultInstance" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3940 3984])
+                    ("MessageLite" function
+                       (:constructor-flag t
+                        :parent "google::protobuf"
+                        :type ("protobuf" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4039 4205])
+                    ("SharedCtor" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4207 5268])
+                    ("PacketHead" function
+                       (:destructor-flag t
+                        :parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5270 5382])
+                    ("SharedDtor" function
+                       (:parent "PacketHead"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5384 87221]))                  
+                :type "namespace")
+                nil [460 87221]))          
+      :file "common.pb.cpp"
+      :pointmax 87221
+      :fsize 87220
+      :lastmodtime '(22440 34309 725495 901000)
+      :unmatched-syntax '((punctuation 4038 . 4039) (punctuation 4037 . 4038) (punctuation 4035 . 4036) (semantic-list 4008 . 4032) (symbol 3998 . 4008) (punctuation 3997 . 3998) (punctuation 3996 . 3997) (symbol 3986 . 3996) (punctuation 3799 . 3800) (punctuation 3798 . 3799) (punctuation 3796 . 3797) (semantic-list 3791 . 3793) (symbol 3781 . 3791) (punctuation 3780 . 3781) (punctuation 3779 . 3780) (symbol 3769 . 3779) (semantic-list 2987 . 2997) (symbol 2974 . 2987) (VOID 2969 . 2973) (STATIC 2962 . 2968))
+      :lexical-table 
+        '(("INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION")
+          )
+)
+    (semanticdb-table "common.pb.h"
+      :file "common.pb.h"
+      :fsize 60521
+      :lastmodtime '(22440 34309 726495 901000)))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!src!cfgsvr_test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

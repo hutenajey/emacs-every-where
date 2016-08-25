@@ -1,0 +1,48 @@
+((("COMMON_MSG_MCU_ROOM" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("process_server_msg_from_other" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("COMMON_MSG_MCU_STRATEGY" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("CStgySvrMsgHandler" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_sAuthorizationStr" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("CRegisterHXAccount" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("s_authorization" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("set" .
+   [0 0 1])
+  ("parse" .
+   [0 0 1 0 0])
+  ("exp" .
+   [0 0 1])
+  ("export" .
+   [0 0 0 0 0 1])
+  ("expiresTime" .
+   [0 0 0 1 1 0 0 0 0 0 0])
+  ("CHXHelper" .
+   [0 0 0 0 0 0 0 0 2])
+  ("TBImDetailsReq" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("oResp" .
+   [1 0 0 2 0])
+  ("theReq" .
+   [0 0 0 0 1 0])
+  ("userInfos" .
+   [0 0 0 0 0 0 1 0 0])
+  ("RET_IM_NOHXTOKEN" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("oReq" .
+   [0 0 1 0])
+  ("groupId" .
+   [0 0 0 0 1 0 0])
+  ("isMaxusers" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("isDesc" .
+   [0 0 0 0 0 1])
+  ("struct" .
+   [0 0 0 0 1 0])
+  ("CRedisHelper" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])))

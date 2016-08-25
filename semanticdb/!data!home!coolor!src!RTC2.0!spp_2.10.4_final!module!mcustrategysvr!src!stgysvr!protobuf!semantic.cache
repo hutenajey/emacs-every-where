@@ -1,0 +1,16 @@
+;; Object protobuf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "protobuf/"
+  :tables
+  (list
+    (semanticdb-table "youme_mcu_room.pb.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "youme_mcu_room.pb.cpp"
+      :pointmax 65140
+      :fsize 65139
+      :lastmodtime '(22443 64897 736339 933000)
+      :unmatched-syntax nil))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!mcustrategysvr!src!stgysvr!protobuf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

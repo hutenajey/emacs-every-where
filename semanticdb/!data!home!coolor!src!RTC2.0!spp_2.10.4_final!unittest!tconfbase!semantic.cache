@@ -1,0 +1,272 @@
+;; Object tconfbase/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tconfbase/"
+  :tables
+  (list
+    (semanticdb-table "sessionmgrconf_unittest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("unittesteq.h" include nil nil [26 49])
+            ("tconfbase/sessionmgrconf.h" include nil nil [50 87])
+            ("tlog.h" include nil nil [88 105])
+            ("spp::tconfbase" using (:type ("spp::tconfbase" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [107 138])
+            ("CMgrConf" type
+               (:superclasses 
+                  ( ("testing::Test" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [187 194])
+                    ("CMgrConf" function
+                       (:constructor-flag t
+                        :type ("CMgrConf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [203 315])
+                    ("CMgrConf" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [324 383])
+                    ("protected" label nil (reparse-symbol classsubparts) [398 408])
+                    ("flog" variable (:type ("CTLog" type (:type "class") nil nil)) (reparse-symbol classsubparts) [417 428])
+                    ("mgr" variable
+                       (:pointer 1
+                        :type ("CSessionMgrConf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [437 458]))                  
+                :type "class")
+                nil [139 461])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CMgrConf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [469 478])
+                    ("" variable (:type ("CMgrConfTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [479 492]))                  
+                :type "int")
+                nil [462 1196]))          
+      :file "sessionmgrconf_unittest.cpp"
+      :pointmax 1198
+      :fsize 1197
+      :lastmodtime '(22440 34315 328495 895000)
+      :unmatched-syntax nil)
+    (semanticdb-table "unittesteq.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SPP_UNITTEST_EQ_" variable (:constant-flag t) nil [36 53])
+            ("private" variable (:constant-flag t) nil [63 70])
+            ("protected" variable (:constant-flag t) nil [86 95])
+            ("loadconfbase.h" include nil nil [103 128])
+            ("spp::tconfbase" using (:type ("spp::tconfbase" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [129 160])
+            ("equalLog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [175 191])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Log" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [192 209]))                  
+                :type "bool")
+                nil [161 210])
+            ("equalStat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Stat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [226 243])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Stat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 262]))                  
+                :type "bool")
+                nil [211 263])
+            ("equalProcmon" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Procmon" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [283 303])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Procmon" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [304 325]))                  
+                :type "bool")
+                nil [265 326])
+            ("equalMoni" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Moni" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [342 359])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Moni" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [360 378]))                  
+                :type "bool")
+                nil [327 379])
+            ("equalModule" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [397 416])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [417 437]))                  
+                :type "bool")
+                nil [380 438])
+            ("equalConnectShm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConnectShm" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [460 483])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConnectShm" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [484 508]))                  
+                :type "bool")
+                nil [439 509])
+            ("equalAcceptorSock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AcceptorSock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [533 558])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AcceptorSock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [559 585]))                  
+                :type "bool")
+                nil [510 586])
+            ("equalSessionConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SessionConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [611 637])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SessionConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [638 665]))                  
+                :type "bool")
+                nil [587 666])
+            ("equalReport" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Report" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [684 703])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Report" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [704 724]))                  
+                :type "bool")
+                nil [667 725])
+            ("equalProxy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Proxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [742 760])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Proxy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [761 780]))                  
+                :type "bool")
+                nil [726 781])
+            ("equalWorker" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Worker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [799 818])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Worker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [819 839]))                  
+                :type "bool")
+                nil [782 840])
+            ("equalIptable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Iptable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [859 879])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Iptable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [880 901]))                  
+                :type "bool")
+                nil [841 902])
+            ("equalAsyncSession" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("left" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AsyncSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [926 951])
+                    ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AsyncSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 978]))                  
+                :type "bool")
+                nil [903 979]))          
+      :file "unittesteq.h"
+      :pointmax 987
+      :fsize 986
+      :lastmodtime '(22440 34315 330495 895000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SPP_UNITTEST_EQ_")
+          ("private" . ((PUBLIC "public" 71 . 77)))
+          ("protected" . ((PUBLIC "public" 96 . 102)))
+          )
+))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!unittest!tconfbase!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

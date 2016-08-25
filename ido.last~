@@ -1,0 +1,333 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/data/home/coolor/src/" . "RTC2.0/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/" . "common/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/" . "stgysvr/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/" . "src/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/src/" . "cfgsvr/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/" . "src/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/stgysvr/" . "protobuf/")
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/platforms/" . "generic/")
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/" . "platforms/")
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/" . "telepresence/")
+ ("/data/home/coolor/src/RTC2.0/roomsvr/" . "src/")
+ ("/data/home/coolor/src/RTC2.0/" . "spp_2.10.4_final/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/" . "stgysvr/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/" . "src/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/" . "mcustrategysvr/")
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/" . "module/")
+ ("/data/home/coolor/.emacs.d/lisp/" . "editing-utils/")
+ ("/data/home/coolor/.emacs.d/" . "lisp/")
+ ("/data/home/coolor/" . "src/")
+ ("/home/huangnanju/project/lisp-self/" . "common/")
+ ("/mnt/hgfs/svn/client_mcu1.0/src/telepresence/platforms/" . "generic/")
+ ("/mnt/hgfs/svn/client_mcu1.0/src/telepresence/" . "platforms/")
+ ("/mnt/hgfs/svn/cu2.1/src/telepresence/platforms/" . "generic/")
+ ("/mnt/hgfs/svn/cu2.1/src/telepresence/" . "platforms/")
+ ("/mnt/hgfs/svn/cu2.1/src/" . "telepresence/")
+ ("/mnt/hgfs/svn/cu2.1/" . "src/")
+ ("/mnt/hgfs/" . "svn/")
+ ("/mnt/" . "hgfs/")
+ ("/mnt/hgfs/svn/" . "client_mcu1.0/")
+ ("/mnt/hgfs/svn/client_mcu1.0/src/" . "telepresence/")
+ ("/mnt/hgfs/svn/client_mcu1.0/" . "src/")
+ ("/home/huangnanju/bigfan_broka/cgi/CI/application/" . "core/")
+ ("/home/huangnanju/bigfan_broka/cgi/CI/" . "application/")
+ ("/home/huangnanju/.emacs.d/lisp/" . "editing-utils/")
+ ("/home/huangnanju/bigfan_broka/cgi/app/" . "im/")
+ ("/home/huangnanju/bigfan_broka/cgi/" . "app/")
+ ("/home/huangnanju/bigfan_broka/public_lib/work/" . "include/")
+ ("/home/huangnanju/bigfan_broka/public_lib/3rd/" . "json/")
+ ("/home/huangnanju/bigfan_broka/public_lib/util/" . "include/")
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/ao/" . "src/")
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/" . "ao/")
+ ("/home/huangnanju/bigfan_broka/server/imserver/" . "src/")
+ ("/home/huangnanju/bigfan_broka/public_lib/pb/" . "libs/")
+ ("/home/huangnanju/project/" . "colisp/")
+ ("/home/huangnanju/.emacs.d/" . "lisp/")
+ ("/home/huangnanju/project/spp_2.10.4/spp_2.10.4_final/src/" . "worker/")
+ ("/home/huangnanju/project/spp_2.10.4/spp_2.10.4_final/" . "src/")
+ ("/home/huangnanju/project/spp_2.10.4/" . "spp_2.10.4_final/")
+ ("/home/huangnanju/bigfan_broka/public_lib/include/spp_include/" . "comm_bak/")
+ ("/home/huangnanju/bigfan_broka/public_lib/include/" . "spp_include/")
+ ("/home/huangnanju/bigfan_broka/public_lib/" . "include/")
+ ("/" . "home/")
+ ("/home/" . "huangnanju/")
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/ao/" . "src/")
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/" . "ao/")
+ ("/home/huangnanju/bigfan_broka/server/loginserver/" . "src/")
+ ("/home/huangnanju/bigfan_broka/server/" . "imserver/")
+ ("/home/huangnanju/bigfan_broka/" . "server/")
+ ("/home/huangnanju/" . ".emacs.d/")
+ ("c:/Program Files (x86)/Common Files/" . "Intel/")
+ ("c:/Program Files (x86)/" . "Common Files/")
+ ("c:/" . "Program Files (x86)/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/"
+ "/data/home/coolor/.emacs.d/"
+ "/data/home/coolor/.emacs.d/lisp/"
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/common/"
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/protobuf/"
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/stgysvr/protobuf/"
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/stgysvr/"
+ "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/src/cfgsvr/"
+ "/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/"
+ "/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/platforms/generic/"
+ "/home/huangnanju/project/lisp-self/common/"
+ "/home/huangnanju/"
+ "/home/huangnanju/project/lisp-self/lisp/"
+ "/home/huangnanju/.emacs.d/lisp/"
+ "/home/huangnanju/.emacs.d/"
+ "/mnt/hgfs/svn/client_mcu1.0/src/telepresence/platforms/generic/"
+ "/mnt/hgfs/svn/client_mcu1.0/src/telepresence/"
+ "/home/huangnanju/project/"
+ "/mnt/hgfs/svn/cu2.1/src/telepresence/"
+ "/mnt/hgfs/svn/cu2.1/src/telepresence/platforms/generic/"
+ "/home/huangnanju/.emacs.d/lisp/editing-utils/"
+ "/home/huangnanju/project/colisp/"
+ "/home/huangnanju/bigfan_broka/server/imserver/src/ao/src/"
+ "/home/huangnanju/bigfan_broka/public_lib/include/"
+ "/home/huangnanju/bigfan_broka/server/imserver/src/ao/include/"
+ "/home/huangnanju/bigfan_broka/cgi/app/im/"
+ "/home/huangnanju/bigfan_broka/cgi/CI/application/core/"
+ "/home/huangnanju/bigfan_broka/cgi/CI/application/libraries/"
+ "/home/huangnanju/bigfan_broka/public_lib/keyvalue/"
+ "/home/huangnanju/bigfan_broka/public_lib/util/include/"
+ "/home/huangnanju/bigfan_broka/server/imserver/src/svc/"
+ "/home/huangnanju/bigfan_broka/server/loginserver/src/ao/src/"
+ "/home/huangnanju/bigfan_broka/public_lib/util/test/"
+ "/home/huangnanju/bigfan_broka/server/loginserver/src/ao/include/"
+ "/home/huangnanju/bigfan_broka/public_lib/util/src/"
+ "/home/huangnanju/bigfan_broka/public_lib/3rd/json/"
+ "/home/huangnanju/bigfan_broka/server/loginserver/src/svc/"
+ "/home/huangnanju/bigfan_broka/public_lib/pb/"
+ "/home/huangnanju/project/spp_2.10.4/spp_2.10.4_final/src/worker/"
+ "/home/huangnanju/bigfan_broka/public_lib/include/spp_include/comm_bak/"
+ "/home/huangnanju/bigfan_broka/server/loginserver/src/test/"
+ "c:/Program Files (x86)/Common Files/Intel/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "stgysvr_spp_main.cpp"
+ "init.el"
+ "init-session.el"
+ "init-desktop.el"
+ "stgysvr_conf_mgr.cpp"
+ "stgysvr_process.cpp"
+ "redis_helper.cpp"
+ "stgysvr_msg_handler.h"
+ "youme_common.proto"
+ "stgysvr_msg_handler.cpp"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/data/home/coolor/.emacs.d/" (22445 29661 428909 31000) "lisp/" ".gitignore" "recentf" "../" "ido.last~" "snippets/" "recentf~" "README.md" ".emacs.desktop.lock" ".session" "elpa/" "ac-comphist.dat" "init.el" "auto-save-list/" "ede-projects.el" ".emacs.desktop" ".mc-lists.el" "ido.last" "custom.el~" "custom.el" "./" "semanticdb/" "smex-items" "srecode-map.el")
+
+ ("/data/home/coolor/.emacs.d/lisp/" (22445 29544 844909 139000) "custom-themes/" "init-ido.el" "init-auctex.el" "../" "init-cscope.el" "init-ecb.el" "init-helm.el" "init-git.el" "init-cedet.el" "init-session.el" "init-haskell.el" "init-helm-gtags.el" "init-fonts.el" "custom-dicts/" "init-hippie-expand.el" "init-recentf.el" "elpa/" "editing-utils/" "init-themes.el" "init-markdown.el" "init-security.el" "init-gtags.el" "init-auto-complete.el" "init-dired.el" "init-ac-source.el" "init-utils.el" "init-matlab.el" "init-yasnippet.el" "init-editing-utils.el" "init-org.el" "init-desktop.el" "init-desktop.el~" "init-slime.el" "./" "init-tabbar.el" "init-exec-path.el" "init-elpa.el" "init-evil.el")
+
+ ("/data/home/coolor/" (22445 29323 566909 322000) "../" ".bashrc" "package/" "tools/" ".bash_logout" ".bash_history" ".subversion/" ".emacs.d/" ".gnupg/" "src/" "./" ".dir_colors" ".vim/" ".viminfo" ".bash_profile")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/" (22445 21123 311089 801000) "stgysvr_msg_handler.cpp" "stgysvr_room_session.cpp" "stgysvr_session_mgr.h" "#stgysvr_conf_mgr.cpp#" "../" "stgysvr_conf_mgr.cpp" "stgysvr_room_session.h" "stgysvr_process.cpp" "stgysvr_conf_mgr.h" "stgysvr_common.h" "stgysvr_session_mgr.cpp" "stgysvr_room_mgr.h" "stgysvr_spp_container.h" "common/" "stgysvr_spp_main.cpp" "#stgysvr_msg_handler.h#" "config/" "stgysvr_room_mgr.cpp" ".svn/" "protobuf/" "stgysvr_spp_container.cpp" "stgysvr_process.h" "stgysvr_msg_handler.h" "./" "Makefile" "stgysvr_predefine.h")
+
+ ("/data/home/coolor/src/" (22440 34239 669495 965000) "../" "RTC2.0/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/protobuf/" (22444 31533 807573 912000) "../" "youme_server_common.proto" "youme_client_common.proto" "youme_mcu_strategy.proto" "youme_client_common.pb.h" "youme_common.proto" ".svn/" "youme_common.pb.h" "youme_mcu_strategy.pb.cpp" "youme_mcu_room.pb.h" "youme_server_common.pb.cpp" "youme_mcu_strategy.pb.h" "youme_client_common.pb.cpp" "youme_mcu_room.proto" "./" "youme_common.pb.cpp" "youme_mcu_room.pb.cpp" "youme_server_common.pb.h")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/common/" (22444 22636 493582 177000) "zen_mysql_process.h" "redis_helper.h" "zen_mysql_command.cpp" "zen_mysql_predefine.h" "../" "zen_mysql_result.h" "zen_boost_lord_rings.h" "rapidxml_iterators.hpp" "zen_boost_non_copyable.h" "zen_mysql_command.h" "rapidxml_utils.hpp" "redis_helper.cpp" "zen_mysql_field.h" ".svn/" "zen_mysql_result.cpp" "zen_mysql_connect.h" "zen_mysql_connect.cpp" "rapidxml_print.hpp" "rapidxml.hpp" "zen_mysql_field.cpp" "zen_mysql_process.cpp" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/" (22443 64897 734339 933000) "stgysvr/" "../" "build/" ".svn/" "version/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/" (22443 64897 758339 933000) "../" "etc/" ".svn/" "src/" "./" "import/")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/" (22443 65018 18339 821000) "confserver/" "../" "mcustrategysvr/" ".svn/" "loginsvr/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/stgysvr/protobuf/" (22443 63918 235482 454000) "../" "youme_server_common.proto" "common2.pb.h" "youme_mcu_strategy.proto" "room.pb.cpp" "youme_common.proto" ".svn/" "common2.pb.cpp" "youme_common.pb.h" "strategy.proto" "youme_mcu_strategy.pb.cpp" "protobufutil" "room.proto" "strategy.pb.cpp" "common2.proto" "youme_mcu_room.pb.h" "youme_server_common.pb.cpp" "strategy.pb.h" "youme_mcu_strategy.pb.h" "youme_mcu_room.proto" "./" "youme_common.pb.cpp" "youme_mcu_room.pb.cpp" "room.pb.h" "youme_server_common.pb.h")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/stgysvr/" (22443 64077 492482 307000) "stgysvr_msg_handler.cpp" "stgysvr_room_session.cpp" "stgysvr_session_mgr.h" "#stgysvr_conf_mgr.cpp#" "../" "stgysvr_conf_mgr.cpp" "stgysvr_room_session.h" "stgysvr_process.cpp" "stgysvr_conf_mgr.h" "stgysvr_common.h" "stgysvr_session_mgr.cpp" "stgysvr_room_mgr.h" "stgysvr_spp_container.h" "common/" "stgysvr_spp_main.cpp" "config/" "stgysvr_room_mgr.cpp" ".svn/" "protobuf/" ".#stgysvr_conf_mgr.cpp" "stgysvr_spp_container.cpp" "stgysvr_process.h" "stgysvr_msg_handler.h" "./" "Makefile" "stgysvr_predefine.h")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/src/cfgsvr/" (22441 37507 214477 843000) "cfgsvr_monitor_handler.cpp" "../" "cfgsvr_db_process.cpp" "cfgsvr_spp_container.cpp" "zerg_buf_storage.h" "cfgsvr_conf_mgr.cpp" "cfgsvr_timer_handler.cpp" "cfgsvr_server_info_mgr.h" "common/" "cfgsvr_service.cpp" "cfgsvr_redis_process.h" "cfgsvr_sdk_verify.cpp" "cfgsvr_msg_handler.cpp" "cfgsvr_conf_mgr.h" "config/" ".svn/" "cfgsvr_db_process.h" "cfgsvr_mcu_svr_mgr.h" "cfgsvr_redirect_svr_mgr.h" "protobuf/" "cfgsvr_timer_handler.h" "cfgsvr_mcu_svr_mgr.cpp" "cfgsvr_redis_process.cpp" "cfgsvr_predefine.h" "cfgsvr_monitor_handler.h" "cfgsvr_spp_container.h" "cfgsvr_sdk_verify.h" "cfgsvr_common.h" "cfgsvr_server_info_mgr.cpp" "./" "cfgsvr_msg_handler.h" "cfgsvr_redirect_svr_mgr.cpp" "Makefile" "zerg_buf_storage.cpp")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/src/" (22440 34309 728495 901000) "cfgsvr_test/" "../" "build/" "cfgsvr/" ".svn/" "version/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/" (22440 34314 385495 896000) "../" ".svn/" "script/" "sql/" "src/" "./" "import/")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/" (22442 44032 255942 495000) "stgysvr/" "../" "build/" ".svn/" "version/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/" (22442 38834 381868 337000) "OTMonitor.cpp" "OTBridgeInfo.h" "OTCodec.h" "cfg/" "OTObject.cpp" "../" "OTCommon.h" "OTRole.h" "OTObject.h" "mcu_audio_session_handler.cpp" "room.cpp" "OTRedisReport.h" "tinywrap/" "OTMutex.cpp" "OTProcess.h" "YoumeCallSession.cpp" "OTMonitor.h" "McuMonitorHandle.h" "OTMutex.h" "room.h" "mcu_seq_generator.cpp" "OTSessionInfo.h" "OTWrap.h" "mcu_call_session_object_mgr.cpp" "OTCodec.cpp" "OTBridge.h" "OTBridge.cpp" "OpenTelepresenceAPI.h" "mcu_audio_session_handler.h" "patterns/" "YoumeCallSession.h" "OTEngine.h" ".svn/" "OTBridgeInfo.cpp" "platforms/" "OTEngine.cpp" "protobuf/" "OTRedisReport.cpp" "mcu_seq_generator.h" "OpenTelepresenceConfig.h" "mcu_common.h" "OTWrap.cpp" "OTProcess.cpp" "McuMonitorHandle.cpp" "mcu_predefine.h" "./" "mcu_call_session_object_mgr.h" "Makefile" "main.cpp" "OTSessionInfo.cpp")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/platforms/generic/" (22442 38758 989868 407000) "../" "OTEngineGen.cpp" ".svn/" "OTEngineGen.h" "./")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/platforms/" (22440 34272 89495 934000) "../" "generic/" ".svn/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/" (22440 34272 594495 935000) "../" "doubango/" "build/" ".svn/" "version/" "./" "telepresence/")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/" (22440 34272 598495 935000) "../" "config/" ".svn/" "script/" "src/" "./" "svnclean.sh" "import/")
+
+ ("/data/home/coolor/src/RTC2.0/" (22440 34308 795495 901000) "../" "thirdparties/" "common/" "spp_2.10.4_final/" ".svn/" "roomsvr/" "spp_3.0.0_release_0010/" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/" (22440 34314 875495 895000) "../" "etc/" ".svn/" "src/" "./" "import/")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/" (22441 16751 256610 757000) "../" "doc/" "GTAGS" "etc/" "build/" ".svn/" "cscope.po.out" "GRTAGS" "cscope.out" "GPATH" "src/" "unittest/" "module/" "tags" "./" "TAGS" "cscope.in.out" "dist/" "Makefile")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/src/" (22440 34315 299495 895000) "tool/" "../" "publish/" "async_frame/" "proxy/" "worker/" "controller/" "incl_comm.mk" ".svn/" "async/" "script/" "module/" "./" "Makefile" "comm/")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/src/comm/" (22440 34315 21495 894000) "spp_version.h" "frame.h" "stat_mgr/" "IPC.cpp" "poller.cpp" "timerlist.cpp" "../" "IPC.h" "serverbase.cpp" "tconfbase/" "crc32.cpp" "tinyxml/" "makefile" "global.cpp" "singleton.h" "global.h" "crc32.h" "keygen.cpp" "coresingleton.h" "comm_def.h" ".svn/" "timestamp.h" "benchadapter.cpp" "noncopyable.h" "timerlist.h" "keygen.h" "tbase/" "myepoll.h" "./" "serverbase.h" "poller.h" "frame.cpp" "Lock.h" "benchapiplus.h" "benchadapter.h")
+
+ ("/data/home/coolor/.emacs.d/lisp/editing-utils/" (22440 30440 0 0) "init-autopair.el" "init-flex-isearch.el" "../" "init-undo-tree.el" "init-compile.el" "init-outl-minor.el" "init-flyspell.el" "./" "init-switch-window.el")
+
+ ("/mnt/hgfs/svn/cu2.1/src/telepresence/" (22406 12926 472703 300000) "YoumeCallSession.h" "YoumeCallSession.cpp" "tinywrap/" "protobuf/" "platforms/" "patterns/" "OTWrap.h" "OTWrap.cpp" "OTSessionInfo.h" "OTSessionInfo.cpp" "OTRole.h" "OTRedisReport.h" "OTRedisReport.cpp" "OTProxyPluginProducerAudio.h" "OTProxyPluginProducerAudio.cpp" "OTProxyPluginProducer.h" "OTProxyPluginProducer.cpp" "OTProxyPluginMgr.h" "OTProxyPluginMgr.cpp" "OTProxyPluginConsumerAudio.h" "OTProxyPluginConsumerAudio.cpp" "OTProxyPluginConsumer.h" "OTProxyPluginConsumer.cpp" "OTProxyPlugin.h" "OTProxyPlugin.cpp" "OTProcess.h" "OTProcess.cpp" "OTObject.h" "OTObject.cpp" "OTMutex.h" "OTMutex.cpp" "OTMonitor.h" "OTMonitor.cpp" "OTMixerMgrMgr.h" "OTMixerMgrMgr.cpp" "OTMixerMgrAudio.h" "OTMixerMgrAudio.cpp" "OTMixerMgr.h" "OTMixerMgr.cpp" "OTFrameAudio.h" "OTFrameAudio.cpp" "OTFrame.h" "OTFrame.cpp" "OTEngine.h" "OTEngine.cpp" "OTCommon.h" "OTCodecAudio.h" "OTCodecAudio.cpp" "OTCodec.h" "OTCodec.cpp" "OTBridgeInfo.h" "OTBridgeInfo.cpp" "OTBridge.h" "OTBridge.cpp" "OpenTelepresenceConfig.h" "OpenTelepresenceAPI.h" "mixers/" "McuMonitorHandle.h" "McuMonitorHandle.cpp" "Makefile" "main.cpp" "cfg/" "#main.cpp#" "../" "./")
+
+ ("/mnt/hgfs/svn/client_mcu1.0/src/telepresence/" (22413 46776 932509 900000) "YoumeCallSession.h" "YoumeCallSession.cpp" "tinywrap/" "protobuf/" "platforms/" "patterns/" "OTWrap.h" "OTWrap.cpp" "OTSessionInfo.h" "OTSessionInfo.cpp" "OTRole.h" "OTRedisReport.h" "OTRedisReport.cpp" "OTProcess.h" "OTProcess.cpp" "OTObject.h" "OTObject.cpp" "OTMutex.h" "OTMutex.cpp" "OTMonitor.h" "OTMonitor.cpp" "OTEngine.h" "OTEngine.cpp" "OTCommon.h" "OTCodec.h" "OTCodec.cpp" "OTBridgeInfo.h" "OTBridgeInfo.cpp" "OTBridge.h" "OTBridge.cpp" "OpenTelepresenceConfig.h" "OpenTelepresenceAPI.h" "mcu_seq_generator.h" "mcu_seq_generator.cpp" "mcu_predefine.h" "mcu_common.h" "mcu_call_session_object_mgr.h" "mcu_call_session_object_mgr.cpp" "mcu_audio_session_handler.h" "mcu_audio_session_handler.cpp" "McuMonitorHandle.h" "McuMonitorHandle.cpp" "Makefile" "main.cpp" "cfg/" "#OTEngine.cpp#" "#OTBridge.h#" "../" "./")
+
+ ("/home/huangnanju/.emacs.d/" (22422 61842 603080 342000) ".#ac-comphist.dat" "init.el" "#init.el#" "semanticdb/" "ede-projects.el" "srecode-map.el" "snippets/" "smex-items" "recentf~" "recentf" "README.md" "lisp/" "ido.last~" "ido.last" "elpa/" "custom.el~" "custom.el" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".emacs.desktop" "../" "./")
+
+ ("/home/huangnanju/.emacs.d/lisp/" (22407 33396 392651 77000) "init-helm.el" "init-cscope.el" "init-editing-utils.el" "init-cedet.el" "init-ecb.el" "init-helm-gtags.el" "init-gtags.el" "init-themes.el" "init-yasnippet.el" "init-utils.el" "init-tabbar.el" "init-slime.el" "init-security.el" "init-recentf.el" "init-org.el" "init-matlab.el" "init-markdown.el" "init-ido.el" "init-hippie-expand.el" "init-haskell.el" "init-git.el" "init-fonts.el" "init-exec-path.el" "init-evil.el" "init-elpa.el" "init-dired.el" "init-auto-complete.el" "init-auctex.el" "init-ac-source.el" "elpa/" "editing-utils/" "custom-themes/" "custom-dicts/" "../" "./")
+
+ ("/home/huangnanju/" (22423 4807 608197 195000) "2016-07-25.txt" "2016-07-25.html" "2016-07-25.org" ".viminfo" ".bash_profile" ".slime/" ".pki/" "2016-07-25.tex" ".gnupg/" ".subversion/" ".recentf" "project/" ".vim/" ".emacs.d/" ".bash_history" ".bashrc" ".bash_logout" "../" "./")
+
+ ("/home/huangnanju/project/" (22412 34188 559202 982000) "sbcl-1.1.9-x86-64-linux/" "cmucl/" "sbcl/" "lisp-self/" "cscope-15.8b/" "cscope-15.8b.tar.gz" "cedet-1.1/" "cedet-1.1 (1).tar.gz" "ecb-snap/" "ecb.tar.gz" "cedet-1.0.1/" "cedet-1.0.1.tar.gz" "global-6.5.4/" "global-6.5.4.tar.gz" "emacs-24.4/" "colisp/" "../" "./")
+
+ ("/home/huangnanju/project/lisp-self/common/" (22423 3514 934122 476000) "#net.lisp#" "thread.lisp" "producter.lisp" "pkgdcl.lisp" "net.lisp" ".gitignore" "../" "./")
+
+ ("/home/huangnanju/project/lisp-self/lisp/" (22412 38899 689475 295000) "test.lisp" "pkgdcl.lisp" "main.lisp" ".gitignore" "../" "./")
+
+ ("/home/huangnanju/project/lisp-self/" (22412 38899 689475 295000) "version.sexp" "lisp-self.asd" "Makefile" "protocol/" "package/" "lisp/" "conf/" "common/" "bin/" "README.md" ".gitignore" ".git/" "../" "./")
+
+ ("/home/huangnanju/.emacs.d/elpa/helm-gtags-20160417.555/" (22407 31312 264786 806000) "helm-gtags.elc" "helm-gtags-pkg.elc" "helm-gtags-pkg.el" "helm-gtags-autoloads.el" "helm-gtags.el" "../" "./")
+
+ ("/mnt/hgfs/" (22407 30716 419753 800000) "svn/" "../" "./")
+
+ ("/mnt/hgfs/svn/client_mcu1.0/src/telepresence/platforms/generic/" (22407 30704 528926 900000) "OTEngineGen.h" "OTEngineGen.cpp" "#OTEngineGen.cpp#" "../" "./")
+
+ ("/mnt/hgfs/svn/" (22407 26888 271092 400000) "cu2.1/" "common.zip" "common/" "client_mcu1.0.zip" "client_mcu1.0/" "../" "./")
+
+ ("/home/huangnanju/.emacs.d/elpa/" (22406 12263 786843 879000) "ycmd-20160506.21/" "toc-org-20160422.605/" "slime-20160419.858/" "page-break-lines-20160109.1813/" "org-20160509/" "markdown-mode-20160509.1244/" "macrostep-20151213.145/" "hlinum-20150621.1933/" "haskell-mode-20160508.1246/" "ghci-completion-20151125.457/" "flycheck-hdevtools-20160109.1814/" "flex-isearch-20130508.1503/" "epl-20150517.433/" "default-text-scale-20150227.956/" "color-theme-sanityinc-tomorrow-20160505.104/" "color-theme-20080305.34/" "autopair-20160304.437/" "auto-complete-20160416.604/" "async-20160504.2209/" "ac-haskell-process-20150423.702/" "xcscope/" "ac-helm-readme.txt" "helm-core-20160711.1141/" "gtags/" "undo-tree-20140509.522/" "smex-20151212.1409/" "pos-tip-20150318.813/" "org-fstree-20090723.819/" "seq-2.15.signed" "seq-2.15/" "ac-helm-20160318.1933/" "ac-php-core-readme.txt" "with-editor-20160408.201/" "switch-window-20160229.334/" "request-20160424.2032/" "orgit-20160119.1424/" "math-symbol-lists-20160302.1431/" "magit-20160510.353/" "ido-completing-read+-20160319.2338/" "help-fns+-20151215.637/" "goto-chg-20131228.659/" "fuzzy-20150729.2037/" "flycheck-haskell-20160413.131/" "expand-region-20150902.558/" "diminish-20151215.915/" "let-alist-1.0.4.signed" "let-alist-1.0.4/" "org-20160711.signed" "buffer-sets-readme.txt" "ecb/" "yasnippet-20160508.1232/" "tabbar-20141109.143/" "s-20160508.2357/" "popup-20160409.2133/" "org-20160509.signed" "gnupg/" "helm-gtags-readme.txt" "helm-20160712.550/" "multiple-cursors-20160705.707/" "whole-line-or-region-20110901.130/" "request-deferred-20160419.1605/" "pkg-info-20150517.443/" "matlab-mode-20160416.34/" "magit-popup-20160425.430/" "ido-ubiquitous-20160319.2338/" "hi2-20141005.1231/" "hayoo-20140831.521/" "git-commit-20160425.430/" "flycheck-ycmd-20160320.424/" "flycheck-20160510.514/" "evil-20160506.1021/" "dired+-20160507.1224/" "deferred-20160109.2046/" "dash-20160510.1127/" "color-theme-sanityinc-solarized-20160429.1903/" "auto-complete-clang-20140409.52/" "atom-dark-theme-20151119.2335/" "ac-math-20141116.1327/" "exec-path-from-shell-20160112.2246/" "auctex-11.89.3.signed" "auctex-11.89.3/" "helm-gtags-20160417.555/" "archives/" "org-20160711/" "../" "./")
+
+ ("/usr/" (22396 45426 217719 694000) "tmp/" "src/" "local/" "libexec/" "include/" "games/" "etc/" "share/" "lib64/" "lib/" "sbin/" "bin/" "../" "./")
+
+ ("/usr/local/" (22396 62588 391984 542000) "var/" "src/" "share/" "sbin/" "libexec/" "lib64/" "lib/" "include/" "games/" "etc/" "bin/" "../" "./")
+
+ ("/usr/local/share/" (22397 55944 632958 159000) "gtags/" "emacs/" "icons/" "man/" "info/" "applications/" "../" "./")
+
+ ("/usr/local/share/emacs/" (22396 62581 803984 605000) "site-lisp/" "24.4/" "../" "./")
+
+ ("/usr/local/share/emacs/24.4/" (22396 62581 801984 605000) "site-lisp/" "lisp/" "etc/" "../" "./")
+
+ ("/usr/local/share/emacs/24.4/lisp/" (22396 62588 281984 543000) "image-dired.el.gz" "scroll-bar.el.gz" "filenotify.el.gz" "calculator.el.gz" "rfn-eshadow.el.gz" "time-stamp.el.gz" "image-file.el.gz" "autoinsert.el.gz" "userlock.el.gz" "flow-ctrl.el.gz" "font-lock.el.gz" "help-macro.el.gz" "electric.el.gz" "vt-control.el.gz" "sb-image.el.gz" "cus-edit.el.gz" "info-look.el.gz" "case-table.el.gz" "arc-mode.el.gz" "wid-edit.el.gz" "minibuffer.el.gz" "help-fns.el.gz" "cus-theme.el.gz" "ansi-color.el.gz" "find-cmd.el.gz" "savehist.el.gz" "hfy-cmap.el.gz" "font-core.el.gz" "type-break.el.gz" "delim-col.el.gz" "emacs-lock.el.gz" "doc-view.el.gz" "loadhist.el.gz" "profiler.el.gz" "w32-common-fns.el.gz" "vt100-led.el.gz" "saveplace.el.gz" "ruler-mode.el.gz" "echistory.el.gz" "dired-aux.el.gz" "register.el.gz" "mouse-drag.el.gz" "epg-config.el.gz" "buff-menu.el.gz" "pcmpl-rpm.el.gz" "htmlfontify.el.gz" "epa-dired.el.gz" "jka-compr.el.gz" "face-remap.el.gz" "reposition.el.gz" "hilit-chg.el.gz" "skeleton.el.gz" "pcmpl-cvs.el.gz" "frameset.el.gz" "menu-bar.el.gz" "bindings.el.gz" "wid-browse.el.gz" "find-lisp.el.gz" "dirtrack.el.gz" "elide-head.el.gz" "find-dired.el.gz" "mb-depth.el.gz" "pcomplete.el.gz" "bookmark.el.gz" "filecache.el.gz" "epa-file.el.gz" "help-at-pt.el.gz" "ibuf-macs.el.gz" "scroll-all.el.gz" "icomplete.el.gz" "windmove.el.gz" "generic-x.el.gz" "cmuscheme.el.gz" "isearchb.el.gz" "password-cache.el.gz" "disp-table.elc" "scroll-lock.elc" "image-dired.elc" "scroll-bar.elc" "filenotify.elc" "hi-lock.elc" "calculator.elc" "ibuffer.elc" "mpc.elc" "apropos.elc" "rfn-eshadow.elc" "time-stamp.elc" "ps-samp.elc" "image-file.elc" "tempo.elc" "COPYING" "subr.elc" "autoinsert.elc" "epa-hook.elc" "pcmpl-unix.elc" "xt-mouse.elc" "timezone.elc" "simple.elc" "tree-widget.elc" "ielm.elc" "filesets.elc" "speedbar.el.gz" "ibuf-ext.elc" "ebuff-menu.el.gz" "userlock.elc" "server.elc" "leim/" "find-file.el.gz" "misc.elc" "flow-ctrl.elc" "help-mode.elc" "allout-widgets.elc" "font-lock.elc" "cedet/" "disp-table.el.gz" "autoarg.elc" "gnus/" "tar-mode.elc" "env.elc" "format-spec.elc" "ps-print.el.gz" "dynamic-setting.el.gz" "man.elc" "novice.elc" "completion.elc" "tutorial.elc" "elec-pair.el.gz" "whitespace.el.gz" "newcomment.el.gz" "pcmpl-linux.elc" "jit-lock.elc" "README" "msb.elc" "epa-hook.el.gz" "xt-mouse.el.gz" "w32-vars.el.gz" "repeat.elc" "gs.elc" "obsolete/" "help-macro.elc" "play/" "electric.elc" "url/" "vt-control.elc" "image-mode.elc" "dnd.elc" "format-spec.el.gz" "pcmpl-linux.el.gz" "jka-cmpr-hook.el.gz" "sb-image.elc" "dabbrev.elc" "informat.el.gz" "eshell/" "misearch.el.gz" "pcmpl-gnu.elc" "pcmpl-unix.el.gz" "timezone.el.gz" "time.elc" "facemenu.elc" "composite.el.gz" "midnight.elc" "cus-edit.elc" "info-look.elc" "completion.el.gz" "rot13.elc" "jit-lock.el.gz" "autorevert.el.gz" "uniquify.el.gz" "scroll-lock.el.gz" "epg.elc" "desktop.elc" "sort.elc" "case-table.elc" "info.elc" "uniquify.elc" "files-x.elc" "nxml/" "isearch.elc" "hex-util.elc" "pcmpl-gnu.el.gz" "arc-mode.elc" "dframe.elc" "printing.el.gz" "recentf.elc" "view.elc" "wid-edit.elc" "shadowfile.elc" "thingatpt.el.gz" "minibuffer.elc" "cus-start.el.gz" "mouse-copy.elc" "midnight.el.gz" "cus-face.el.gz" "array.elc" "net/" "erc/" "lpr.elc" "strokes.elc" "elec-pair.elc" "help-fns.elc" "mouse-copy.el.gz" "chistory.el.gz" "dos-w32.elc" "descr-text.el.gz" "ldefs-boot.el" "comint.elc" "minibuf-eldef.el.gz" "ps-bdf.elc" "foldout.elc" "calendar/" "cus-theme.elc" "ansi-color.elc" "ehelp.elc" "speedbar.elc" "misearch.elc" "expand.elc" "makesum.elc" "files.elc" "ibuf-ext.el.gz" "language/" "whitespace.elc" "textmodes/" "cus-face.elc" "follow.elc" "image.elc" "dos-vars.elc" "t-mouse.elc" "double.elc" "ps-def.elc" "info-xref.el.gz" "bs.elc" "pcmpl-x.elc" "ses.elc" "talk.elc" "hexl.el.gz" "shell.elc" "cdl.elc" "allout-widgets.el.gz" "tmm.elc" "tree-widget.el.gz" "time.el.gz" "facemenu.el.gz" "follow.el.gz" "dos-vars.el.gz" "ps-print.elc" "mwheel.elc" "dynamic-setting.elc" "ffap.el.gz" "image-mode.el.gz" "frame.elc" "find-cmd.elc" "apropos.el.gz" "savehist.elc" "hfy-cmap.elc" "soundex.elc" "tool-bar.el.gz" "autoarg.el.gz" "tar-mode.el.gz" "font-core.elc" "shadowfile.el.gz" "type-break.elc" "delim-col.elc" "emacs-lock.elc" "doc-view.elc" "filesets.el.gz" "ezimage.elc" "w32-vars.elc" "cus-start.elc" "composite.elc" "master.elc" "indent.elc" "vcursor.el.gz" "informat.elc" "x-dnd.elc" "tutorial.el.gz" "autorevert.elc" "image.el.gz" "ps-mule.elc" "allout.elc" "dos-fns.elc" "paren.elc" "forms.el.gz" "loadhist.elc" "hippie-exp.el.gz" "md4.el.gz" "ls-lisp.el.gz" "hexl.elc" "w32-fns.el.gz" "xml.elc" "hex-util.el.gz" "mouse.el.gz" "dabbrev.el.gz" "window.el.gz" "faces.elc" "color.elc" "minibuf-eldef.elc" "hippie-exp.elc" "epa-mail.elc" "tabify.elc" "rot13.el.gz" "wdired.el.gz" "format.elc" "dired-x.elc" "notifications.elc" "sort.el.gz" "reveal.elc" "tool-bar.elc" "profiler.elc" "finder.elc" "startup.elc" "json.el.gz" "thumbs.el.gz" "term.el.gz" "kermit.elc" "recentf.el.gz" "iimage.el.gz" "w32-common-fns.elc" "vt100-led.elc" "saveplace.elc" "master.el.gz" "ruler-mode.elc" "echistory.elc" "dired-aux.elc" "abbrev.el.gz" "register.elc" "mouse-drag.elc" "epg-config.elc" "locate.el.gz" "hl-line.el.gz" "buff-menu.elc" "pcmpl-rpm.elc" "dired.el.gz" "w32-fns.elc" "ls-lisp.elc" "edmacro.elc" "abbrev.elc" "delsel.el.gz" "htmlfontify.elc" "fringe.el.gz" "vcursor.elc" "align.elc" "comint.el.gz" "epa-dired.elc" "epg.el.gz" "edmacro.el.gz" "jka-compr.elc" "imenu.el.gz" "avoid.elc" "face-remap.elc" "reposition.elc" "strokes.el.gz" "desktop.el.gz" "outline.el.gz" "lpr.el.gz" "expand.el.gz" "forms.elc" "epa-mail.el.gz" "allout.el.gz" "chistory.elc" "select.elc" "calc/" "makesum.el.gz" "woman.elc" "proced.el.gz" "dframe.el.gz" "ielm.el.gz" "battery.elc" "hilit-chg.elc" "skeleton.elc" "fringe.elc" "xml.el.gz" "loaddefs.el" "ezimage.el.gz" "paren.el.gz" "dnd.el.gz" "finder-inf.el" "pcmpl-cvs.elc" "json.elc" "thingatpt.elc" "env.el.gz" "iimage.elc" "align.el.gz" "frameset.elc" "kmacro.elc" "md4.elc" "rect.elc" "menu-bar.elc" "mpc.el.gz" "macros.el.gz" "linum.elc" "kermit.el.gz" "descr-text.elc" "avoid.el.gz" "mouse.elc" "t-mouse.el.gz" "replace.elc" "faces.el.gz" "bindings.elc" "wid-browse.elc" "subdirs.el" "tabify.el.gz" "hl-line.elc" "wdired.elc" "find-lisp.elc" "epa.elc" "dirtrack.elc" "window.elc" "cus-dep.el.gz" "elide-head.elc" "man.el.gz" "indent.el.gz" "ido.el.gz" "find-dired.elc" "tooltip.elc" "foldout.el.gz" "mb-depth.elc" "pcomplete.elc" "emulation/" "double.el.gz" "view.el.gz" "notifications.el.gz" "ses.el.gz" "delsel.elc" "thumbs.elc" "dos-fns.el.gz" "shell.el.gz" "battery.el.gz" "custom.el.gz" "bookmark.elc" "filecache.elc" "soundex.el.gz" "isearch.el.gz" "ps-samp.el.gz" "widget.elc" "array.el.gz" "printing.elc" "mh-e/" "button.elc" "cdl.el.gz" "pcmpl-x.el.gz" "version.el.gz" "button.el.gz" "subr.el.gz" "loadup.el" "format.el.gz" "files-x.el.gz" "epa-file.elc" "cus-load.el" "dired-x.el.gz" "winner.elc" "emacs-lisp/" "help-at-pt.elc" "info-xref.elc" "vc/" "mwheel.el.gz" "talk.el.gz" "outline.elc" "org/" "misc.el.gz" "mail/" "hi-lock.el.gz" "reveal.el.gz" "winner.el.gz" "newcomment.elc" "finder.el.gz" "novice.el.gz" "help.el.gz" "jka-cmpr-hook.elc" "version.elc" "ps-bdf.el.gz" "gs.el.gz" "ibuf-macs.elc" "term/" "kmacro.el.gz" "tooltip.el.gz" "help-mode.el.gz" "dos-w32.el.gz" "select.el.gz" "replace.el.gz" "ps-mule.el.gz" "linum.el.gz" "macros.elc" "ido.elc" "tmm.el.gz" "bs.el.gz" "simple.el.gz" "ps-def.el.gz" "rect.el.gz" "scroll-all.elc" "msb.el.gz" "custom.elc" "find-file.elc" "icomplete.elc" "windmove.elc" "startup.el.gz" "locate.elc" "cus-dep.elc" "generic-x.elc" "epa.el.gz" "ehelp.el.gz" "international/" "files.el.gz" "cmuscheme.elc" "repeat.el.gz" "woman.el.gz" "term.elc" "frame.el.gz" "isearchb.elc" "imenu.elc" "progmodes/" "dired.elc" "widget.el.gz" "ebuff-menu.elc" "tempo.el.gz" "password-cache.elc" "ffap.elc" "help.elc" "server.el.gz" "color.el.gz" "info.el.gz" "ibuffer.el.gz" "proced.elc" "x-dnd.el.gz" "../" "./")
+
+ ("/usr/local/share/emacs/24.4/lisp/emacs-lisp/" (22396 62583 388984 590000) "backquote.el.gz" "avl-tree.el.gz" "copyright.el.gz" "eieio-base.el.gz" "testcover.el.gz" "regexp-opt.el.gz" "benchmark.el.gz" "cl-extra.el.gz" "tcover-ses.el.gz" "tcover-unsafep.el.gz" "autoload.el.gz" "bytecomp.el.gz" "checkdoc.el.gz" "eieio-opt.el.gz" "byte-run.el.gz" "tabulated-list.el.gz" "easymenu.el.gz" "re-builder.el.gz" "byte-opt.el.gz" "warnings.el.gz" "pp.el.gz" "find-func.el.gz" "eieio-custom.el.gz" "subr-x.el.gz" "eieio-core.el.gz" "ewoc.el.gz" "backquote.elc" "easy-mmode.elc" "advice.elc" "timer.elc" "disass.el.gz" "check-declare.el.gz" "easy-mmode.el.gz" "cl-seq.elc" "lisp-mnt.el.gz" "ring.elc" "tq.elc" "eldoc.elc" "package-x.elc" "trace.elc" "shadow.elc" "regi.elc" "generic.elc" "ert-x.elc" "avl-tree.elc" "package-x.el.gz" "cl-macs.el.gz" "edebug.elc" "lisp-mode.elc" "lisp.elc" "cl-indent.el.gz" "rx.elc" "float-sup.elc" "copyright.elc" "debug.elc" "disass.elc" "check-declare.elc" "gulp.elc" "eieio-base.elc" "eieio.elc" "bindat.elc" "unsafep.el.gz" "chart.el.gz" "pcase.elc" "smie.elc" "macroexp.elc" "cl-indent.elc" "shadow.el.gz" "package.el.gz" "testcover.elc" "cl-macs.elc" "debug.el.gz" "helper.elc" "cconv.elc" "cl.elc" "elint.elc" "regi.el.gz" "syntax.elc" "eieio-datadebug.el.gz" "authors.el.gz" "regexp-opt.elc" "crm.elc" "lisp-mode.el.gz" "float-sup.el.gz" "macroexp.el.gz" "package.elc" "lisp-mnt.elc" "cl-seq.el.gz" "cl.el.gz" "cl-lib.el.gz" "eieio-speedbar.elc" "timer.el.gz" "generic.el.gz" "map-ynp.el.gz" "benchmark.elc" "nadvice.elc" "cl-extra.elc" "edebug.el.gz" "tcover-ses.elc" "cl-lib.elc" "bindat.el.gz" "elint.el.gz" "elp.el.gz" "eieio-datadebug.elc" "eldoc.el.gz" "gv.el.gz" "authors.elc" "pcase.el.gz" "tcover-unsafep.elc" "autoload.elc" "lisp.el.gz" "gv.elc" "bytecomp.elc" "unsafep.elc" "ring.el.gz" "smie.el.gz" "tq.el.gz" "map-ynp.elc" "ert-x.el.gz" "helper.el.gz" "checkdoc.elc" "eieio-opt.elc" "eieio.el.gz" "rx.el.gz" "elp.elc" "byte-run.elc" "ert.elc" "cconv.el.gz" "cl-loaddefs.el" "ewoc.elc" "derived.elc" "chart.elc" "tabulated-list.elc" "syntax.el.gz" "ert.el.gz" "crm.el.gz" "easymenu.elc" "re-builder.elc" "derived.el.gz" "nadvice.el.gz" "byte-opt.elc" "advice.el.gz" "warnings.elc" "pp.elc" "gulp.el.gz" "find-func.elc" "eieio-custom.elc" "subr-x.elc" "eieio-core.elc" "trace.el.gz" "eieio-speedbar.el.gz" "../" "./")
+
+ ("/mnt/hgfs/svn/cu2.1/" (22403 20536 974931 500000) "TAGS" "svnclean.sh" "src/" "script/" "import/" "GTAGS" "GRTAGS" "GPATH" "cscope.po.out" "cscope.out" "cscope.in.out" "cscope.files" "config/" ".svn/" ".settings/" ".project" ".cproject" "../" "./")
+
+ ("/mnt/hgfs/svn/cu2.1/src/telepresence/platforms/generic/" (22403 17841 664887 0) "OTEngineGen.h" "OTEngineGen.cpp" "#OTEngineGen.cpp#" "../" "./")
+
+ ("/mnt/hgfs/svn/cu2.1/src/telepresence/platforms/" (22396 56035 177015 200000) "generic/" "../" "./")
+
+ ("/mnt/hgfs/svn/cu2.1/src/" (22396 56037 187032 500000) "Xcode/" "version/" "telepresence/" "doubango/" "build/" "../" "./")
+
+ ("/mnt/hgfs/svn/client_mcu1.0/src/telepresence/platforms/" (22396 56065 642138 800000) "generic/" "../" "./")
+
+ ("/home/huangnanju/.emacs.d/lisp/editing-utils/" (22399 40238 522967 816000) "init-undo-tree.el" "init-switch-window.el" "init-outl-minor.el" "init-flyspell.el" "init-flex-isearch.el" "init-compile.el" "init-autopair.el" "../" "./")
+
+ ("/mnt/hgfs/svn/client_mcu1.0/" (22399 8116 183393 400000) "TAGS" "svnclean.sh" "src/" "script/" "import/" "GTAGS" "GRTAGS" "GPATH" "config/" ".svn/" ".settings/" ".project" ".cproject" "../" "./")
+
+ ("/home/" (22396 45687 892413 651000) "huangnanju/" "../" "./")
+
+ ("/mnt/" (22397 50883 439006 573000) "hgfs/" "cdrom/" "../" "./")
+
+ ("/mnt/hgfs/svn/client_mcu1.0/src/" (22396 56065 411430 900000) "version/" "telepresence/" "doubango/" "build/" "../" "./")
+
+ ("/home/huangnanju/project/colisp/" (22396 59249 530930 264000) "test.lisp" "quicklisp.lisp.asc" "quicklisp.lisp" "lol.lisp" "easysql.lisp" "easysql.asd" "../" "./")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/ao/src/" (22344 15834 739171 283000) "CModifyGroupTask.cpp" "CCancleFollowUserTask.cpp" "CHXHelper.cpp" "CDeleteMembersTask.cpp" ".#CModifyGroupTask.cpp" "#CModifyGroupTask.cpp#" "CServerCfg.cpp" "CFriendRemarksTask.cpp" "CMoveBlackListTask.cpp" "CAddBlackListTask.cpp" "CGetFriendsListTask.cpp" "CCreateGroupTask.cpp" "CRegisterHXAccountTask.cpp" "CAddMembersTask.cpp" "CFollowUserTask.cpp" "./" "../" "CSendAuthorityTask.cpp")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/include/" (22344 15675 928171 358000) "serialize.h" "server.proto" "error_protocol.h" "bigfan.proto" "bigfan.pb.cc" "tinyxml/" "server.pb.cc" "spp_include/" "server.pb.h" "plugin.h" "bigfan.pb.h" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/ao/include/" (22344 14673 744171 851000) "CGetFriendsListTask.h" "CAddBlackListTask.h" "CRegisterHXAccountTask.h" "CCreateGroupTask.h" "CModifyGroupTask.h" "CHXHelper.h" "CMoveBlackListTask.h" "CSendAuthorityTask.h" "CFriendRemarksTask.h" "CAddMembersTask.h" "CFollowUserTask.h" "CServerCfg.h" "CCancleFollowUserTask.h" "CDeleteMembersTask.h" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/app/im/" (22344 2086 464177 998000) "modifyGroup.php" "sendAuthority.php" "createGroup.php" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/util/include/" (22343 47155 434187 986000) "util.h" "mytlog.h" "ip_struct.h" "mutex.h" "svccfg_client.h" "curlstub.h" "charset.h" "protocol.h" "clog.h" "netwk.h" "singleton.h" "udplib.h" "jserialize.h" "urlencode.h" "lark_stub.h" "tcplib.h" "./" "cfg.h" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/CI/application/core/" (22342 63353 213212 76000) "MY_Controller.php" "index.html" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/CI/application/libraries/" (22342 59359 405214 26000) "pb_proto_bigfan.php" "index.html" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/CI/application/" (22342 59359 407214 25000) "views/" "models/" "helpers/" ".htaccess" "core/" "logs/" "config/" "libraries/" "index.html" "third_party/" "language/" "controllers/" "hooks/" "./" "../" "cache/")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/util/src/" (22342 47488 302219 821000) "udplib.c" "mytlog.cpp" "makefile" "netwk.o" "netwk.c" "clog.cpp" "curlstub.cpp" "cfg.o" "tcplib.o" "liblarkutil.a" "charset.o" "clog.o" "util.o" "cfg.cpp" "urlencode.cpp" "tcplib.c" "mytlog.o" "urlencode.o" "util.cpp" "udplib.o" "./" "charset.cpp" "../" "curlstub.o")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/util/test/" (22342 51790 906217 720000) "err_msg_test" "makefile" "im_test.cpp" "err_msg_test.cpp" "bigfan.pb.o" "server_test" "curl_test.cpp" "server_test.o" "#err_msg_test.cpp#" "server_test.cpp" "err_msg_test.h" "server.pb.o" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/ao/src/" (22342 30907 965227 916000) "CCancleThirdBindTask.cpp" "CBindInfoTask.cpp" "CServerCfg.cpp" "CLoginTask.cpp" "CLoginConfig.cpp" "CBindAuthPlatformTask.cpp" "CVerifyCodeTask.cpp" "CChangePhoneTask.cpp" "CResetPassWdTask.cpp" "CRegisterTask.cpp" "CLogoutTask.cpp" "CBindPhoneTask.cpp" "CChangePassWdTask.cpp" "./" "../" "CVerifyPassWdTask.cpp")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/svc/" (22342 59006 374214 198000) "Makefile" "#Makefile#" ".Makefile.swp" "libspp_imserver_main.so" "spp_imserver_main.cpp" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/keyvalue/" (22342 59943 758213 741000) "keyvalue.h" "qqcrypt.h" "#keyvalue.h#" "kvhashval.h" "kv_dbAgentApi.h" "kvtypedef.h" "kvconvert.h" "kvfundutil.h" "kvdatabuf.h" "./" "../" "kvlog.h")
+
+ ("/home/huangnanju/bigfan_broka/cgi/app/" (22342 59359 461214 26000) "libs/" "im/" "userInfo/" "config.xml" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/CI/" (22342 59359 423214 26000) "application/" ".gitignore" "index.php" "readme.rst" "contributing.md" "user_guide/" "license.txt" "system/" "composer.json" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/cgi/" (22342 59359 404214 26000) ".gitkeep" "app/" "CI/" "README" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/" (22342 59006 460214 199000) "Makefile" "build/" "conf/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/build/" (22342 27539 243229 562000) "etc/" "client/" "stat/" "bin/" "log/" "./" "../" "moni/")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/build/log/" (22342 27539 287229 562000) "spp_worker1.log" "spp_frame_worker1.log" "spp_proxy.log" "spp_frame_proxy.log" "water/" "spp_frame_ctrl.log" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/spp_base/" (22340 26789 757293 921000) "etc/" "bin/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/work/include/" (22340 26789 699293 920000) "CObject.h" "CTaskManager.h" "IPbProtocolTask.h" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/work/" (22334 54826 260472 212000) "Makefile" "include/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/uinttest/" (22341 24672 920262 958000) "README.org" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/pb/" (22340 26789 657293 921000) "libs/" "protoc" ".libs/" "google/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/svc/" (22341 39125 479255 901000) "Makefile" "spp_longin_main.o" "#Makefile#" "spp_longin_main.cpp" "./" "../" "#spp_longin_main.cpp#")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/3rd/json/" (22341 39505 577255 716000) "test/" "value.h" "json.h" "forwards.h" "features.h" "autolink.h" "reader.h" "config.h" "./" "writer.h" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/ao/include/" (22341 39125 474255 902000) "CVerifyPassWdTask.h" "CVerifyCodeTask.h" "CCancleThirdBindTask.h" "CRegisterTask.h" "CBindAuthPlatformTask.h" "CLoginTask.h" "CChangePassWdTask.h" "CLogoutTask.h" "CBindPhoneTask.h" "CChangePhoneTask.h" "CBindInfoTask.h" "CLoginConfig.h" "#CBindAuthPlatformTask.h#" "CServerCfg.h" "sturct_user.h" "CResetPassWdTask.h" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/googletest/" (22340 26789 427293 920000) "lib/" "include/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/" (22341 35942 960257 477000) "elib/" "util/" "pb/" "db/" "libs/" "Makefile" "misclib/" "tinyxml/" "tc_tt/" "work/" "googletest/" "3rd/" "jemalloc/" "keyvalue/" "libevent/" "include/" "curl/" "hiredis/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/" (22341 39620 218255 658000) "tool/" "cgi/" "Makefile" "spp_base/" "api/" "makefile.mid" "cscope.out" "database/" "public_lib/" "cscope.out.po" "cscope.out.in" ".git/" "README.md" "makefile.dir" "nginx/" "cscope.files" "server/" "branch/" "makefile.base" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/util/" (22341 28937 241260 875000) "test/" "Makefile" "include/" "conf/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/3rd/" (22341 19072 402265 691000) "cJSON/" "libs/" "json/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/ao/" (22341 24672 877262 958000) "include/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/" (22341 24672 834262 958000) "commonserver/" "README.ORG" "imserver/" "Makefile" "create_task.sh" "create_module.sh" "template/" "loginserver/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/imserver/src/" (22341 24672 919262 958000) "makefile" "tool/" "ao/" "uinttest/" "./" "../" "svc/")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/db/" (22334 54825 899472 211000) "makefile" "tools/" "include/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/public_lib/db/include/" (22340 26789 420293 922000) "dbacc_mysql.h" "dbacc.h" "mysql/" "dbacc_oracle.h" ".dbaccess.h.swp" "dbacc_tpg.h" "sqlbind.h" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/server/loginserver/src/" (22341 3991 569273 26000) "makefile" "test/" "ao/" "include/" "./" "../" "svc/")
+
+ ("/home/huangnanju/bigfan_broka/server/loginserver/" (22341 3985 671273 57000) "Makefile" "conf/" "./" "src/" "../")
+
+ ("/home/huangnanju/bigfan_broka/database/" (22338 48923 551347 107000) "Makefile" "mysql/" "commoncache/" "README.md" "ttserver/" "./" "../")
+
+ ("/home/huangnanju/bigfan_broka/database/commoncache/" (22338 48923 549347 106000) "Makefile" "lib/" "include/" "./" "src/" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

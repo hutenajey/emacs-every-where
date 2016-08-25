@@ -1,0 +1,440 @@
+;; Object stubs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "stubs/"
+  :tables
+  (list
+    (semanticdb-table "port.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GOOGLE_PROTOBUF_STUBS_PORT_H_" variable (:constant-flag t) nil [1707 1736])
+            ("assert.h" include (:system-flag t) nil [1738 1757])
+            ("stdlib.h" include (:system-flag t) nil [1758 1777])
+            ("cstddef" include (:system-flag t) nil [1778 1796])
+            ("string" include (:system-flag t) nil [1797 1814])
+            ("string.h" include (:system-flag t) nil [1815 1834])
+            ("stdint.h" include (:system-flag t) nil [2006 2025])
+            ("sys/param.h" include (:system-flag t) nil [2677 2701])
+            ("LIBPROTOBUF_EXPORT" variable (:constant-flag t) nil [3346 3364])
+            ("LIBPROTOC_EXPORT" variable (:constant-flag t) nil [3375 3391])
+            ("google" type
+               (:members 
+                  ( ("protobuf" type
+                       (:members 
+                          ( ("uint" type
+                               (:typedef ("unsigned int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3540 3566])
+                            ("int8" type
+                               (:typedef ("signed char")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3820 3846])
+                            ("int16" type
+                               (:typedef ("short")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3847 3867])
+                            ("int32" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3868 3886])
+                            ("int64" type
+                               (:typedef ("long long")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3887 3911])
+                            ("uint8" type
+                               (:typedef ("unsigned char")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3913 3942])
+                            ("uint16" type
+                               (:typedef ("unsigned short")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3943 3973])
+                            ("uint32" type
+                               (:typedef ("unsigned int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [3974 4002])
+                            ("uint64" type
+                               (:typedef ("unsigned long long")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [4003 4037])
+                            ("GOOGLE_LONGLONG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4407 4422])
+                            ("GOOGLE_ULONGLONG" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4440 4456])
+                            ("GOOGLE_LL_FORMAT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4475 4491])
+                            ("kint32max" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0x7FFFFFFF"
+                                :type ("int32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4556 4598])
+                            ("kint32min" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "-kint32max - 1"
+                                :type ("int32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4599 4645])
+                            ("kint64max" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "GOOGLE_LONGLONG(0x7FFFFFFFFFFFFFFF)"
+                                :type ("int64" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4646 4713])
+                            ("kint64min" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "-kint64max - 1"
+                                :type ("int64" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4714 4760])
+                            ("kuint32max" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "0xFFFFFFFFu"
+                                :type ("uint32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4761 4806])
+                            ("kuint64max" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "GOOGLE_ULONGLONG(0xFFFFFFFFFFFFFFFF)"
+                                :type ("uint64" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4807 4877])
+                            ("GOOGLE_ATTRIBUTE_ALWAYS_INLINE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5409 5439])
+                            ("GOOGLE_ATTRIBUTE_NOINLINE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [5789 5814])
+                            ("GOOGLE_ATTRIBUTE_NOINLINE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6082 6107])
+                            ("GOOGLE_ATTRIBUTE_DEPRECATED" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6251 6278])
+                            ("GOOGLE_PREDICT_TRUE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6452 6471])
+                            ("GOOGLE_PREDICT_FALSE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6642 6662])
+                            ("GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6993 7028])
+                            ("GOOGLE_SAFE_CONCURRENT_WRITES_END" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7088 7121])
+                            ("GOOGLE_FALLTHROUGH_INTENDED" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7464 7491])
+                            ("GOOGLE_GUARDED_BY" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7508 7525])
+                            ("GOOGLE_ATTRIBUTE_COLD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7537 7558])
+                            ("GOOGLE_UNALIGNED_LOAD16" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7722 7745])
+                            ("GOOGLE_UNALIGNED_LOAD32" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7798 7821])
+                            ("GOOGLE_UNALIGNED_LOAD64" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7874 7897])
+                            ("GOOGLE_UNALIGNED_STORE16" variable (:constant-flag t) (reparse-symbol namespacesubparts) [7951 7975])
+                            ("GOOGLE_UNALIGNED_STORE32" variable (:constant-flag t) (reparse-symbol namespacesubparts) [8037 8061])
+                            ("GOOGLE_UNALIGNED_STORE64" variable (:constant-flag t) (reparse-symbol namespacesubparts) [8123 8147])
+                            ("GOOGLE_THREAD_LOCAL" variable (:constant-flag t) (reparse-symbol namespacesubparts) [8889 8908])
+                            ("ghtonl" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10575 10584]))                                  
+                                :type ("uint32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10561 10585])
+                            ("BigEndian" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [10606 10613])
+                                    ("FromHost16" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11091 11100]))                                          
+                                        :type ("uint16" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11066 11114])
+                                    ("ToHost16" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11140 11149]))                                          
+                                        :type ("uint16" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11117 11163])
+                                    ("FromHost32" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11192 11201]))                                          
+                                        :type ("uint32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11167 11215])
+                                    ("ToHost32" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11241 11250]))                                          
+                                        :type ("uint32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11218 11264])
+                                    ("FromHost64" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11293 11302]))                                          
+                                        :type ("uint64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11268 11316])
+                                    ("ToHost64" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11342 11351]))                                          
+                                        :type ("uint64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11319 11365])
+                                    ("IsLittleEndian" function
+                                       (:typemodifiers ("static")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [11369 11415])
+                                    ("Load16" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [11530 11544]))                                          
+                                        :type ("uint16" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11509 11599])
+                                    ("Store16" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [11623 11631])
+                                            ("v" variable (:type ("uint16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11632 11641]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11603 11695])
+                                    ("Load32" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [11720 11734]))                                          
+                                        :type ("uint32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11699 11789])
+                                    ("Store32" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [11813 11821])
+                                            ("v" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11822 11831]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11793 11885])
+                                    ("Load64" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [11910 11924]))                                          
+                                        :type ("uint64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11889 11979])
+                                    ("Store64" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [12003 12011])
+                                            ("v" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12012 12021]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [11983 12075]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [10587 12078]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3518 12082]))                  
+                :type "namespace")
+                nil [3499 12107]))          
+      :file "port.h"
+      :pointmax 12171
+      :fsize 12170
+      :lastmodtime '(22440 34310 146495 900000)
+      :unmatched-syntax '((spp-system-include "byteswap.h" 9492 . 9513) (semantic-list 7702 . 7712) (symbol 7695 . 7702) (punctuation 7693 . 7694) (punctuation 7692 . 7693) (semantic-list 7682 . 7691) (symbol 7675 . 7682))
+      :lexical-table 
+        '(("LIBPROTOBUF_EXPORT")
+          ("GOOGLE_PREDICT_TRUE" (spp-arg-list ("x") 6471 . 6474) . ((semantic-list "(__builtin_expect(!!(x), 1))" 6475 . 6503)))
+          ("GOOGLE_FALLTHROUGH_INTENDED")
+          ("GOOGLE_GUARDED_BY" (spp-arg-list ("x") 7525 . 7528))
+          ("GOOGLE_ATTRIBUTE_COLD")
+          ("GOOGLE_PREDICT_FALSE" (spp-arg-list ("x") 6662 . 6665) . ((semantic-list "(__builtin_expect(x, 0))" 6666 . 6690)))
+          ("GOOGLE_PROTOBUF_STUBS_PORT_H_")
+          ("LIBPROTOC_EXPORT")
+          ("GOOGLE_LONGLONG" (spp-arg-list ("x") 4422 . 4425) . ((spp-symbol-merge ((symbol "x" 4426 . 4427) (symbol "LL" 4429 . 4431)) 4426 . 4431)))
+          ("GOOGLE_LL_FORMAT" . ((string "\"ll\"" 4492 . 4496)))
+          ("GOOGLE_UNALIGNED_LOAD16" (spp-arg-list ("_p") 7745 . 7749) . ((semantic-list "(*reinterpret_cast<const uint16 *>(_p))" 7750 . 7789)))
+          ("GOOGLE_UNALIGNED_LOAD64" (spp-arg-list ("_p") 7897 . 7901) . ((semantic-list "(*reinterpret_cast<const uint64 *>(_p))" 7902 . 7941)))
+          ("GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN" (spp-arg-list nil 7028 . 7030))
+          ("GOOGLE_UNALIGNED_LOAD32" (spp-arg-list ("_p") 7821 . 7825) . ((semantic-list "(*reinterpret_cast<const uint32 *>(_p))" 7826 . 7865)))
+          ("GOOGLE_ATTRIBUTE_ALWAYS_INLINE" . ((symbol "__attribute__" 5440 . 5453) (semantic-list "((always_inline))" 5454 . 5471)))
+          ("GOOGLE_ATTRIBUTE_NOINLINE")
+          ("GOOGLE_ATTRIBUTE_DEPRECATED" . ((symbol "__attribute__" 6279 . 6292) (semantic-list "((deprecated))" 6292 . 6306)))
+          ("GOOGLE_UNALIGNED_STORE16" (spp-arg-list ("_p" "_val") 7975 . 7985) . ((semantic-list "(*reinterpret_cast<uint16 *>(_p) = (_val))" 7986 . 8028)))
+          ("GOOGLE_UNALIGNED_STORE64" (spp-arg-list ("_p" "_val") 8147 . 8157) . ((semantic-list "(*reinterpret_cast<uint64 *>(_p) = (_val))" 8158 . 8200)))
+          ("GOOGLE_SAFE_CONCURRENT_WRITES_END" (spp-arg-list nil 7121 . 7123))
+          ("GOOGLE_THREAD_LOCAL" . ((symbol "__thread" 8909 . 8917)))
+          ("GOOGLE_ULONGLONG" (spp-arg-list ("x") 4456 . 4459) . ((spp-symbol-merge ((symbol "x" 4460 . 4461) (symbol "ULL" 4463 . 4466)) 4460 . 4466)))
+          ("GOOGLE_UNALIGNED_STORE32" (spp-arg-list ("_p" "_val") 8061 . 8071) . ((semantic-list "(*reinterpret_cast<uint32 *>(_p) = (_val))" 8072 . 8114)))
+          )
+)
+    (semanticdb-table "template_util.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GOOGLE_PROTOBUF_TEMPLATE_UTIL_H_" variable (:constant-flag t) nil [2452 2484])
+            ("google" type
+               (:members 
+                  ( ("protobuf" type
+                       (:members 
+                          ( ("internal" type
+                               (:members 
+                                  ( ("small_" type
+                                       (:typedef ("char")
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [2631 2651])
+                                    ("big_" type
+                                       (:members 
+                                          ( ("dummy" variable
+                                               (:dereference 1
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [2669 2683]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2653 2686])
+                                    ("identity_" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2754 2769]))                                          )
+                                        (reparse-symbol namespacesubparts) [2714 2772])
+                                    ("integral_constant" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("T" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value" variable
+                                               (:typemodifiers ("static")
+                                                :constant-flag t
+                                                :default-value "v"
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3077 3102])
+                                            ("value_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3105 3126])
+                                            ("type" type
+                                               (:typedef ("integral_constant" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil)
+                                                          ("v" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3129 3166]))                                          )
+                                        (reparse-symbol namespacesubparts) [3025 3169])
+                                    ("integral_constant::value" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3171 3234])
+                                    ("true_type" type
+                                       (:typedef ("integral_constant" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("true" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [3414 3463])
+                                    ("false_type" type
+                                       (:typedef ("integral_constant" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("false" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [3464 3514])
+                                    ("true_" type
+                                       (:typedef ("true_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [3515 3540])
+                                    ("false_" type
+                                       (:typedef ("false_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [3541 3567])
+                                    ("if_" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil)
+                                            ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("A" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3787 3802]))                                          )
+                                        (reparse-symbol namespacesubparts) [3729 3805])
+                                    ("if_" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("B" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3868 3883]))                                          
+                                        :template-specifier 
+                                          ( ("false" type nil nil nil)
+                                            ("A" type nil nil nil)
+                                            ("B" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3807 3886])
+                                    ("type_equals_" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("false_" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4180 4253])
+                                    ("type_equals_" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("true_" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("A" type nil nil nil)
+                                            ("A" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4255 4321])
+                                    ("and_" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("integral_constant" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4413 4519])
+                                    ("or_" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("integral_constant" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4609 4714]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2526 4718]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2505 4743]))                  
+                :type "namespace")
+                nil [2486 4768]))          
+      :file "template_util.h"
+      :pointmax 4835
+      :fsize 4834
+      :lastmodtime '(22440 34310 141495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GOOGLE_PROTOBUF_TEMPLATE_UTIL_H_")
+          )
+))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!import!include!google!protobuf!stubs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

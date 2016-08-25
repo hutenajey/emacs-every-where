@@ -1,0 +1,358 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables
+  (list
+    (semanticdb-table "OTEngineGen.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OPENTELEPRESENCE_ENGINE_GEN_H" variable (:constant-flag t) nil [273 302])
+            ("mcu_predefine.h" include nil nil [304 330])
+            ("OTEngine.h" include nil nil [331 352])
+            ("OpenTelepresenceConfig.h" include nil nil [353 388])
+            ("tinynet.h" include nil nil [389 409])
+            ("set" include (:system-flag t) nil [410 424])
+            ("OTEngineGen" type
+               (:superclasses 
+                  ( ("OTEngine" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [463 470])
+                    ("OTEngineGen" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("OTEngineGen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [475 490])
+                    ("OTEngineGen" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [495 519])
+                    ("GetObjectId" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [542 610])
+                    ("public" label nil (reparse-symbol classsubparts) [612 619])
+                    ("start" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [624 646])
+                    ("stop" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [651 672])
+                    ("procesLeveMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [697 729]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [678 730])
+                    ("processJoinMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [755 787]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [735 788])
+                    ("procesHeartBeatMsg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [817 849]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [793 850])
+                    ("checkCallSation" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [855 878])
+                    ("stopCallSession" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("callSession" variable
+                               (:pointer 1
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [911 938]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [883 939])
+                    ("getCallSessionInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("currentBridges" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [975 1022]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [945 1023])
+                    ("getAppkeySessionInfo" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("appkeySessionInfo" variable
+                               (:reference 1
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1060 1109]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1028 1110])
+                    ("serverTransportCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1151 1183]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1115 1184])
+                    ("serverTimerCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("pParam" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1221 1240])
+                            ("iTimerID" variable (:type "long") (reparse-symbol arg-sub-list) [1241 1255]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1189 1256])
+                    ("getSvcTimerID" function (:type "long") (reparse-symbol classsubparts) [1261 1321])
+                    ("maxCallNum" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1327 1349])
+                    ("protected" label nil (reparse-symbol classsubparts) [1350 1360])
+                    ("isValid" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1365 1389])
+                    ("m_pTransport" variable
+                       (:pointer 1
+                        :type ("tnet_transport_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1395 1433])
+                    ("m_svcLocalIP" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1439 1461])
+                    ("m_svcLocalPort" variable (:type ("tnet_port_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1466 1493])
+                    ("m_initFlag" variable (:type "bool") (reparse-symbol classsubparts) [1498 1514])
+                    ("m_iTimerID" variable (:type "long") (reparse-symbol classsubparts) [1519 1535]))                  
+                :type "class")
+                nil [425 1538]))          
+      :file "OTEngineGen.h"
+      :pointmax 1584
+      :fsize 1640
+      :lastmodtime '(22396 56065 646141 300000)
+      :unmatched-syntax '((symbol 532 . 541) (VIRTUAL 524 . 531))
+      :lexical-table 
+        '(("OPENTELEPRESENCE_ENGINE_GEN_H")
+          )
+)
+    (semanticdb-table "OTEngineGen.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("platforms/generic/OTEngineGen.h" include nil nil [227 269])
+            ("protobuf/serverlogin.pb.h" include nil nil [270 306])
+            ("tinywrap/XTimer.h" include nil nil [307 335])
+            ("tsk_list.h" include nil nil [336 357])
+            ("tsk_time.h" include nil nil [358 379])
+            ("map" include (:system-flag t) nil [380 394])
+            ("math.h" include (:system-flag t) nil [395 412])
+            ("mutex" include (:system-flag t) nil [413 429])
+            ("stdlib.h" include (:system-flag t) nil [430 449])
+            ("../../McuMonitorHandle.h" include nil nil [450 485])
+            ("trtp_manager.h" include nil nil [486 511])
+            ("cfg/OTCfgMgr.h" include nil nil [512 537])
+            ("mcu_audio_session_handler.h" include nil nil [538 576])
+            ("g_rcvTrpPackets" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [579 606])
+            ("g_rcvTrpDataSize" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [607 635])
+            ("g_sendTrpPackets" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [636 664])
+            ("g_sendTrpDataSize" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [665 694])
+            ("SESSION_STATE_CHECK_TIME_1000" variable (:constant-flag t) nil [706 735])
+            ("ONE_MINUTES" variable (:constant-flag t) nil [749 760])
+            ("RETRY_TIME" variable (:constant-flag t) nil [772 782])
+            ("userMutex" variable (:type ("std::mutex" type (:type "class") nil nil)) nil [796 817])
+            ("CallSessionMap" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("unsigned long" type nil nil nil)
+                      ("MyCallSession" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [818 874])
+            ("youmeSvc" variable (:constant-flag t) nil [884 892])
+            ("OTEngineGen::maxCallNum" variable
+               (:default-value "400"
+                :type "int")
+                nil [905 939])
+            ("OTEngineGen" function
+               (:constructor-flag t
+                :parent "OTEngineGen"
+                :type ("OTEngineGen" type (:type "class") nil nil))
+                nil [942 1044])
+            ("OTEngineGen" function
+               (:destructor-flag t
+                :parent "OTEngineGen"
+                :type "void")
+                nil [1046 1078])
+            ("isValid" function
+               (:parent "OTEngineGen"
+                :type "bool")
+                nil [1080 1129])
+            ("start" function
+               (:parent "OTEngineGen"
+                :type "bool")
+                nil [1131 2411])
+            ("stop" function
+               (:parent "OTEngineGen"
+                :type "bool")
+                nil [2413 2472])
+            ("serverTimerCallback" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("pParam" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2512 2531])
+                    ("iTimerID" variable (:type "long") (reparse-symbol arg-sub-list) [2532 2546]))                  
+                :type "int")
+                nil [2474 3773])
+            ("serverTransportCallback" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3817 3849]))                  
+                :type "int")
+                nil [3775 5662])
+            ("processJoinMsg" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5696 5728]))                  
+                :type "int")
+                nil [5663 10981])
+            ("procesLeveMsg" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11014 11046]))                  
+                :type "int")
+                nil [10982 14391])
+            ("procesHeartBeatMsg" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14430 14462]))                  
+                :type "int")
+                nil [14393 16375])
+            ("checkCallSation" function
+               (:parent "OTEngineGen"
+                :type "int")
+                nil [16377 19045])
+            ("stopCallSession" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("callSession" variable
+                       (:pointer 1
+                        :type ("MyCallSession" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19080 19107]))                  
+                :type "int")
+                nil [19046 19398])
+            ("getCallSessionInfo" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("currentBridges" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19436 19482]))                  
+                :type "int")
+                nil [19400 20193])
+            ("getAppkeySessionInfo" function
+               (:parent "OTEngineGen"
+                :arguments 
+                  ( ("appkeySessionInfo" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20232 20281]))                  
+                :type "int")
+                nil [20194 21033]))          
+      :file "OTEngineGen.cpp"
+      :pointmax 21034
+      :fsize 21835
+      :lastmodtime '(22396 56065 646141 300000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ONE_MINUTES" . ((number "60" 761 . 763)))
+          ("RETRY_TIME" . ((number "15000" 783 . 788)))
+          ("SESSION_STATE_CHECK_TIME_1000" . ((number "1000" 736 . 740)))
+          ("youmeSvc" . ((string "\"youmeSvc\"" 893 . 903)))
+          )
+))
+  :file "!mnt!hgfs!svn!client_mcu1.0!src!telepresence!platforms!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

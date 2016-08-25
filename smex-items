@@ -1,0 +1,53 @@
+
+;; ----- smex-history -----
+(
+ list-packages
+ load-file
+ pwd
+ desktop-read
+ desktop-save
+ slime
+ tabbar-forward-tab
+)
+
+;; ----- smex-data -----
+(
+ (list-packages . 4)
+ (load-file . 82)
+ (desktop-save . 6)
+ (desktop-read . 9)
+ (tabbar-backward-tab . 5)
+ (find-file . 1)
+ (switch-source-file . 2)
+ (minibuffer-insert-file-name-at-point . 1)
+ (tabbar-forward-tab . 12)
+ (replace-regexp . 6)
+ (slime . 13)
+ (pwd . 4)
+ (compile . 1)
+ (auto-complete-mode . 2)
+ (auto-complete . 8)
+ (getenv . 1)
+ (package-install . 5)
+ (ac-complete-slime . 1)
+ (slime-interrupt . 10)
+ (grep . 7)
+ (cscope-find-this-symbol . 27)
+ (cscope-find-functions-calling-this-function . 2)
+ (line-number-mode . 1)
+ (global-linum-mode . 4)
+ (describe-coding-system . 3)
+ (revert-buffer-with-coding-system . 2)
+ (set-language-environment . 2)
+ (list-faces-display . 1)
+ (type-break-guesstimate-keystroke-threshold . 1)
+ (dark . 2)
+ (light . 1)
+ (color-theme-select . 2)
+ (gtags-mode . 3)
+ (visit-tags-table . 1)
+ (gtags-find-tag . 1)
+ (global-set-key . 1)
+ (ecb-show-ecb-windows . 2)
+ (ecb-goto-window-methods . 1)
+)

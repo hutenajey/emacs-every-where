@@ -1,0 +1,967 @@
+;; Object protobuf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "protobuf/"
+  :tables
+  (list
+    (semanticdb-table "descriptor.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GOOGLE_PROTOBUF_DESCRIPTOR_H__" variable (:constant-flag t) nil [2887 2917])
+            ("set" include (:system-flag t) nil [2919 2933])
+            ("string" include (:system-flag t) nil [2934 2951])
+            ("vector" include (:system-flag t) nil [2952 2969])
+            ("google/protobuf/stubs/common.h" include (:system-flag t) nil [2970 3011])
+            ("google/protobuf/stubs/scoped_ptr.h" include (:system-flag t) nil [3012 3057])
+            ("google" type
+               (:members 
+                  ( ("protobuf" type
+                       (:members 
+                          ( ("Descriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3241 3258])
+                            ("FieldDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3259 3281])
+                            ("OneofDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3282 3304])
+                            ("EnumDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3305 3326])
+                            ("EnumValueDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3327 3353])
+                            ("ServiceDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3354 3378])
+                            ("MethodDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3379 3402])
+                            ("FileDescriptor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3403 3424])
+                            ("DescriptorDatabase" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3425 3450])
+                            ("DescriptorPool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3451 3472])
+                            ("DescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3505 3527])
+                            ("FieldDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3528 3555])
+                            ("OneofDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3556 3583])
+                            ("EnumDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3584 3610])
+                            ("EnumValueDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3611 3642])
+                            ("ServiceDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3643 3672])
+                            ("MethodDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3673 3701])
+                            ("FileDescriptorProto" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3702 3728])
+                            ("MessageOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3729 3750])
+                            ("FieldOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3751 3770])
+                            ("EnumOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3771 3789])
+                            ("EnumValueOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3790 3813])
+                            ("ServiceOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3814 3835])
+                            ("MethodOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3836 3856])
+                            ("FileOptions" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3857 3875])
+                            ("UninterpretedOption" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3876 3902])
+                            ("SourceCodeInfo" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3903 3924])
+                            ("Message" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3950 3964])
+                            ("DescriptorBuilder" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3994 4018])
+                            ("FileDescriptorTables" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4019 4046])
+                            ("UnknownField" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4083 4102])
+                            ("internal" type
+                               (:members 
+                                  ( ("GeneratedMessageReflection" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [4173 4206]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [4150 4208])
+                            ("SourceLocation" type
+                               (:members 
+                                  ( ("start_line" variable (:type "int") (reparse-symbol classsubparts) [4271 4286])
+                                    ("end_line" variable (:type "int") (reparse-symbol classsubparts) [4289 4302])
+                                    ("start_column" variable (:type "int") (reparse-symbol classsubparts) [4305 4322])
+                                    ("end_column" variable (:type "int") (reparse-symbol classsubparts) [4325 4340])
+                                    ("leading_comments" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4473 4497])
+                                    ("trailing_comments" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4500 4525])
+                                    ("leading_detached_comments" variable (:type ("vector" type
+                                         (:template-specifier 
+                                            ( ("string" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4528 4569]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4245 4572])
+                            ("DebugStringOptions" type
+                               (:members 
+                                  ( ("include_comments" variable (:type "bool") (reparse-symbol classsubparts) [4996 5018])
+                                    ("elide_group_body" variable (:type "bool") (reparse-symbol classsubparts) [5078 5100])
+                                    ("elide_oneof_body" variable (:type "bool") (reparse-symbol classsubparts) [5103 5125])
+                                    ("DebugStringOptions" function
+                                       (:constructor-flag t
+                                        :type ("DebugStringOptions" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [5129 5250]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4666 5253])
+                            ("Descriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [5597 15795])
+                            ("FieldDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [16506 29280])
+                            ("OneofDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [29330 31497])
+                            ("EnumDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [31694 36019])
+                            ("EnumValueDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [36333 38965])
+                            ("ServiceDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [39253 42006])
+                            ("MethodDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [42244 45074])
+                            ("FileDescriptor" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [45306 52448])
+                            ("DescriptorPool" variable (:type ("LIBPROTOBUF_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [53840 67590])
+                            ("PROTOBUF_DEFINE_ACCESSOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [67730 67754])
+                            ("PROTOBUF_DEFINE_STRING_ACCESSOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [67917 67948])
+                            ("PROTOBUF_DEFINE_ARRAY_ACCESSOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [68086 68116])
+                            ("PROTOBUF_DEFINE_OPTIONS_ACCESSOR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [68222 68254])
+                            ("name" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [68337 68386])
+                            ("full_name" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [68387 68441])
+                            ("file" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68442 68507])
+                            ("containing_type" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68508 68580])
+                            ("field_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68582 68636])
+                            ("oneof_decl_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68637 68696])
+                            ("nested_type_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68697 68757])
+                            ("enum_type_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68758 68816])
+                            ("field" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68818 68891])
+                            ("oneof_decl" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68892 68970])
+                            ("nested_type" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [68971 69045])
+                            ("enum_type" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69046 69122])
+                            ("extension_range_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69124 69188])
+                            ("extension_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69189 69247])
+                            ("extension_range" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69248 69373])
+                            ("extension" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69374 69482])
+                            ("reserved_range_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69484 69547])
+                            ("reserved_range" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69548 69671])
+                            ("reserved_name_count" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [69672 69734])
+                            ("options" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("MessageOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69736 69796])
+                            ("is_placeholder" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [69798 69856])
+                            ("name" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69858 69912])
+                            ("full_name" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69913 69972])
+                            ("lowercase_name" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [69973 70037])
+                            ("camelcase_name" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [70038 70102])
+                            ("file" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70103 70173])
+                            ("number" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70174 70228])
+                            ("is_extension" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [70229 70290])
+                            ("type" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("FieldDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [70291 70361])
+                            ("label" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("FieldDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [70362 70434])
+                            ("containing_type" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70435 70512])
+                            ("containing_oneof" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70513 70621])
+                            ("index_in_oneof" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70622 70684])
+                            ("extension_scope" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70685 70762])
+                            ("message_type" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70763 70837])
+                            ("enum_type" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [70838 70913])
+                            ("options" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("FieldOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [70914 70977])
+                            ("has_default_value" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [70978 71044])
+                            ("default_value_int32" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("int32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71045 71116])
+                            ("default_value_int64" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("int64" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71117 71188])
+                            ("default_value_uint32" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("uint32" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71189 71260])
+                            ("default_value_uint64" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("uint64" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71261 71332])
+                            ("default_value_float" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "float")
+                                (reparse-symbol namespacesubparts) [71333 71404])
+                            ("default_value_double" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "double")
+                                (reparse-symbol namespacesubparts) [71405 71476])
+                            ("default_value_bool" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [71477 71548])
+                            ("default_value_enum" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [71549 71663])
+                            ("default_value_string" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71664 71734])
+                            ("name" function
+                               (:parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71736 71790])
+                            ("full_name" function
+                               (:parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71791 71850])
+                            ("containing_type" function
+                               (:parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [71851 71928])
+                            ("field_count" function
+                               (:parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [71929 71988])
+                            ("name" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [71990 72043])
+                            ("full_name" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72044 72102])
+                            ("file" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72103 72172])
+                            ("containing_type" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72173 72249])
+                            ("value_count" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72250 72308])
+                            ("value" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72309 72421])
+                            ("options" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("EnumOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72422 72483])
+                            ("is_placeholder" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [72485 72547])
+                            ("name" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72549 72607])
+                            ("full_name" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72608 72671])
+                            ("number" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72672 72730])
+                            ("type" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72731 72805])
+                            ("options" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("EnumValueOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72806 72877])
+                            ("name" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72879 72935])
+                            ("full_name" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [72936 72997])
+                            ("file" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [72998 73070])
+                            ("method_count" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73071 73133])
+                            ("method" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73134 73247])
+                            ("options" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("ServiceOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73248 73315])
+                            ("name" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73318 73373])
+                            ("full_name" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73374 73434])
+                            ("service" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73435 73512])
+                            ("input_type" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73513 73586])
+                            ("output_type" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73587 73661])
+                            ("options" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("MethodOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73662 73727])
+                            ("client_streaming" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [73729 73795])
+                            ("server_streaming" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [73796 73862])
+                            ("name" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73864 73917])
+                            ("package" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [73918 73974])
+                            ("pool" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [73975 74044])
+                            ("dependency_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74045 74108])
+                            ("public_dependency_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74109 74179])
+                            ("weak_dependency_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74180 74248])
+                            ("message_type_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74249 74314])
+                            ("enum_type_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74315 74377])
+                            ("service_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74378 74438])
+                            ("extension_count" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74439 74501])
+                            ("options" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("FileOptions" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [74502 74563])
+                            ("is_placeholder" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [74565 74627])
+                            ("message_type" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74629 74708])
+                            ("enum_type" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74709 74789])
+                            ("service" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74790 74902])
+                            ("extension" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) nil))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [74903 75015])
+                            ("IsExtensionNumber" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [75215 75226]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [75173 75297])
+                            ("IsReservedNumber" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("number" variable (:type "int") (reparse-symbol arg-sub-list) [75340 75351]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [75299 75421])
+                            ("IsReservedName" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [75462 75481]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [75423 75624])
+                            ("reserved_name" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [75817 75827]))                                  
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [75770 75871])
+                            ("is_required" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [75873 75961])
+                            ("is_optional" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [75963 76051])
+                            ("is_repeated" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [76053 76141])
+                            ("is_packable" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [76143 76245])
+                            ("index" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [76363 76674])
+                            ("index" function
+                               (:parent "Descriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [76676 76893])
+                            ("index" function
+                               (:parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [76895 77006])
+                            ("index" function
+                               (:parent "EnumDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [77008 77224])
+                            ("index" function
+                               (:parent "EnumValueDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [77226 77325])
+                            ("index" function
+                               (:parent "ServiceDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [77327 77426])
+                            ("index" function
+                               (:parent "MethodDescriptor"
+                                :typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [77428 77528])
+                            ("type_name" function
+                               (:pointer 1
+                                :parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [77530 77616])
+                            ("cpp_type" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("FieldDescriptor::CppType" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [77618 77722])
+                            ("cpp_type_name" function
+                               (:pointer 1
+                                :parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [77724 77836])
+                            ("TypeToCppType" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77901 77911]))                                  
+                                :type ("FieldDescriptor::CppType" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [77838 77949])
+                            ("TypeName" function
+                               (:pointer 1
+                                :parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77996 78006]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [77951 78038])
+                            ("CppTypeName" function
+                               (:pointer 1
+                                :parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("cpp_type" variable (:type ("CppType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78088 78105]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [78040 78144])
+                            ("IsTypePackable" function
+                               (:parent "FieldDescriptor"
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("field_type" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78190 78206]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [78146 78432])
+                            ("dependency" function
+                               (:pointer 1
+                                :parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [78490 78500]))                                  
+                                :type ("FileDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78434 78541])
+                            ("public_dependency" function
+                               (:pointer 1
+                                :parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [78611 78621]))                                  
+                                :type ("FileDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78543 78684])
+                            ("weak_dependency" function
+                               (:pointer 1
+                                :parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [78752 78762]))                                  
+                                :type ("FileDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78686 78823])
+                            ("syntax" function
+                               (:parent "FileDescriptor"
+                                :typemodifiers ("inline")
+                                :type ("FileDescriptor::Syntax" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [78825 78907])
+                            ("field" function
+                               (:pointer 1
+                                :parent "OneofDescriptor"
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [79098 79108]))                                  
+                                :type ("FieldDescriptor" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [79045 79143]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3194 79146]))                  
+                :type "namespace")
+                nil [3175 79172]))          
+      :file "descriptor.h"
+      :pointmax 79236
+      :fsize 79235
+      :lastmodtime '(22396 56065 843364 0)
+      :unmatched-syntax '((punctuation 74563 . 74564) (punctuation 73727 . 73728) (punctuation 73315 . 73316) (punctuation 72483 . 72484) (punctuation 69796 . 69797) (punctuation 74563 . 74564) (punctuation 73727 . 73728) (punctuation 73315 . 73316) (punctuation 72483 . 72484) (punctuation 69796 . 69797))
+      :lexical-table 
+        '(("PROTOBUF_DEFINE_OPTIONS_ACCESSOR" (spp-arg-list ("CLASS" "TYPE") 68254 . 68267) . 
+              ((INLINE "inline" 68272 . 68278) (CONST "const" 68279 . 68284) (symbol "TYPE" 68285 . 68289) (punctuation "&" 68289 . 68290) (symbol "CLASS" 68291 . 68296) (punctuation ":" 68296 . 68297) (punctuation ":" 68297 . 68298) (symbol "options" 68298 . 68305) (semantic-list "()" 68305 . 68307) (CONST "const" 68308 . 68313) (semantic-list "{ return *options_; }" 68314 . 68335)))
+          ("GOOGLE_PROTOBUF_DESCRIPTOR_H__")
+          )
+))
+  :file "!mnt!hgfs!svn!client_mcu1.0!import!include!google!protobuf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

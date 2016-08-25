@@ -1,0 +1,809 @@
+;; Object telepresence/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "telepresence/"
+  :tables
+  (list
+    (semanticdb-table "mcu_audio_session_handler.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("MCU_AUDIO_SESSION_HANDLER_H_" variable (:constant-flag t) nil [555 583])
+            ("mcu_predefine.h" include nil nil [585 611])
+            ("YoumeCallSession.h" include nil nil [612 641])
+            ("room.h" include nil nil [642 659])
+            ("McuAudioSessionHandler" type
+               (:superclasses 
+                  ( ("ZEN_NON_Copyable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [719 726])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("McuAudioSessionHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [731 773])
+                    ("clean_instance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [778 807])
+                    ("set_nodata_threshold_times" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("the_time" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [845 862]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [813 863])
+                    ("get_nodata_threshold_times" function
+                       (:prototype-flag t
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [869 906])
+                    ("audio_session_prepare" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [985 1016]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [959 1017])
+                    ("audio_session_start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1055 1086]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1031 1087])
+                    ("startSession" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("theSession" variable
+                               (:pointer 1
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1110 1136]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1092 1137])
+                    ("audio_session_stop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1166 1197]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1143 1198])
+                    ("stopSession" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("theSession" variable
+                               (:pointer 1
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1220 1246]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1203 1247])
+                    ("audio_session_pause" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1277 1308]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1253 1309])
+                    ("set_range_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1349 1380])
+                            ("start_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1381 1407])
+                            ("end_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1408 1432]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1329 1433])
+                    ("audio_transport_layer_cb" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1505 1537]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1469 1538])
+                    ("audio_recv_data" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1586 1617])
+                            ("data_ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [1654 1684])
+                            ("data_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1721 1738])
+                            ("local_fd" variable (:type ("tnet_fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1775 1794])
+                            ("remote_addr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("sockaddr_storage" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1831 1874]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1559 1875])
+                    ("audio_session_process_data" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1936 1967])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [1968 1996])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1997 2009]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1898 2010])
+                    ("audio_session_rtp_relay" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("audio_session" variable
+                               (:reference 1
+                                :type ("McuAudioSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2088 2119])
+                            ("buffer" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [2120 2148])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2149 2161]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2053 2162])
+                    ("get_audio_callsession_mutex" function (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2173 2248])
+                    ("get_audio_callsession_map" function (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil)
+                              ("MyCallSession" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2254 2350])
+                    ("get_room_map" function (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint64_t" type nil nil nil)
+                              ("Room" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2356 2417])
+                    ("insert_session" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2443 2469])
+                            ("theSession" variable
+                               (:pointer 1
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2470 2496]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2423 2497])
+                    ("delete_session" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2522 2548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2502 2549])
+                    ("get_room" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2568 2594])
+                            ("theRoom" variable
+                               (:pointer 2
+                                :type ("Room" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2595 2610])
+                            ("theSession" variable
+                               (:pointer 2
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2611 2638]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2554 2639])
+                    ("lock_room" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("roomId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2660 2683]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2645 2684])
+                    ("unlock_room" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("roomId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2706 2729]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2689 2730])
+                    ("private" label nil (reparse-symbol classsubparts) [2733 2741])
+                    ("instance_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("McuAudioSessionHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2747 2788])
+                    ("audio_callsession_mutex_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2794 2830])
+                    ("audio_callsession_map_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil)
+                              ("MyCallSession" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2835 2894])
+                    ("room_map_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil)
+                              ("Room" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2899 2936])
+                    ("mutex_map_" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil)
+                              ("std::mutex" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2941 2984])
+                    ("nodata_threshold_times" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2990 3022])
+                    ("MAX_ROOM" variable
+                       (:typemodifiers ("static")
+                        :default-value "400"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3028 3057])
+                    ("private" label nil (reparse-symbol classsubparts) [3059 3067])
+                    ("McuAudioSessionHandler" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("McuAudioSessionHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3072 3097])
+                    ("McuAudioSessionHandler" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3102 3128]))                  
+                :type "class")
+                nil [661 3136]))          
+      :file "mcu_audio_session_handler.h"
+      :pointmax 3147
+      :fsize 3371
+      :lastmodtime '(22442 38707 962868 452000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MCU_AUDIO_SESSION_HANDLER_H_")
+          )
+)
+    (semanticdb-table "mcu_predefine.h"
+      :file "mcu_predefine.h"
+      :fsize 2211
+      :lastmodtime '(22440 34272 583495 935000))
+    (semanticdb-table "YoumeCallSession.h"
+      :file "YoumeCallSession.h"
+      :fsize 3340
+      :lastmodtime '(22440 34272 578495 935000))
+    (semanticdb-table "OTEngine.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OTEngine.h" include nil nil [227 248])
+            ("platforms/generic/OTEngineGen.h" include nil nil [249 291])
+            ("OTMonitor.h" include nil nil [292 314])
+            ("cfg/OTCfgParser.h" include nil nil [315 343])
+            ("tsk_debug.h" include nil nil [344 366])
+            ("tsk_string.h" include nil nil [367 390])
+            ("algorithm" include (:system-flag t) nil [391 411])
+            ("assert.h" include (:system-flag t) nil [412 431])
+            ("functional" include (:system-flag t) nil [432 453])
+            ("protobuf/cfgsvr_server.pb.h" include nil nil [454 492])
+            ("cfg/OTCfgMgr.h" include nil nil [493 518])
+            ("OTRedisReport.h" include nil nil [519 545])
+            ("mcu_audio_session_handler.h" include nil nil [546 584])
+            ("OTEngine::g_bInitialized" variable
+               (:default-value "false"
+                :type "bool")
+                nil [586 624])
+            ("OTEngine::g_uId" variable
+               (:default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [625 654])
+            ("OTEngine::g_oEngines" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("uint64_t" type nil nil nil)
+                      ("OTEngine" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [655 707])
+            ("OT_SIP_REALM" variable (:constant-flag t) nil [744 756])
+            ("OT_SIP_IMPI" variable (:constant-flag t) nil [814 825])
+            ("OT_SIP_IMPU" variable (:constant-flag t) nil [876 887])
+            ("ot_list_count" variable (:constant-flag t) nil [939 952])
+            ("ot_str_is" variable (:constant-flag t) nil [1011 1020])
+            ("ot_str_is_star" variable (:constant-flag t) nil [1082 1096])
+            ("ot_str_is_yes" variable (:constant-flag t) nil [1133 1146])
+            ("ot_str_is_null_or_empty" variable (:constant-flag t) nil [1185 1208])
+            ("g_sampleSessionID" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1243 1272])
+            ("g_rcvTrpPackets" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1273 1300])
+            ("g_rcvTrpDataSize" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1301 1329])
+            ("FindParamByName" type
+               (:superclasses 
+                  ( ("std::binary_function" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("oParam" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OTObjectWrapper" type
+                                     (:template-specifier 
+                                        ( ("OTCfgParam" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1458 1502])
+                            ("pcName" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1503 1522]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1441 1600]))                  
+                :type "struct")
+                nil [1331 1603])
+            ("OTEngine" function
+               (:constructor-flag t
+                :parent "OTEngine"
+                :type ("OTEngine" type (:type "class") nil nil))
+                nil [1605 2136])
+            ("OTEngine" function
+               (:destructor-flag t
+                :parent "OTEngine"
+                :type "void")
+                nil [2138 2276])
+            ("start" function
+               (:parent "OTEngine"
+                :type "bool")
+                nil [2278 2786])
+            ("stop" function
+               (:parent "OTEngine"
+                :type "bool")
+                nil [2788 3587])
+            ("getBridge" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("strId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3638 3656]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTBridge" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3589 3852])
+            ("setDebugLevel" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcLevel" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3884 3904]))                  
+                :type "bool")
+                nil [3854 4546])
+            ("addTransport" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcTransport" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4577 4601])
+                    ("nLocalPort" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4602 4622])
+                    ("pcLocalIP" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4623 4660])
+                    ("pcIPVersion" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4661 4700]))                  
+                :type "bool")
+                nil [4548 4842])
+            ("setAcceptIncomingSipReg" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("bAcceptIncomingSipReg" variable (:type "bool") (reparse-symbol arg-sub-list) [4886 4913]))                  
+                :type "bool")
+                nil [4846 4996])
+            ("setMaxCallNumber" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("maxCallNumber" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5031 5053]))                  
+                :type "bool")
+                nil [4998 5407])
+            ("setLocalIP" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("localIP" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5435 5455]))                  
+                :type "void")
+                nil [5409 5485])
+            ("getLocalIP" function
+               (:parent "OTEngine"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5487 5549])
+            ("setLocalPort" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("localPort" variable (:type "int") (reparse-symbol arg-sub-list) [5579 5593]))                  
+                :type "void")
+                nil [5551 5627])
+            ("getLocalPort" function
+               (:parent "OTEngine"
+                :type "int")
+                nil [5629 5686])
+            ("setConfByCfgSvc" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("cfgPb" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("YouMeProtocol::CfgSvrInfoResponse" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5720 5767]))                  
+                :type "bool")
+                nil [5689 9314])
+            ("setConfFile" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("pcConfFileFullPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9344 9375]))                  
+                :type "bool")
+                nil [9316 19903])
+            ("OTCfgParserOnNewCfg" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("oCfg" variable (:type ("OTObjectWrapper" type
+                         (:template-specifier 
+                            ( ("OTCfg" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19941 19971])
+                    ("pcCallbackData" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19972 19999]))                  
+                :type "bool")
+                nil [19905 21273])
+            ("getEngine" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("uId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21324 21337]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTEngine" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21275 21518])
+            ("getBridge" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("uEngineId" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21569 21588])
+                    ("strBridgeId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21589 21613]))                  
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTBridge" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21520 21787])
+            ("New" function
+               (:parent "OTEngine"
+                :type ("OTObjectWrapper" type
+                     (:template-specifier 
+                        ( ("OTEngine" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21789 22040])
+            ("getBridgeSessionMgr" function
+               (:pointer 1
+                :parent "OTEngine"
+                :arguments 
+                  ( ("bridgeid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22090 22118]))                  
+                :type ("BridgeSessionMgr" type (:type "class") nil nil))
+                nil [22042 22355])
+            ("setDatabaseIp" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22386 22401]))                  
+                :type "bool")
+                nil [22357 22450])
+            ("setDatabasePort" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("port" variable
+                       (:constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22483 22503]))                  
+                :type "bool")
+                nil [22452 22556])
+            ("setDatabaseUsername" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("username" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22593 22614]))                  
+                :type "bool")
+                nil [22558 22675])
+            ("setDatabasePassword" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22712 22733]))                  
+                :type "bool")
+                nil [22677 22794])
+            ("setNodataThresholdTimes" function
+               (:parent "OTEngine"
+                :arguments 
+                  ( ("inodataThresholdTimes" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22836 22866]))                  
+                :type "bool")
+                nil [22796 23527]))          
+      :file "OTEngine.cpp"
+      :pointmax 23528
+      :fsize 24278
+      :lastmodtime '(22440 34272 582495 935000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ot_str_is_yes" (spp-arg-list ("str") 1146 . 1151) . ((symbol "ot_str_is" 1152 . 1161) (semantic-list "((str), \"yes\")" 1162 . 1176)))
+          ("ot_str_is_null_or_empty" (spp-arg-list ("str") 1208 . 1213) . ((symbol "tsk_strnullORempty" 1214 . 1232) (semantic-list "((str))" 1233 . 1240)))
+          ("OT_SIP_REALM" . ((string "\"conf-call.org\"" 757 . 772)))
+          ("OT_SIP_IMPU" . 
+              ((string "\"sip\"" 888 . 893) (symbol "OT_SIP_IMPI" 894 . 905) (string "\"@\"" 906 . 909) (symbol "OT_SIP_REALM" 910 . 922)))
+          ("OT_SIP_IMPI" . ((string "\"engine\"" 826 . 834)))
+          ("ot_str_is_star" (spp-arg-list ("str") 1096 . 1101) . ((symbol "ot_str_is" 1102 . 1111) (semantic-list "((str), \"*\")" 1112 . 1124)))
+          ("ot_list_count" (spp-arg-list ("list") 952 . 958) . ((symbol "tsk_list_count" 959 . 973) (semantic-list "((list), tsk_null, tsk_null)" 974 . 1002)))
+          ("ot_str_is" (spp-arg-list ("str" "val") 1020 . 1030) . ((symbol "tsk_striequals" 1031 . 1045) (semantic-list "((const char *) (str), val)" 1046 . 1073)))
+          )
+)
+    (semanticdb-table "OTEngine.h"
+      :file "OTEngine.h"
+      :fsize 3859
+      :lastmodtime '(22440 34272 580495 935000))
+    (semanticdb-table "OTMonitor.h"
+      :file "OTMonitor.h"
+      :fsize 958
+      :lastmodtime '(22440 34272 577495 935000))
+    (semanticdb-table "OTRedisReport.h"
+      :file "OTRedisReport.h"
+      :fsize 1292
+      :lastmodtime '(22440 34272 583495 935000))
+    (semanticdb-table "McuMonitorHandle.h"
+      :file "McuMonitorHandle.h"
+      :fsize 2870
+      :lastmodtime '(22440 34272 583495 935000))
+    (semanticdb-table "room.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ROOM_H" variable (:constant-flag t) nil [125 131])
+            ("protobuf/common.pb.h" include nil nil [133 164])
+            ("mcu_predefine.h" include nil nil [165 191])
+            ("stdio.h" include (:system-flag t) nil [192 210])
+            ("string" include (:system-flag t) nil [211 228])
+            ("list" include (:system-flag t) nil [229 244])
+            ("Room" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [267 274])
+                    ("Room" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Room" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [277 284])
+                    ("Room" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("theRoom" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Room" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [292 312]))                          
+                        :type ("Room" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [287 313])
+                    ("Room" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [319 335])
+                    ("setRoomId" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("roomId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [363 386]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [341 406])
+                    ("getRoomId" function
+                       (:typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [412 457])
+                    ("isChooseRoute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [504 530]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [485 531])
+                    ("addRoute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [569 595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [555 596])
+                    ("removeRoute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [638 664]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [621 665])
+                    ("resetRoute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [706 732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [690 733])
+                    ("addSession" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [762 788])
+                            ("theSession" variable
+                               (:pointer 1
+                                :type ("MyCallSession" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [789 815]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [739 931])
+                    ("removeSession" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("sessionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [963 989]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [937 1048])
+                    ("getSessionSize" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1054 1116])
+                    ("getSessions" function
+                       (:typemodifiers ("inline")
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil)
+                                  ("MyCallSession" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1122 1203])
+                    ("lock" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1209 1256])
+                    ("unlock" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1262 1313])
+                    ("private" label nil (reparse-symbol classsubparts) [1315 1323])
+                    ("m_roomId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1325 1343])
+                    ("sessions" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil)
+                              ("MyCallSession" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1346 1390])
+                    ("m_RouteList" variable (:type ("std::list" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1401 1433])
+                    ("m_RouteHold" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1447 1478])
+                    ("m_RouteActive" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1492 1525])
+                    ("m_Room_Mutex" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1541 1565])
+                    ("ROUTE_NUM" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :default-value "6"
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1568 1602]))                  
+                :type "class")
+                nil [249 1605]))          
+      :file "room.h"
+      :pointmax 1634
+      :fsize 1784
+      :lastmodtime '(22442 38834 381868 337000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROOM_H")
+          )
+))
+  :file "!data!home!coolor!src!RTC2.0!roomsvr!src!telepresence!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

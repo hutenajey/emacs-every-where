@@ -1,0 +1,168 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "redis_helper.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("REDIS_HELPER_H_" variable (:constant-flag t) nil [540 555])
+            ("CRedisHelper" type
+               (:superclasses 
+                  ( ("SingleTon" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [612 619])
+                    ("redis_init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("host" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [666 684])
+                            ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [685 705]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [651 706])
+                    ("redis_exit" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [732 749])
+                    ("check_redis_status" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [774 799])
+                    ("redis_reinit" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [837 856])
+                    ("select_database" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("context" variable
+                               (:pointer 1
+                                :type ("redisContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [910 932]))                          
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [880 933])
+                    ("process_command" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("command" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [993 1014]))                          
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [965 1015])
+                    ("free_redis_reply" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reply" variable
+                               (:pointer 1
+                                :type ("redisReply" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1067 1085]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1046 1086])
+                    ("private" label nil (reparse-symbol classsubparts) [1092 1100])
+                    ("redis_context_" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1130 1159])
+                    ("redis_reply_" variable
+                       (:pointer 1
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1191 1216])
+                    ("private" label nil (reparse-symbol classsubparts) [1218 1226])
+                    ("CRedisHelper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CRedisHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1231 1246])
+                    ("CRedisHelper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1251 1267]))                  
+                :type "class")
+                nil [557 1271]))          
+      :file "redis_helper.h"
+      :pointmax 1280
+      :fsize 1402
+      :lastmodtime '(22444 26138 516578 916000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("REDIS_HELPER_H_")
+          )
+)
+    (semanticdb-table "redis_helper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("redis_helper.h" include nil nil [510 535])
+            ("CRedisHelper" function
+               (:constructor-flag t
+                :parent "CRedisHelper"
+                :type ("CRedisHelper" type (:type "class") nil nil))
+                nil [538 646])
+            ("CRedisHelper" function
+               (:destructor-flag t
+                :parent "CRedisHelper"
+                :type "void")
+                nil [648 722])
+            ("redis_init" function
+               (:parent "CRedisHelper"
+                :arguments 
+                  ( ("host" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [754 772])
+                    ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [773 793]))                  
+                :type "int")
+                nil [725 1587])
+            ("redis_reinit" function
+               (:parent "CRedisHelper"
+                :type "int")
+                nil [1589 2537])
+            ("select_database" function
+               (:pointer 1
+                :parent "CRedisHelper"
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2583 2605]))                  
+                :type ("redisContext" type (:type "class") nil nil))
+                nil [2539 3329])
+            ("redis_exit" function
+               (:parent "CRedisHelper"
+                :type "int")
+                nil [3331 4172])
+            ("process_command" function
+               (:pointer 1
+                :parent "CRedisHelper"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4216 4237]))                  
+                :type ("redisReply" type (:type "class") nil nil))
+                nil [4174 6016])
+            ("free_redis_reply" function
+               (:parent "CRedisHelper"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6053 6071]))                  
+                :type "int")
+                nil [6018 6521]))          
+      :file "redis_helper.cpp"
+      :pointmax 6522
+      :fsize 6910
+      :lastmodtime '(22444 27231 290577 897000)
+      :unmatched-syntax nil))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!mcustrategysvr!src!stgysvr!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

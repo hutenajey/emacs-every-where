@@ -1,0 +1,271 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "zen_boost_non_copyable.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ZEN_LIB_BOOST_NON_COPYABLE_H_" variable (:constant-flag t) nil [278 307])
+            ("ZEN_NON_Copyable" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [389 399])
+                    ("ZEN_NON_Copyable" function
+                       (:constructor-flag t
+                        :type ("ZEN_NON_Copyable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [431 462])
+                    ("ZEN_NON_Copyable" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [467 498])
+                    ("private" label nil (reparse-symbol classsubparts) [550 558])
+                    ("ZEN_NON_Copyable" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ZEN_NON_Copyable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [602 628]))                          
+                        :type ("ZEN_NON_Copyable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [585 629])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ZEN_NON_Copyable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [688 714]))                          
+                        :type ("ZEN_NON_Copyable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [653 715]))                  
+                :type "class")
+                nil [364 718]))          
+      :file "zen_boost_non_copyable.h"
+      :pointmax 760
+      :fsize 1009
+      :lastmodtime '(22440 34310 74495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ZEN_LIB_BOOST_NON_COPYABLE_H_")
+          )
+)
+    (semanticdb-table "zen_boost_lord_rings.h"
+      :file "zen_boost_lord_rings.h"
+      :fsize 11596
+      :lastmodtime '(22440 34310 74495 900000))
+    (semanticdb-table "zen_mysql_predefine.h"
+      :file "zen_mysql_predefine.h"
+      :fsize 5901
+      :lastmodtime '(22440 34310 75495 900000))
+    (semanticdb-table "rapidxml.hpp"
+      :file "rapidxml.hpp"
+      :fsize 120937
+      :lastmodtime '(22440 34310 73495 900000))
+    (semanticdb-table "rapidxml_print.hpp"
+      :file "rapidxml_print.hpp"
+      :fsize 16092
+      :lastmodtime '(22440 34310 75495 900000))
+    (semanticdb-table "rapidxml_utils.hpp"
+      :file "rapidxml_utils.hpp"
+      :fsize 3539
+      :lastmodtime '(22440 34310 75495 900000))
+    (semanticdb-table "zen_mysql_process.h"
+      :file "zen_mysql_process.h"
+      :fsize 4918
+      :lastmodtime '(22440 34310 73495 900000))
+    (semanticdb-table "zen_mysql_process.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("zen_mysql_process.h" include nil nil [481 511])
+            ("ZEN_Mysql_Process::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("ZEN_Mysql_Process" type (:type "class") nil nil))
+                nil [601 656])
+            ("ZEN_Mysql_Process" function
+               (:constructor-flag t
+                :parent "ZEN_Mysql_Process"
+                :type ("ZEN_Mysql_Process" type (:type "class") nil nil))
+                nil [671 740])
+            ("ZEN_Mysql_Process" function
+               (:destructor-flag t
+                :parent "ZEN_Mysql_Process"
+                :type "void")
+                nil [741 814])
+            ("init_mysql_server" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("host_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [901 923])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [965 982])
+                    ("pwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1024 1040])
+                    ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1082 1100])
+                    ("connect_atonce" variable (:type "bool") (reparse-symbol arg-sub-list) [1142 1162]))                  
+                :type "int")
+                nil [860 1359])
+            ("init_mysql_socketfile" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("socket_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1478 1502])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1548 1565])
+                    ("pwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1611 1627])
+                    ("connect_atonce" variable (:type "bool") (reparse-symbol arg-sub-list) [1673 1693]))                  
+                :type "int")
+                nil [1433 1873])
+            ("connect_mysql_server" function
+               (:parent "ZEN_Mysql_Process"
+                :type "int")
+                nil [2283 3080])
+            ("disconnect_mysql_server" function
+               (:parent "ZEN_Mysql_Process"
+                :type "void")
+                nil [3089 3234])
+            ("db_process_query" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3986 4002])
+                    ("numaffect" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4003 4027])
+                    ("insertid" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4028 4051])
+                    ("sqllen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4052 4066]))                  
+                :type "int")
+                nil [3946 4979])
+            ("db_process_query" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5725 5741])
+                    ("numaffect" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [5742 5766])
+                    ("dbresult" variable
+                       (:reference 1
+                        :type ("ZEN_Mysql_Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5767 5794])
+                    ("sqllen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5795 5809]))                  
+                :type "int")
+                nil [5685 6713])
+            ("db_process_query" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7336 7352])
+                    ("dbresult" variable
+                       (:reference 1
+                        :type ("ZEN_Mysql_Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7353 7380])
+                    ("sqllen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7381 7395]))                  
+                :type "int")
+                nil [7296 8133])
+            ("get_return_error" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("szerr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8681 8693])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8694 8708]))                  
+                :type "unsigned int")
+                nil [8632 8853])
+            ("get_query_sql" function
+               (:pointer 1
+                :parent "ZEN_Mysql_Process"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9338 9343]))                  
+                :type "char")
+                nil [9293 9389])
+            ("get_return_error_str" function
+               (:pointer 1
+                :parent "ZEN_Mysql_Process"
+                :constant-flag t
+                :type "char")
+                nil [9402 9503])
+            ("get_return_error_id" function
+               (:parent "ZEN_Mysql_Process"
+                :type "unsigned int")
+                nil [9516 9612])
+            ("make_real_escape_string" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("tostr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9785 9797])
+                    ("fromstr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9854 9874])
+                    ("fromlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9931 9952]))                  
+                :type "unsigned int")
+                nil [9729 10050])
+            ("instance" function
+               (:parent "ZEN_Mysql_Process"
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("ZEN_Mysql_Process" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10181 10209]))                  
+                :type "void")
+                nil [10148 10261])
+            ("instance" function
+               (:pointer 1
+                :parent "ZEN_Mysql_Process"
+                :type ("ZEN_Mysql_Process" type (:type "class") nil nil))
+                nil [10269 10529])
+            ("clean_instance" function
+               (:parent "ZEN_Mysql_Process"
+                :type "void")
+                nil [10538 10666]))          
+      :file "zen_mysql_process.cpp"
+      :pointmax 10668
+      :fsize 11833
+      :lastmodtime '(22440 34310 75495 900000)
+      :unmatched-syntax nil))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!src!cfgsvr!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

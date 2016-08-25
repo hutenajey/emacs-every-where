@@ -1,0 +1,366 @@
+;; Object tinyNET/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tinyNET/"
+  :tables
+  (list
+    (semanticdb-table "tnet_transport.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("tnet_transport.h" include nil nil [954 981])
+            ("tsk_buffer.h" include nil nil [982 1005])
+            ("tsk_debug.h" include nil nil [1006 1028])
+            ("tsk_memory.h" include nil nil [1029 1052])
+            ("tsk_runnable.h" include nil nil [1053 1078])
+            ("tsk_string.h" include nil nil [1079 1102])
+            ("tsk_thread.h" include nil nil [1103 1126])
+            ("string.h" include (:system-flag t) nil [1128 1147])
+            ("TNET_CIPHER_LIST" variable (:constant-flag t) nil [1249 1265])
+            ("tnet_transport_prepare" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("transport" variable
+                       (:pointer 1
+                        :type ("tnet_transport_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1345 1373]))                  
+                :type "int")
+                nil [1310 1374])
+            ("tnet_transport_unprepare" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("transport" variable
+                       (:pointer 1
+                        :type ("tnet_transport_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1412 1440]))                  
+                :type "int")
+                nil [1375 1441])
+            ("tnet_transport_mainthread" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1483 1495]))                  
+                :type "void")
+                nil [1442 1496])
+            ("tnet_transport_stop" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("transport" variable
+                       (:pointer 1
+                        :type ("tnet_transport_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1529 1557]))                  
+                :type "int")
+                nil [1497 1558])
+            ("run" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1579 1590]))                  
+                :type "void")
+                nil [1560 1591])
+            ("tnet_transport_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1634 1651])
+                    ("port" variable (:type ("tnet_port_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1652 1669])
+                    ("type" variable (:type ("tnet_socket_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1670 1694])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1695 1719]))                  
+                :type ("tnet_transport_t" type (:type "class") nil nil))
+                nil [1593 2643])
+            ("tnet_transport_create_2" function
+               (:pointer 1
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("tnet_socket_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2688 2710])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2711 2735]))                  
+                :type ("tnet_transport_t" type (:type "class") nil nil))
+                nil [2645 3544])
+            ("tnet_transport_event_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("tnet_transport_event_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3599 3632])
+                    ("callback_data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3633 3659])
+                    ("fd" variable (:type ("tnet_fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3660 3673]))                  
+                :type ("tnet_transport_event_t" type (:type "class") nil nil))
+                nil [3546 3758])
+            ("tnet_transport_start" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3787 3819]))                  
+                :type "int")
+                nil [3761 4479])
+            ("tnet_transport_get_description" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4526 4564]))                  
+                :type "char")
+                nil [4482 4785])
+            ("tnet_transport_get_ip_n_port" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4821 4859])
+                    ("fd" variable (:type ("tnet_fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4860 4873])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("tnet_ip_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4874 4888])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("tnet_port_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4889 4907]))                  
+                :type "int")
+                nil [4787 5097])
+            ("tnet_transport_get_ip_n_port_2" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5135 5173])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("tnet_ip_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5174 5188])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("tnet_port_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5189 5207]))                  
+                :type "int")
+                nil [5099 5670])
+            ("tnet_transport_get_public_ip_n_port" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5713 5751])
+                    ("fd" variable (:type ("tnet_fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5752 5765])
+                    ("ip" variable
+                       (:pointer 1
+                        :type ("tnet_ip_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5766 5780])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("tnet_port_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5781 5799]))                  
+                :type "int")
+                nil [5672 5905])
+            ("tnet_transport_get_type" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5952 5990]))                  
+                :type ("tnet_socket_type_t" type (:type "class") nil nil))
+                nil [5908 6164])
+            ("tnet_transport_get_master_fd" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6206 6244]))                  
+                :type ("tnet_fd_t" type (:type "class") nil nil))
+                nil [6166 6478])
+            ("tnet_transport_connectto" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7025 7063])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7064 7081])
+                    ("port" variable (:type ("tnet_port_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7082 7099])
+                    ("type" variable (:type ("tnet_socket_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7100 7124]))                  
+                :type ("tnet_fd_t" type (:type "class") nil nil))
+                nil [6989 7215])
+            ("tnet_transport_connectto_3" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7255 7293])
+                    ("socket" variable
+                       (:pointer 1
+                        :type ("tnet_socket_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7294 7323])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7324 7341])
+                    ("port" variable (:type ("tnet_port_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7342 7359])
+                    ("type" variable (:type ("tnet_socket_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7360 7384]))                  
+                :type ("tnet_fd_t" type (:type "class") nil nil))
+                nil [7217 9746])
+            ("tnet_transport_set_callback" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9781 9819])
+                    ("callback" variable (:type ("tnet_transport_cb_f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9820 9849])
+                    ("callback_data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9850 9876]))                  
+                :type "int")
+                nil [9748 10162])
+            ("tnet_transport_shutdown" function
+               (:arguments 
+                  ( ("handle" variable
+                       (:pointer 1
+                        :type ("tnet_transport_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10194 10226]))                  
+                :type "int")
+                nil [10165 10515])
+            ("run" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10580 10591]))                  
+                :type "void")
+                nil [10561 11935])
+            ("tnet_transport_ctor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12114 12133])
+                    ("app" variable
+                       (:pointer 1
+                        :type ("va_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12134 12147]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [12072 12239])
+            ("tnet_transport_dtor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12283 12302]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [12241 12873])
+            ("tnet_transport_def_s" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    sizeof (tnet_transport_t), tnet_transport_ctor, tnet_transport_dtor, tsk_null,
+}"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [12875 13015])
+            ("tnet_transport_def_t" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "&tnet_transport_def_s"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [13016 13085])
+            ("tnet_transport_event_ctor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13276 13295])
+                    ("app" variable
+                       (:pointer 1
+                        :type ("va_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13296 13309]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [13228 13557])
+            ("tnet_transport_event_dtor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13607 13626]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [13559 13737])
+            ("tnet_transport_event_def_s" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    sizeof (tnet_transport_event_t), tnet_transport_event_ctor, tnet_transport_event_dtor, 0,
+}"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [13739 13896])
+            ("tnet_transport_event_def_t" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "&tnet_transport_event_def_s"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [13897 13978]))          
+      :file "tnet_transport.c"
+      :pointmax 13979
+      :fsize 13978
+      :lastmodtime '(22396 56065 405431 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TNET_CIPHER_LIST" . ((string "\"ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH\"" 1266 . 1301)))
+          )
+)
+    (semanticdb-table "tnet_transport.h"
+      :file "tnet_transport.h"
+      :fsize 5342
+      :lastmodtime '(22396 56065 406427 0)))
+  :file "!mnt!hgfs!svn!client_mcu1.0!src!doubango!tinyNET!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

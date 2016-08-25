@@ -1,0 +1,412 @@
+;; Object objectivec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "objectivec/"
+  :tables
+  (list
+    (semanticdb-table "objectivec_helpers.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GOOGLE_PROTOBUF_COMPILER_OBJECTIVEC_HELPERS_H__" variable (:constant-flag t) nil [1725 1772])
+            ("string" include (:system-flag t) nil [1774 1791])
+            ("vector" include (:system-flag t) nil [1792 1809])
+            ("google/protobuf/descriptor.h" include (:system-flag t) nil [1811 1850])
+            ("google/protobuf/descriptor.pb.h" include (:system-flag t) nil [1851 1893])
+            ("google" type
+               (:members 
+                  ( ("protobuf" type
+                       (:members 
+                          ( ("compiler" type
+                               (:members 
+                                  ( ("objectivec" type
+                                       (:members 
+                                          ( ("StripProto" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("filename" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2062 2085]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2044 2086])
+                                            ("IsRetainedName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2199 2218]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [2179 2219])
+                                            ("IsInitName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2337 2356]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [2321 2357])
+                                            ("FileName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2505 2532]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2489 2533])
+                                            ("FilePath" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2723 2750]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2707 2751])
+                                            ("FileClassName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2961 2988]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [2940 2989])
+                                            ("ClassName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("Descriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3097 3126]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3080 3127])
+                                            ("EnumName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("EnumDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3144 3177]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3128 3178])
+                                            ("EnumValueName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("EnumValueDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3295 3333]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3274 3334])
+                                            ("EnumValueShortName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("EnumValueDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3433 3471]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3407 3472])
+                                            ("UnCamelCaseEnumShortName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3536 3555]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3504 3556])
+                                            ("ExtensionMethodName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3681 3715]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3654 3716])
+                                            ("FieldName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3774 3803]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3757 3804])
+                                            ("FieldNameCapitalized" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3833 3862]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3805 3863])
+                                            ("OneofEnumName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("OneofDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3925 3959]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3904 3960])
+                                            ("OneofName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("OneofDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3978 4012]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [3961 4013])
+                                            ("OneofNameCapitalized" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("OneofDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4042 4076]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4014 4077])
+                                            ("HasFieldPresence" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4108 4135]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [4079 4197])
+                                            ("HasPreservingUnknownEnumSemantics" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4245 4272]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [4199 4334])
+                                            ("IsMapEntryMessage" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("descriptor" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("Descriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4366 4395]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [4336 4443])
+                                            ("UnCamelCaseFieldName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("name" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4498 4517])
+                                                    ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4518 4547]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4470 4548])
+                                            ("ObjectiveCType" type
+                                               (:members 
+                                                  ( ("OBJECTIVECTYPE_INT32" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4574 4595])
+                                                    ("OBJECTIVECTYPE_UINT32" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4598 4620])
+                                                    ("OBJECTIVECTYPE_INT64" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4623 4644])
+                                                    ("OBJECTIVECTYPE_UINT64" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4647 4669])
+                                                    ("OBJECTIVECTYPE_FLOAT" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4672 4693])
+                                                    ("OBJECTIVECTYPE_DOUBLE" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4696 4718])
+                                                    ("OBJECTIVECTYPE_BOOLEAN" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4721 4744])
+                                                    ("OBJECTIVECTYPE_STRING" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4747 4769])
+                                                    ("OBJECTIVECTYPE_DATA" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4772 4792])
+                                                    ("OBJECTIVECTYPE_ENUM" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4795 4815])
+                                                    ("OBJECTIVECTYPE_MESSAGE" variable
+                                                       (:constant-flag t
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [4818 4842]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol namespacesubparts) [4550 4843])
+                                            ("GetCapitalizedType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4871 4900]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4845 4901])
+                                            ("GetObjectiveCType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field_type" variable (:type ("FieldDescriptor::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4936 4969]))                                                  
+                                                :type ("ObjectiveCType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4903 4970])
+                                            ("GetObjectiveCType" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5012 5041]))                                                  
+                                                :type ("ObjectiveCType" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [4972 5088])
+                                            ("IsPrimitiveType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5111 5140]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [5090 5141])
+                                            ("IsReferenceType" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5163 5192]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [5142 5193])
+                                            ("GPBGenericValueFieldName" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5227 5256]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5195 5257])
+                                            ("DefaultValue" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("field" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FieldDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5278 5307]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5258 5308])
+                                            ("BuildFlagsString" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("strings" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vector" type
+                                                             (:template-specifier 
+                                                                ( ("string" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [5334 5364]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5310 5365])
+                                            ("BuildCommentsString" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("location" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("SourceLocation" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5394 5425]))                                                  
+                                                :type ("string" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [5367 5426])
+                                            ("ValidateObjCClassPrefix" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("file" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("FileDescriptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5617 5644])
+                                                    ("out_error" variable
+                                                       (:pointer 1
+                                                        :type ("string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5645 5663]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol namespacesubparts) [5588 5664])
+                                            ("TextFormatDecodeData" variable (:type ("LIBPROTOC_EXPORT" type
+                                                 (:prototype t
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol namespacesubparts) [5790 6347]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1956 6350]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1935 6377]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1914 6402]))                  
+                :type "namespace")
+                nil [1895 6427]))          
+      :file "objectivec_helpers.h"
+      :pointmax 6508
+      :fsize 6507
+      :lastmodtime '(22440 34312 102495 898000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GOOGLE_PROTOBUF_COMPILER_OBJECTIVEC_HELPERS_H__")
+          )
+))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!import!include!google!protobuf!compiler!objectivec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,184 @@
+;; Object tinySAK/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tinySAK/"
+  :tables
+  (list
+    (semanticdb-table "tsk_runnable.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("tsk_debug.h" include nil nil [1 23])
+            ("tsk_runnable.h" include nil nil [24 49])
+            ("tsk_thread.h" include nil nil [50 73])
+            ("__async_join" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [103 114]))                  
+                :type "void")
+                nil [75 115])
+            ("tsk_runnable_create" function
+               (:pointer 1
+                :type ("tsk_runnable_t" type (:type "class") nil nil))
+                nil [214 319])
+            ("tsk_runnable_create_2" function
+               (:pointer 1
+                :arguments 
+                  ( ("priority" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [623 640]))                  
+                :type ("tsk_runnable_t" type (:type "class") nil nil))
+                nil [584 822])
+            ("tsk_runnable_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1142 1163])
+                    ("objdef" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsk_object_def_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1164 1195]))                  
+                :type "int")
+                nil [1112 1604])
+            ("tsk_runnable_deinit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1843 1864]))                  
+                :type "int")
+                nil [1811 2365])
+            ("tsk_runnable_start" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2645 2666])
+                    ("objdef" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("tsk_object_def_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2667 2698]))                  
+                :type "int")
+                nil [2621 3765])
+            ("tsk_runnable_set_important" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4079 4100])
+                    ("important" variable (:type ("tsk_bool_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4101 4122]))                  
+                :type "int")
+                nil [4047 4294])
+            ("tsk_runnable_set_priority" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4361 4382])
+                    ("priority" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4383 4400]))                  
+                :type "int")
+                nil [4330 4651])
+            ("tsk_runnable_stop" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4866 4887]))                  
+                :type "int")
+                nil [4843 7488])
+            ("__async_join" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7518 7528]))                  
+                :type "void")
+                nil [7490 7724])
+            ("tsk_runnable_ctor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7899 7918])
+                    ("app" variable
+                       (:pointer 1
+                        :type ("va_list" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7919 7932]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [7859 8038])
+            ("tsk_runnable_dtor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_object_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8080 8099]))                  
+                :type ("tsk_object_t" type (:type "class") nil nil))
+                nil [8040 8531])
+            ("tsk_runnable_def_s" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    sizeof (tsk_runnable_t), tsk_runnable_ctor, tsk_runnable_dtor, tsk_null,
+}"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [8533 8665])
+            ("tsk_runnable_def_t" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "&tsk_runnable_def_s"
+                :type ("tsk_object_def_t" type (:type "class") nil nil))
+                nil [8666 8731])
+            ("TSK_RUNNABLE_POP_FIRST_SAFE" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("tsk_runnable_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8779 8800]))                  
+                :type ("tsk_list_item_t" type (:type "class") nil nil))
+                nil [8733 8972]))          
+      :file "tsk_runnable.c"
+      :pointmax 8973
+      :fsize 8972
+      :lastmodtime '(22396 56065 316365 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("lib_LTLIBRARIES" variable (:default-value ("libtinySAK.la")) nil [1 41])
+            ("libtinySAK_la_SOURCES" variable (:default-value ("tsk.c" "tsk_base64.c" "tsk_binaryutils.c" "tsk_buffer.c" "tsk_condwait.c" "tsk_debug.c" "tsk_fsm.c" "tsk_hmac.c" "tsk_list.c" "tsk_md5.c" "tsk_memory.c" "tsk_mutex.c" "tsk_object.c" "tsk_options.c" "tsk_params.c" "tsk_ppfcs16.c" "tsk_ppfcs32.c" "tsk_ragel_state.c" "tsk_runnable.c" "tsk_safeobj.c" "tsk_semaphore.c" "tsk_sha1.c" "tsk_string.c" "tsk_thread.c" "tsk_time.c" "tsk_timer.c" "tsk_url.c" "tsk_uuid.c" "tsk_xml.c")) nil [42 489])
+            ("libtinySAK_la_LDFLAGS" variable (:default-value ("$LDFLAGS" "-no-undefined")) nil [501 548])
+            ("libtinySAK_la_HEADERS" variable (:default-value ("*.h")) nil [575 603])
+            ("libtinySAK_ladir" variable (:default-value ("$(includedir)/tinySAK")) nil [603 644]))          
+      :file "Makefile.am"
+      :pointmax 644
+      :fsize 643
+      :lastmodtime '(22396 56065 317351 600000)
+      :unmatched-syntax '((shell-command 490 . 490) (bol 489 . 489)))
+    (semanticdb-table "tsk_debug.h"
+      :file "tsk_debug.h"
+      :fsize 4066
+      :lastmodtime '(22396 56065 304325 400000))
+    (semanticdb-table "tsk_runnable.h"
+      :file "tsk_runnable.h"
+      :fsize 7519
+      :lastmodtime '(22396 56065 319365 500000))
+    (semanticdb-table "tsk_thread.h"
+      :file "tsk_thread.h"
+      :fsize 1919
+      :lastmodtime '(22396 56065 308328 200000)))
+  :file "!mnt!hgfs!svn!client_mcu1.0!src!doubango!tinySAK!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

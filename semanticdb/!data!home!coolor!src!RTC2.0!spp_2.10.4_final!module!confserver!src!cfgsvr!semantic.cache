@@ -1,0 +1,3682 @@
+;; Object cfgsvr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cfgsvr/"
+  :tables
+  (list
+    (semanticdb-table "cfgsvr_spp_container.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_spp_container.h" include nil nil [520 553])
+            ("CfgSvrSPPContainer::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                nil [555 612])
+            ("CfgSvrSPPContainer" function
+               (:constructor-flag t
+                :parent "CfgSvrSPPContainer"
+                :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                nil [614 707])
+            ("CfgSvrSPPContainer" function
+               (:destructor-flag t
+                :parent "CfgSvrSPPContainer"
+                :type "void")
+                nil [709 776])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                nil [778 937])
+            ("clean_instance" function
+               (:parent "CfgSvrSPPContainer"
+                :type "void")
+                nil [939 1061])
+            ("set_spp_server_base" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("spp_base" variable
+                       (:pointer 1
+                        :type ("CServerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1108 1130]))                  
+                :type "void")
+                nil [1063 1167])
+            ("get_spp_server_base" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :type ("CServerBase" type (:type "class") nil nil))
+                nil [1169 1256])
+            ("set_spp_blob_type" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("spp_blob" variable
+                       (:pointer 1
+                        :type ("blob_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1301 1321]))                  
+                :type "void")
+                nil [1258 1356])
+            ("get_spp_blob_type" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :type ("blob_type" type (:type "class") nil nil))
+                nil [1358 1439])
+            ("set_spp_server_tcp_commu" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1491 1507])
+                    ("spp_commu" variable
+                       (:pointer 1
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1508 1542]))                  
+                :type "void")
+                nil [1441 2517])
+            ("get_spp_server_tcp_commu" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2588 2604]))                  
+                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                nil [2519 3202])
+            ("set_spp_server_udp_commu" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3254 3270])
+                    ("spp_commu" variable
+                       (:pointer 1
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3271 3305]))                  
+                :type "void")
+                nil [3204 3723])
+            ("get_spp_server_udp_commu" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3794 3810]))                  
+                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                nil [3725 4022])
+            ("set_spp_server_web_commu" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4074 4090])
+                    ("spp_commu" variable
+                       (:pointer 1
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4091 4125]))                  
+                :type "void")
+                nil [4024 4543])
+            ("get_spp_server_web_commu" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4614 4630]))                  
+                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                nil [4545 4851])
+            ("set_spp_client_tcp_commu" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4903 4919])
+                    ("spp_commu" variable
+                       (:pointer 1
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4920 4954]))                  
+                :type "void")
+                nil [4853 5372])
+            ("get_spp_client_tcp_commu" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5443 5459]))                  
+                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                nil [5374 5671])
+            ("set_spp_client_udp_commu" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5723 5739])
+                    ("spp_commu" variable
+                       (:pointer 1
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5740 5774]))                  
+                :type "void")
+                nil [5673 6192])
+            ("get_spp_client_udp_commu" function
+               (:pointer 1
+                :parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6263 6275]))                  
+                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                nil [6194 6487])
+            ("set_spp_server_tcp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6538 6554])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6555 6573]))                  
+                :type "void")
+                nil [6489 7516])
+            ("get_spp_server_tcp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7575 7591]))                  
+                :type "unsigned int")
+                nil [7518 8315])
+            ("set_spp_server_web_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8366 8382])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8383 8401]))                  
+                :type "void")
+                nil [8317 8784])
+            ("get_spp_server_web_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8844 8860]))                  
+                :type "unsigned int")
+                nil [8787 9055])
+            ("set_spp_server_udp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9107 9123])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9124 9142]))                  
+                :type "void")
+                nil [9058 9525])
+            ("get_spp_server_udp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9585 9601]))                  
+                :type "unsigned int")
+                nil [9528 9796])
+            ("set_spp_client_tcp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9848 9864])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9865 9883]))                  
+                :type "void")
+                nil [9799 10266])
+            ("get_spp_client_tcp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10326 10342]))                  
+                :type "unsigned int")
+                nil [10269 10537])
+            ("set_spp_client_udp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10589 10605])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10606 10624]))                  
+                :type "void")
+                nil [10540 11007])
+            ("get_spp_client_udp_flow" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11067 11083]))                  
+                :type "unsigned int")
+                nil [11010 11278])
+            ("set_spp_svc_type" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11322 11338])
+                    ("type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11339 11357]))                  
+                :type "void")
+                nil [11280 12330])
+            ("get_spp_svc_type" function
+               (:parent "CfgSvrSPPContainer"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12382 12398]))                  
+                :type "unsigned int")
+                nil [12332 13147]))          
+      :file "cfgsvr_spp_container.cpp"
+      :pointmax 13147
+      :fsize 13632
+      :lastmodtime '(22440 34310 86495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_spp_container.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_SPP_CONTAINER_H_" variable (:constant-flag t) nil [554 577])
+            ("cfgsvr_predefine.h" include nil nil [579 608])
+            ("SPP_COMMU_MAP" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil)
+                          ("tbase::tcommu::CTCommu" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [610 676])
+            ("SPP_FLOW_MAP" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil)
+                          ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [677 730])
+            ("SPP_SVC_TYPE_MAP" type
+               (:typedef ("map" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil)
+                          ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [731 788])
+            ("CfgSvrSPPContainer" type
+               (:superclasses 
+                  ( ("ZEN_NON_Copyable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [844 851])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [856 894])
+                    ("clean_instance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [896 925])
+                    ("set_spp_server_base" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("spp_base" variable
+                               (:pointer 1
+                                :type ("CServerBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [978 1000]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [953 1001])
+                    ("get_spp_server_base" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("CServerBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1003 1038])
+                    ("set_spp_blob_type" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("spp_blob" variable
+                               (:pointer 1
+                                :type ("blob_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1087 1107]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1064 1108])
+                    ("get_spp_blob_type" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("blob_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1110 1141])
+                    ("set_spp_server_tcp_commu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1203 1219])
+                            ("spp_commu" variable
+                               (:pointer 1
+                                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1220 1254]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1173 1255])
+                    ("get_spp_server_tcp_commu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1306 1322]))                          
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1257 1323])
+                    ("set_spp_server_udp_commu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1358 1374])
+                            ("spp_commu" variable
+                               (:pointer 1
+                                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1375 1409]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1328 1410])
+                    ("get_spp_server_udp_commu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1464 1480]))                          
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1415 1481])
+                    ("set_spp_server_web_commu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1516 1532])
+                            ("spp_commu" variable
+                               (:pointer 1
+                                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1533 1567]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1486 1568])
+                    ("get_spp_server_web_commu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1622 1638]))                          
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1573 1639])
+                    ("set_spp_client_tcp_commu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1675 1691])
+                            ("spp_commu" variable
+                               (:pointer 1
+                                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1692 1726]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1645 1727])
+                    ("get_spp_client_tcp_commu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1781 1797]))                          
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1732 1798])
+                    ("set_spp_client_udp_commu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1833 1849])
+                            ("spp_commu" variable
+                               (:pointer 1
+                                :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1850 1884]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1803 1885])
+                    ("get_spp_client_udp_commu" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1939 1955]))                          
+                        :type ("tbase::tcommu::CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1890 1956])
+                    ("set_spp_server_tcp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1991 2007])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2008 2026]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1962 2027])
+                    ("get_spp_server_tcp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2069 2085]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2032 2086])
+                    ("set_spp_server_udp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2121 2137])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2138 2156]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2092 2157])
+                    ("get_spp_server_udp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2199 2215]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2162 2216])
+                    ("set_spp_server_web_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2251 2267])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2268 2286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2222 2287])
+                    ("get_spp_server_web_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2329 2345]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2292 2346])
+                    ("set_spp_client_tcp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2381 2397])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2398 2416]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2352 2417])
+                    ("get_spp_client_tcp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2459 2475]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2422 2476])
+                    ("set_spp_client_udp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2511 2527])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2528 2546]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2482 2547])
+                    ("get_spp_client_udp_flow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2589 2605]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2552 2606])
+                    ("set_spp_svc_type" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2634 2650])
+                            ("type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2651 2669]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2612 2670])
+                    ("get_spp_svc_type" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2705 2721]))                          
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [2675 2722])
+                    ("get_spp_server_tcp_commu_map" function (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2728 2827])
+                    ("private" label nil (reparse-symbol classsubparts) [2829 2837])
+                    ("instance_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2842 2879])
+                    ("spp_server_base_" variable
+                       (:pointer 1
+                        :type ("CServerBase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2881 2911])
+                    ("spp_blob_type_" variable
+                       (:pointer 1
+                        :type ("blob_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2913 2939])
+                    ("spp_server_tcp_commu_map_" variable (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2941 2981])
+                    ("spp_server_udp_commu_map_" variable (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2986 3026])
+                    ("spp_server_web_commu_map_" variable (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3031 3071])
+                    ("spp_client_tcp_commu_map_" variable (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3076 3116])
+                    ("spp_client_udp_commu_map_" variable (:type ("SPP_COMMU_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3121 3161])
+                    ("spp_server_tcp_flow_map_" variable (:type ("SPP_FLOW_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3167 3205])
+                    ("spp_server_udp_flow_map_" variable (:type ("SPP_FLOW_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3210 3248])
+                    ("spp_server_web_flow_map_" variable (:type ("SPP_FLOW_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3253 3291])
+                    ("spp_client_tcp_flow_map_" variable (:type ("SPP_FLOW_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3296 3334])
+                    ("spp_client_udp_flow_map_" variable (:type ("SPP_FLOW_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3339 3377])
+                    ("spp_svc_type_map_" variable (:type ("SPP_SVC_TYPE_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3383 3418])
+                    ("private" label nil (reparse-symbol classsubparts) [3420 3428])
+                    ("CfgSvrSPPContainer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CfgSvrSPPContainer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3430 3451])
+                    ("CfgSvrSPPContainer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3453 3475]))                  
+                :type "class")
+                nil [790 3479]))          
+      :file "cfgsvr_spp_container.h"
+      :pointmax 3488
+      :fsize 3636
+      :lastmodtime '(22440 34310 82495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGSVR_SPP_CONTAINER_H_")
+          )
+)
+    (semanticdb-table "cfgsvr_predefine.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_PREDEFINE_H_" variable (:constant-flag t) nil [37 56])
+            ("errno.h" include (:system-flag t) nil [67 85])
+            ("getopt.h" include (:system-flag t) nil [86 105])
+            ("unistd.h" include (:system-flag t) nil [106 125])
+            ("dirent.h" include (:system-flag t) nil [126 145])
+            ("dlfcn.h" include (:system-flag t) nil [146 164])
+            ("semaphore.h" include (:system-flag t) nil [165 187])
+            ("sys/time.h" include (:system-flag t) nil [188 209])
+            ("sys/mman.h" include (:system-flag t) nil [210 231])
+            ("sys/types.h" include (:system-flag t) nil [232 254])
+            ("sys/socket.h" include (:system-flag t) nil [255 278])
+            ("netinet/in.h" include (:system-flag t) nil [279 302])
+            ("sys/io.h" include (:system-flag t) nil [303 322])
+            ("sys/socket.h" include (:system-flag t) nil [323 346])
+            ("netinet/in.h" include (:system-flag t) nil [347 370])
+            ("netinet/tcp.h" include (:system-flag t) nil [371 395])
+            ("arpa/inet.h" include (:system-flag t) nil [396 418])
+            ("sys/file.h" include (:system-flag t) nil [419 440])
+            ("sys/resource.h" include (:system-flag t) nil [441 466])
+            ("time.h" include (:system-flag t) nil [493 510])
+            ("netdb.h" include (:system-flag t) nil [511 529])
+            ("pthread.h" include (:system-flag t) nil [530 550])
+            ("iconv.h" include (:system-flag t) nil [551 569])
+            ("sys/ipc.h" include (:system-flag t) nil [570 590])
+            ("sys/shm.h" include (:system-flag t) nil [591 611])
+            ("sys/sysinfo.h" include (:system-flag t) nil [612 636])
+            ("sys/inotify.h" include (:system-flag t) nil [637 661])
+            ("string.h" include (:system-flag t) nil [672 691])
+            ("time.h" include (:system-flag t) nil [692 709])
+            ("stdio.h" include (:system-flag t) nil [710 728])
+            ("stdlib.h" include (:system-flag t) nil [729 748])
+            ("ctype.h" include (:system-flag t) nil [749 767])
+            ("assert.h" include (:system-flag t) nil [768 787])
+            ("stdarg.h" include (:system-flag t) nil [788 807])
+            ("signal.h" include (:system-flag t) nil [808 827])
+            ("fcntl.h" include (:system-flag t) nil [828 846])
+            ("sys/stat.h" include (:system-flag t) nil [847 868])
+            ("math.h" include (:system-flag t) nil [869 886])
+            ("vector" include (:system-flag t) nil [898 915])
+            ("list" include (:system-flag t) nil [916 931])
+            ("set" include (:system-flag t) nil [932 946])
+            ("map" include (:system-flag t) nil [947 961])
+            ("deque" include (:system-flag t) nil [962 978])
+            ("queue" include (:system-flag t) nil [979 995])
+            ("string" include (:system-flag t) nil [996 1013])
+            ("fstream" include (:system-flag t) nil [1014 1032])
+            ("ctime" include (:system-flag t) nil [1033 1049])
+            ("sstream" include (:system-flag t) nil [1050 1068])
+            ("utility" include (:system-flag t) nil [1069 1087])
+            ("iostream" include (:system-flag t) nil [1088 1107])
+            ("iomanip" include (:system-flag t) nil [1108 1126])
+            ("functional" include (:system-flag t) nil [1127 1148])
+            ("iomanip" include (:system-flag t) nil [1149 1167])
+            ("typeinfo" include (:system-flag t) nil [1168 1187])
+            ("algorithm" include (:system-flag t) nil [1188 1208])
+            ("memory" include (:system-flag t) nil [1209 1226])
+            ("limits" include (:system-flag t) nil [1227 1244])
+            ("common/zen_boost_non_copyable.h" include nil nil [1255 1297])
+            ("common/zen_boost_lord_rings.h" include nil nil [1298 1338])
+            ("common/zen_mysql_predefine.h" include nil nil [1339 1378])
+            ("common/rapidxml.hpp" include nil nil [1379 1409])
+            ("common/rapidxml_print.hpp" include nil nil [1410 1446])
+            ("common/rapidxml_utils.hpp" include nil nil [1447 1483])
+            ("sppincl.h" include (:system-flag t) nil [1694 1714])
+            ("rsa.h" include (:system-flag t) nil [1734 1750])
+            ("hiredis.h" include (:system-flag t) nil [1766 1786])
+            ("net.h" include (:system-flag t) nil [1787 1803])
+            ("MonitorAgent.h" include (:system-flag t) nil [1827 1852])
+            ("protobuf/common.pb.h" include nil nil [1869 1900])
+            ("protobuf/cfgsvr_server.pb.h" include nil nil [1901 1939])
+            ("protobuf/YouMeServerValidProtocol.pb.h" include nil nil [1940 1989])
+            ("protobuf/cfgsvr_server_notify.pb.h" include nil nil [1990 2035])
+            ("cfgsvr_common.h" include nil nil [2046 2072])
+            ("zerg_buf_storage.h" include nil nil [2073 2102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2104 2124])
+            ("rapidxml" using (:type ("rapidxml" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2125 2150]))          
+      :file "cfgsvr_predefine.h"
+      :pointmax 2159
+      :fsize 2304
+      :lastmodtime '(22440 34310 82495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGSVR_PREDEFINE_H_")
+          )
+)
+    (semanticdb-table "cfgsvr_service.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_predefine.h" include nil nil [509 538])
+            ("cfgsvr_msg_handler.h" include nil nil [539 570])
+            ("cfgsvr_server_info_mgr.h" include nil nil [571 606])
+            ("cfgsvr_sdk_verify.h" include nil nil [607 637])
+            ("cfgsvr_timer_handler.h" include nil nil [638 671])
+            ("cfgsvr_spp_container.h" include nil nil [672 705])
+            ("zerg_buf_storage.h" include nil nil [706 735])
+            ("cfgsvr_db_process.h" include nil nil [736 766])
+            ("cfgsvr_conf_mgr.h" include nil nil [767 795])
+            ("cfgsvr_redis_process.h" include nil nil [796 829])
+            ("cfgsvr_monitor_handler.h" include nil nil [830 865])
+            ("g_route_count" variable
+               (:typemodifiers ("static")
+                :default-value "1"
+                :type "unsigned int")
+                nil [892 930])
+            ("G_WORKER_GROUP_NUM" variable
+               (:typemodifiers ("static")
+                :default-value "9"
+                :type "unsigned int")
+                nil [931 974])
+            ("G_MAX_UNIT" variable
+               (:typemodifiers ("static")
+                :default-value "(1 << 32) - 1"
+                :type "unsigned int")
+                nil [975 1022])
+            ("timer_task_func" function
+               (:arguments 
+                  ( ("sessionID" variable (:type "int") (reparse-symbol arg-sub-list) [1069 1083])
+                    ("task_para" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1084 1100])
+                    ("server" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1101 1114]))                  
+                :type "int")
+                nil [1049 1924])
+            ("spp_handle_init" function
+               (:arguments 
+                  ( ("arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2015 2026])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2027 2038]))                  
+                :type "int")
+                nil [1995 3733])
+            ("spp_handle_input" function
+               (:arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3874 3888])
+                    ("arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3889 3900])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3901 3912]))                  
+                :type "int")
+                nil [3853 7539])
+            ("spp_handle_route" function
+               (:arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7654 7668])
+                    ("arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7669 7680])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7681 7692]))                  
+                :type "int")
+                nil [7633 9526])
+            ("spp_handle_process" function
+               (:arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9636 9650])
+                    ("arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9651 9662])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9663 9674]))                  
+                :type "int")
+                nil [9613 12527])
+            ("spp_handle_fini" function
+               (:arguments 
+                  ( ("arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12604 12615])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12616 12627]))                  
+                :type "void")
+                nil [12583 13021]))          
+      :file "cfgsvr_service.cpp"
+      :pointmax 13022
+      :fsize 13970
+      :lastmodtime '(22440 34310 86495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_msg_handler.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_MSG_HANDLER_H_" variable (:constant-flag t) nil [549 570])
+            ("cfgsvr_predefine.h" include nil nil [572 601])
+            ("CfgSvrMsgHandler" type
+               (:superclasses 
+                  ( ("ZEN_NON_Copyable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("BUFFER_MAP" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil)
+                                  ("ZByteBuffer" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [659 716])
+                    ("public" label nil (reparse-symbol classsubparts) [718 725])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [730 766])
+                    ("clean_instance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [768 797])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [826 844])
+                            ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [858 881])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [895 910])
+                            ("src_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [924 948])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [962 979])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [994 1016]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [814 1017])
+                    ("process_sdk_tcp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1065 1083])
+                            ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1084 1107])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1108 1123])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1124 1141])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1142 1164]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1045 1165])
+                    ("process_sdk_udp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1188 1206])
+                            ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1207 1230])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1231 1246])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1247 1264])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1265 1287]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1168 1288])
+                    ("dispatch_sdk_msg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1330 1348])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1349 1364])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1365 1382])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1383 1405])
+                            ("is_tcp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1406 1423]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1309 1425])
+                    ("process_sdk_sdk_auth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1484 1502])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1503 1518])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1519 1536])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1537 1559])
+                            ("is_tcp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1560 1577]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1459 1579])
+                    ("process_sdk_sdk_auth_resp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1654 1668])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1669 1684])
+                            ("sdk_verify_info" variable
+                               (:reference 1
+                                :type ("SDKVerifyAllInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1685 1719])
+                            ("flag" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1720 1735])
+                            ("is_tcp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1737 1754]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1624 1756])
+                    ("process_server_tcp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1815 1838])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1839 1854])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1855 1872])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1873 1895]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1792 1896])
+                    ("process_server_udp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1922 1945])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1946 1961])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1962 1979])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1980 2002]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1899 2003])
+                    ("dispatch_server_msg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2051 2074])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2075 2093])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2094 2109])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2110 2127])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2128 2150]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2027 2151])
+                    ("process_server_cfgsvr_info_req" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2227 2250])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2251 2269])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2270 2285])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2286 2303])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2304 2326]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2192 2327])
+                    ("process_server_cfgsvr_info_resp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2405 2423])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2424 2439])
+                            ("server_info" variable
+                               (:reference 1
+                                :type ("ServerAllInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2440 2467])
+                            ("opt_type" variable (:type ("CFG_SVR_OPT_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2468 2494]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2369 2495])
+                    ("process_server_cfgsvr_web_notify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2571 2589])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2590 2605])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2606 2623])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2624 2646]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2534 2647])
+                    ("process_server_cfgsvr_heartbeat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2721 2744])
+                            ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2745 2763])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2764 2779])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2780 2797])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2798 2820]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2685 2821])
+                    ("process_server_cfgsvr_heartbeat_ack" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2903 2921])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2922 2937])
+                            ("server_info" variable
+                               (:reference 1
+                                :type ("ServerCommInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2938 2966]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2863 2967])
+                    ("process_tcp_stream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("recv_buffer" variable
+                               (:pointer 1
+                                :type ("ZByteBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3010 3035])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3036 3053])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3054 3076]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2987 3077])
+                    ("process_server_tcp_buffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3136 3151])
+                            ("recv_buffer" variable
+                               (:pointer 1
+                                :type ("ZByteBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3152 3177]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3106 3178])
+                    ("process_server_tcp_buffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3214 3229])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3230 3247])
+                            ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3248 3273]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3184 3274])
+                    ("check_recv_full_pkg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("recv_buffer" variable
+                               (:pointer 1
+                                :type ("ZByteBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3329 3354])
+                            ("pkg_length" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3355 3380])
+                            ("flag" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3381 3392]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3305 3393])
+                    ("check_recv_full_pkg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3427 3445])
+                            ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3446 3471])
+                            ("pkg_length" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3472 3497])
+                            ("flag" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3498 3509]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3403 3510])
+                    ("get_tcp_pkg_length" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("recv_buffer" variable
+                               (:pointer 1
+                                :type ("ZByteBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3563 3588])
+                            ("pkg_length" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3589 3614]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3540 3615])
+                    ("get_tcp_pkg_length" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3644 3661])
+                            ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3662 3687])
+                            ("pkg_length" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3688 3713]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3621 3714])
+                    ("send_msg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3746 3764])
+                            ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3765 3780])
+                            ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3781 3798])
+                            ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3799 3821]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3732 3822])
+                    ("set_server_tcp_buffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3882 3898]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3855 3899])
+                    ("get_server_tcp_buffer" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3939 3955]))                          
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3904 3956])
+                    ("set_client_tcp_buffer" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3988 4004]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3961 4005])
+                    ("get_client_tcp_buffer" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4045 4061]))                          
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4010 4062])
+                    ("set_spp_commu" function
+                       (:arguments 
+                          ( ("commu" variable
+                               (:pointer 1
+                                :type ("CTCommu" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4110 4125]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4091 4161])
+                    ("set_spp_flow" function
+                       (:arguments 
+                          ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4184 4202]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4166 4236])
+                    ("set_sdk_package_count" function
+                       (:arguments 
+                          ( ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4302 4321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4275 4369])
+                    ("get_sdk_package_count" function (:type "unsigned int") (reparse-symbol classsubparts) [4379 4462])
+                    ("set_server_busy_flag" function
+                       (:arguments 
+                          ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [4520 4530]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4494 4576])
+                    ("get_server_busy_flag" function (:type "bool") (reparse-symbol classsubparts) [4586 4659])
+                    ("private" label nil (reparse-symbol classsubparts) [4665 4673])
+                    ("instance_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4678 4713])
+                    ("server_tcp_buffer_map_" variable (:type ("BUFFER_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4739 4773])
+                    ("client_tcp_buffer_map_" variable (:type ("BUFFER_MAP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4799 4833])
+                    ("commu_" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4861 4877])
+                    ("flow_" variable (:type "unsigned int") (reparse-symbol classsubparts) [4910 4929])
+                    ("sdk_package_count_" variable (:type "unsigned int") (reparse-symbol classsubparts) [4953 4985])
+                    ("sdk_max_package_sum_" variable (:type "unsigned int") (reparse-symbol classsubparts) [5010 5044])
+                    ("server_busy_flag_" variable (:type "bool") (reparse-symbol classsubparts) [5073 5096])
+                    ("private" label nil (reparse-symbol classsubparts) [5103 5111])
+                    ("CfgSvrMsgHandler" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5116 5135])
+                    ("CfgSvrMsgHandler" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5137 5157]))                  
+                :type "class")
+                nil [603 5161]))          
+      :file "cfgsvr_msg_handler.h"
+      :pointmax 5169
+      :fsize 5532
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGSVR_MSG_HANDLER_H_")
+          )
+)
+    (semanticdb-table "cfgsvr_server_info_mgr.h"
+      :file "cfgsvr_server_info_mgr.h"
+      :fsize 1858
+      :lastmodtime '(22440 34310 85495 900000))
+    (semanticdb-table "cfgsvr_sdk_verify.h"
+      :file "cfgsvr_sdk_verify.h"
+      :fsize 2914
+      :lastmodtime '(22440 34310 82495 900000))
+    (semanticdb-table "cfgsvr_timer_handler.h"
+      :file "cfgsvr_timer_handler.h"
+      :fsize 1243
+      :lastmodtime '(22440 34310 83495 900000))
+    (semanticdb-table "zerg_buf_storage.h"
+      :file "zerg_buf_storage.h"
+      :fsize 3870
+      :lastmodtime '(22440 34310 83495 900000))
+    (semanticdb-table "cfgsvr_db_process.h"
+      :file "cfgsvr_db_process.h"
+      :fsize 1674
+      :lastmodtime '(22440 34310 85495 900000))
+    (semanticdb-table "cfgsvr_conf_mgr.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_CONF_MGR_H_" variable (:constant-flag t) nil [543 561])
+            ("cfgsvr_predefine.h" include nil nil [563 592])
+            ("CfgSvrConfMgr" type
+               (:superclasses 
+                  ( ("ZEN_NON_Copyable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [643 650])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [655 688])
+                    ("clean_instance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [693 722])
+                    ("init_config" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("config_path" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [760 785]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [743 786])
+                    ("reload_config" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("config_path" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [828 853]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [809 854])
+                    ("set_server_tcp_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [910 930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [885 931])
+                    ("get_server_tcp_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [936 973])
+                    ("set_server_web_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1003 1023]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [978 1024])
+                    ("get_server_web_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1029 1066])
+                    ("set_server_udp_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1096 1116]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1071 1117])
+                    ("get_server_udp_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1122 1159])
+                    ("set_client_tcp_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1189 1209]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1164 1210])
+                    ("get_client_tcp_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1215 1252])
+                    ("set_client_udp_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1282 1302]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1257 1303])
+                    ("get_client_udp_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1308 1345])
+                    ("set_db_host" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("host" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1388 1406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1371 1407])
+                    ("get_db_host" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1412 1439])
+                    ("set_db_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1461 1481]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1444 1482])
+                    ("get_db_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1487 1516])
+                    ("set_db_user" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("user" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1538 1556]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1521 1557])
+                    ("get_db_user" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1562 1589])
+                    ("set_db_password" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("password" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1615 1637]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1594 1638])
+                    ("get_db_password" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1643 1674])
+                    ("set_timer_task_interval" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("interval" variable (:type "int") (reparse-symbol arg-sub-list) [1731 1744]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1702 1745])
+                    ("get_timer_task_interval" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1750 1780])
+                    ("set_sdk_need_encrypt_data" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1848 1866]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1817 1867])
+                    ("get_sdk_need_encrypt_data" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1872 1913])
+                    ("set_sdk_max_package_count" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1968 1984]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1937 1985])
+                    ("get_sdk_max_package_count" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1990 2031])
+                    ("set_client_retry_time" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("retry_time" variable (:type "int") (reparse-symbol arg-sub-list) [2079 2094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2052 2095])
+                    ("get_client_retry_time" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2100 2128])
+                    ("set_redis_host" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("host" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2176 2194]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2156 2195])
+                    ("get_redis_host" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2200 2230])
+                    ("set_redis_port" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [2255 2275]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2235 2276])
+                    ("get_redis_port" function
+                       (:prototype-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [2281 2313])
+                    ("set_redirect_host_name" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2383 2401]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2355 2402])
+                    ("get_redirect_host_name" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2407 2445])
+                    ("set_redirect_port_name" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2478 2496]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2450 2497])
+                    ("get_redirect_port_name" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2502 2540])
+                    ("private" label nil (reparse-symbol classsubparts) [2542 2550])
+                    ("instance_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2555 2587])
+                    ("server_tcp_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2592 2624])
+                    ("server_web_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2629 2661])
+                    ("server_udp_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2666 2698])
+                    ("client_tcp_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2703 2735])
+                    ("client_udp_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2740 2772])
+                    ("db_host_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2778 2799])
+                    ("db_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [2804 2828])
+                    ("db_user_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2833 2854])
+                    ("db_password_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2859 2884])
+                    ("timer_task_interval_" variable (:type "int") (reparse-symbol classsubparts) [2890 2915])
+                    ("sdk_need_encrypt_data_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2920 2955])
+                    ("sdk_max_package_count_" variable (:type "unsigned int") (reparse-symbol classsubparts) [2961 2997])
+                    ("client_retry_time_" variable (:type "int") (reparse-symbol classsubparts) [3002 3025])
+                    ("redis_host_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3031 3055])
+                    ("redis_port_" variable (:type "unsigned short") (reparse-symbol classsubparts) [3060 3087])
+                    ("redirect_host_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3093 3125])
+                    ("redirect_port_name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3130 3162])
+                    ("private" label nil (reparse-symbol classsubparts) [3164 3172])
+                    ("CfgSvrConfMgr" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3177 3193])
+                    ("CfgSvrConfMgr" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3198 3223]))                  
+                :type "class")
+                nil [594 3229]))          
+      :file "cfgsvr_conf_mgr.h"
+      :pointmax 3239
+      :fsize 3416
+      :lastmodtime '(22440 34310 86495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGSVR_CONF_MGR_H_")
+          )
+)
+    (semanticdb-table "cfgsvr_redis_process.h"
+      :file "cfgsvr_redis_process.h"
+      :fsize 1603
+      :lastmodtime '(22440 34310 82495 900000))
+    (semanticdb-table "cfgsvr_monitor_handler.h"
+      :file "cfgsvr_monitor_handler.h"
+      :fsize 1337
+      :lastmodtime '(22440 34310 85495 900000))
+    (semanticdb-table "cfgsvr_msg_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_msg_handler.h" include nil nil [513 544])
+            ("cfgsvr_server_info_mgr.h" include nil nil [545 580])
+            ("cfgsvr_sdk_verify.h" include nil nil [581 611])
+            ("cfgsvr_spp_container.h" include nil nil [612 645])
+            ("cfgsvr_redirect_svr_mgr.h" include nil nil [646 682])
+            ("cfgsvr_mcu_svr_mgr.h" include nil nil [683 714])
+            ("cfgsvr_conf_mgr.h" include nil nil [715 743])
+            ("cfgsvr_monitor_handler.h" include nil nil [744 779])
+            ("CfgSvrMsgHandler::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                nil [781 834])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrMsgHandler"
+                :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                nil [836 991])
+            ("clean_instance" function
+               (:parent "CfgSvrMsgHandler"
+                :type "void")
+                nil [993 1113])
+            ("CfgSvrMsgHandler" function
+               (:constructor-flag t
+                :parent "CfgSvrMsgHandler"
+                :type ("CfgSvrMsgHandler" type (:type "class") nil nil))
+                nil [1115 1504])
+            ("CfgSvrMsgHandler" function
+               (:destructor-flag t
+                :parent "CfgSvrMsgHandler"
+                :type "void")
+                nil [1506 1569])
+            ("process" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1601 1619])
+                    ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1645 1668])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1693 1708])
+                    ("src_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1734 1758])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1783 1800])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1823 1845]))                  
+                :type "int")
+                nil [1571 5109])
+            ("process_server_tcp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5152 5175])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5176 5191])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5192 5209])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5210 5232]))                  
+                :type "int")
+                nil [5111 6067])
+            ("process_server_udp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6110 6133])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6134 6149])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6150 6167])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6168 6190]))                  
+                :type "int")
+                nil [6069 6383])
+            ("dispatch_server_msg" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6427 6450])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6451 6469])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6470 6485])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6486 6503])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6504 6526]))                  
+                :type "int")
+                nil [6385 8371])
+            ("process_server_cfgsvr_info_req" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8426 8445])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8446 8464])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8465 8480])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8481 8498])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8499 8521]))                  
+                :type "int")
+                nil [8373 10099])
+            ("process_server_cfgsvr_info_resp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10155 10173])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10174 10189])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10190 10217])
+                    ("opt_type" variable (:type ("CFG_SVR_OPT_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10218 10244]))                  
+                :type "int")
+                nil [10101 13025])
+            ("process_server_cfgsvr_web_notify" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13082 13100])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13101 13116])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13117 13134])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13135 13157]))                  
+                :type "int")
+                nil [13027 23627])
+            ("process_server_cfgsvr_heartbeat" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23683 23706])
+                    ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23707 23725])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23726 23741])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23742 23759])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [23760 23782]))                  
+                :type "int")
+                nil [23629 24858])
+            ("process_server_cfgsvr_heartbeat_ack" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24918 24936])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24937 24952])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerCommInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24953 24981]))                  
+                :type "int")
+                nil [24860 26617])
+            ("process_sdk_tcp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26657 26675])
+                    ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26676 26699])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26700 26715])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26716 26733])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26734 26756]))                  
+                :type "int")
+                nil [26619 26980])
+            ("process_sdk_udp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27020 27038])
+                    ("remote_ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27039 27062])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27063 27078])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27079 27096])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27097 27119]))                  
+                :type "int")
+                nil [26982 27228])
+            ("dispatch_sdk_msg" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27269 27287])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27288 27303])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27304 27321])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27322 27344])
+                    ("is_tcp" variable (:type "bool") (reparse-symbol arg-sub-list) [27345 27357]))                  
+                :type "int")
+                nil [27230 28622])
+            ("process_sdk_sdk_auth" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28667 28685])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28686 28701])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28702 28719])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28720 28742])
+                    ("is_tcp" variable (:type "bool") (reparse-symbol arg-sub-list) [28743 28755]))                  
+                :type "int")
+                nil [28624 35398])
+            ("process_sdk_sdk_auth_resp" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35448 35466])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35467 35482])
+                    ("sdk_verify_info" variable
+                       (:reference 1
+                        :type ("SDKVerifyAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35483 35517])
+                    ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [35518 35528])
+                    ("is_tcp" variable (:type "bool") (reparse-symbol arg-sub-list) [35529 35541]))                  
+                :type "int")
+                nil [35400 41247])
+            ("process_tcp_stream" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("recv_buffer" variable
+                       (:pointer 1
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41290 41315])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41316 41333])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41334 41356]))                  
+                :type "int")
+                nil [41249 41817])
+            ("process_server_tcp_buffer" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41867 41882])
+                    ("recv_buffer" variable
+                       (:pointer 1
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41883 41908]))                  
+                :type "int")
+                nil [41819 43250])
+            ("check_recv_full_pkg" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("recv_buffer" variable
+                       (:pointer 1
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43294 43319])
+                    ("pkg_length" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [43320 43345])
+                    ("flag" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [43346 43357]))                  
+                :type "int")
+                nil [43252 44017])
+            ("check_recv_full_pkg" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44061 44078])
+                    ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [44079 44104])
+                    ("pkg_length" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [44105 44130])
+                    ("flag" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [44131 44142]))                  
+                :type "int")
+                nil [44019 44923])
+            ("get_tcp_pkg_length" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("recv_buffer" variable
+                       (:pointer 1
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44966 44991])
+                    ("pkg_length" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [44992 45017]))                  
+                :type "int")
+                nil [44925 45208])
+            ("get_tcp_pkg_length" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45251 45268])
+                    ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [45269 45294])
+                    ("pkg_length" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [45295 45321]))                  
+                :type "int")
+                nil [45210 45488])
+            ("set_server_tcp_buffer" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [45535 45551]))                  
+                :type "void")
+                nil [45490 46409])
+            ("get_server_tcp_buffer" function
+               (:pointer 1
+                :parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [46464 46480]))                  
+                :type ("ZByteBuffer" type (:type "class") nil nil))
+                nil [46411 47096])
+            ("set_client_tcp_buffer" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47144 47160]))                  
+                :type "void")
+                nil [47099 48018])
+            ("get_client_tcp_buffer" function
+               (:pointer 1
+                :parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("ip" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48073 48089]))                  
+                :type ("ZByteBuffer" type (:type "class") nil nil))
+                nil [48020 48705])
+            ("send_msg" function
+               (:parent "CfgSvrMsgHandler"
+                :arguments 
+                  ( ("flow" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48739 48757])
+                    ("commu" variable
+                       (:pointer 1
+                        :type ("CTCommu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48758 48773])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48774 48791])
+                    ("data_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48792 48814]))                  
+                :type "void")
+                nil [48707 49145]))          
+      :file "cfgsvr_msg_handler.cpp"
+      :pointmax 49146
+      :fsize 51890
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_redirect_svr_mgr.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_REDIRECT_SVR_MGR_H_" variable (:constant-flag t) nil [559 585])
+            ("cfgsvr_predefine.h" include nil nil [587 616])
+            ("CfgSvrRedirectSvrMgr" type
+               (:superclasses 
+                  ( ("ZEN_NON_Copyable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [674 681])
+                    ("instance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [687 727])
+                    ("clean_instance" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [732 761])
+                    ("get_redirect_server" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [812 828])
+                            ("port" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [829 847])
+                            ("is_tcp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [848 867]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [788 869])
+                    ("set_redirect_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [919 935])
+                            ("status" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [936 956]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [895 957])
+                    ("delete_redirect_status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ip" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1028 1044])
+                            ("status" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1045 1065]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1001 1066])
+                    ("private" label nil (reparse-symbol classsubparts) [1072 1080])
+                    ("get_random_index" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("elements" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1121 1137]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1100 1138])
+                    ("filter_redirect_server" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("redirect_vector" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1206 1248])
+                            ("reply" variable
+                               (:pointer 1
+                                :type ("redisReply" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1249 1267]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1179 1268])
+                    ("private" label nil (reparse-symbol classsubparts) [1270 1278])
+                    ("instance_" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1284 1323])
+                    ("private" label nil (reparse-symbol classsubparts) [1326 1334])
+                    ("CfgSvrRedirectSvrMgr" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1339 1362])
+                    ("CfgSvrRedirectSvrMgr" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1367 1391]))                  
+                :type "class")
+                nil [618 1395]))          
+      :file "cfgsvr_redirect_svr_mgr.h"
+      :pointmax 1404
+      :fsize 1529
+      :lastmodtime '(22440 34310 82495 900000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CFGSVR_REDIRECT_SVR_MGR_H_")
+          )
+)
+    (semanticdb-table "cfgsvr_mcu_svr_mgr.h"
+      :file "cfgsvr_mcu_svr_mgr.h"
+      :fsize 1030
+      :lastmodtime '(22440 34310 85495 900000))
+    (semanticdb-table "cfgsvr_common.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CFGSVR_COMMON_H_" variable (:constant-flag t) nil [538 554])
+            ("cfgsvr_predefine.h" include nil nil [556 585])
+            ("SERVER_TCP_PORT" variable (:constant-flag t) nil [624 639])
+            ("SERVER_WEB_PORT" variable (:constant-flag t) nil [653 668])
+            ("SERVER_UDP_PORT" variable (:constant-flag t) nil [682 697])
+            ("CLIENT_TCP_PORT" variable (:constant-flag t) nil [711 726])
+            ("CLIENT_UDP_PORT" variable (:constant-flag t) nil [740 755])
+            ("SDK_VERIFY_OLD_MSG_VERSION" variable (:constant-flag t) nil [782 808])
+            ("SDK_VERIFY_NEW_MSG_VERSION" variable (:constant-flag t) nil [819 845])
+            ("TIMER_TASK_INTERVAL" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "30000"
+                :type "int")
+                nil [849 899])
+            ("CFGSVR_DB_IP" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"10.10.214.94\""
+                :type "char")
+                nil [900 953])
+            ("CFGSVR_DB_PORT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3306"
+                :type "unsigned short")
+                nil [954 1004])
+            ("CFGSVR_DB_USER" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"con_user\""
+                :type "char")
+                nil [1005 1056])
+            ("CFGSVR_DB_PASSWORD" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"Nink@123\""
+                :type "char")
+                nil [1057 1112])
+            ("SDK_NEED_ENCRYPT_DATA" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"youme12345678\""
+                :type "char")
+                nil [1113 1176])
+            ("DEFAULT_SDK_MAX_PACKAGE_COUNT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "100"
+                :type "unsigned int")
+                nil [1177 1239])
+            ("DEFAULT_CLIENT_RETRY_TIME" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "30000"
+                :type "int")
+                nil [1240 1296])
+            ("CFGSVR_REDIS_HOST" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"10.10.219.211\""
+                :type "char")
+                nil [1297 1356])
+            ("CFGSVR_REDIS_PORT" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "6379"
+                :type "unsigned short")
+                nil [1357 1410])
+            ("DEFAULT_REDIRECT_HOST_NAME" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"NETWORK_REDIRECT_ADD\""
+                :type "char")
+                nil [1411 1486])
+            ("DEFAULT_REDIRECT_PORT_NAME" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"NETWORK_REDIRECT_PORT\""
+                :type "char")
+                nil [1487 1563])
+            ("base64char" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\""
+                :type "char")
+                nil [1565 1664])
+            ("SDK_SPECIAL_LIST" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{\"com.dw.fs\"}"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1665 1719])
+            ("SQL_MAX_LENGTH" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1024"
+                :type "unsigned int")
+                nil [1817 1865])
+            ("REDIS_MAX_LENGTH" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "256"
+                :type "unsigned int")
+                nil [1882 1931])
+            ("PKG_MAX_LENGTH" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2048"
+                :type "unsigned int")
+                nil [1950 1998])
+            ("BUFFER_MAX_NUMBER" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2000"
+                :type "unsigned int")
+                nil [2011 2062])
+            ("RSA_KEY_MAX_LENGTH" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1024"
+                :type "unsigned int")
+                nil [2079 2131])
+            ("EXTEND_OBJECT_LIST_SIZE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1024"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2142 2193])
+            ("MIN_OBJECT_LIST_SIZE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "128"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2194 2241])
+            ("MAX_OBJECT_LIST_SIZE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "12800"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2242 2291])
+            ("MAX_OBJECT_BUFFER_SIZE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4096"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2292 2342])
+            ("INVALID_VALUE" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "-1"
+                :type "int")
+                nil [2351 2387])
+            ("SERVICE_TYPE" type
+               (:members 
+                  ( ("SVC_INVALID_SERVER" variable
+                       (:constant-flag t
+                        :default-value (2480 2481)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2459 2481])
+                    ("SVC_CFG_SVR" variable
+                       (:constant-flag t
+                        :default-value (2522 2523)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2508 2523])
+                    ("SVC_STAT_SVR" variable
+                       (:constant-flag t
+                        :default-value (2564 2565)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2549 2565])
+                    ("SVC_SDK_SVR" variable
+                       (:constant-flag t
+                        :default-value (2615 2617)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2601 2617])
+                    ("SVC_MCU_SVR" variable
+                       (:constant-flag t
+                        :default-value (2649 2651)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2635 2651])
+                    ("SVC_REDIRECT_SVR" variable
+                       (:constant-flag t
+                        :default-value (2686 2688)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2667 2688])
+                    ("SVC_LOG_SVR" variable
+                       (:constant-flag t
+                        :default-value (2724 2726)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2710 2726])
+                    ("SVC_TIME_SVR" variable
+                       (:constant-flag t
+                        :default-value (2761 2763)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2746 2763]))                  
+                :type "enum")
+                nil [2425 2766])
+            ("CFGSVR_ASYNC_STATE" type
+               (:members 
+                  ( ("CFGSVR_STATE_FINISH" variable
+                       (:constant-flag t
+                        :default-value (2854 2855)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2832 2855])
+                    ("CFGSVR_STATE_INIT" variable
+                       (:constant-flag t
+                        :default-value (2889 2890)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2869 2890])
+                    ("CFGSVR_STATE_PROCESS" variable
+                       (:constant-flag t
+                        :default-value (2927 2928)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2904 2928])
+                    ("CFGSVR_STATE_ERROR" variable
+                       (:constant-flag t
+                        :default-value (2964 2965)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2943 2965]))                  
+                :type "enum")
+                nil [2790 2972])
+            ("CFG_SVR_OPT_TYPE" type
+               (:members 
+                  ( ("CFG_SVR_OPT_ADD" variable
+                       (:constant-flag t
+                        :default-value (3069 3070)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3051 3070])
+                    ("CFG_SVR_OPT_MODIFY" variable
+                       (:constant-flag t
+                        :default-value (3114 3115)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3093 3115])
+                    ("CFG_SVR_OPT_DELETE" variable
+                       (:constant-flag t
+                        :default-value (3158 3159)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3137 3159]))                  
+                :type "enum")
+                nil [3003 3163])
+            ("NameTypeValue" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3239 3256])
+                    ("type" variable (:type "unsigned int") (reparse-symbol classsubparts) [3266 3284])
+                    ("value" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3293 3311]))                  
+                :type "struct")
+                nil [3202 3314])
+            ("NameTypeValue2" type
+               (:members 
+                  ( ("name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3371 3385])
+                    ("name_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [3390 3415])
+                    ("type" variable (:type "unsigned int") (reparse-symbol classsubparts) [3431 3449])
+                    ("value" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3464 3479])
+                    ("value_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [3484 3510]))                  
+                :type "struct")
+                nil [3333 3513])
+            ("CfgSvrNameTypeValue" type
+               (:members 
+                  ( ("name_value" variable (:type ("NameTypeValue" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3568 3593])
+                    ("opt_type" variable (:type ("CFG_SVR_OPT_TYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3599 3625]))                  
+                :type "struct")
+                nil [3535 3628])
+            ("ServerCommInfo" type
+               (:members 
+                  ( ("svc_type" variable (:type "unsigned int") (reparse-symbol classsubparts) [3685 3707])
+                    ("svc_id" variable (:type "unsigned int") (reparse-symbol classsubparts) [3720 3740])
+                    ("svc_index" variable (:type "unsigned int") (reparse-symbol classsubparts) [3753 3776])
+                    ("busi_id" variable (:type "unsigned int") (reparse-symbol classsubparts) [3788 3809])
+                    ("idc" variable (:type "unsigned int") (reparse-symbol classsubparts) [3822 3839])
+                    ("internal_ip" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3851 3875])
+                    ("bind_ip" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3893 3913])
+                    ("port" variable (:type "unsigned short") (reparse-symbol classsubparts) [3926 3946])
+                    ("update_flag" variable (:type "unsigned short") (reparse-symbol classsubparts) [3958 3985]))                  
+                :type "struct")
+                nil [3644 3990])
+            ("ServerAllInfo" type
+               (:members 
+                  ( ("comm_info" variable (:type ("ServerCommInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4051 4076])
+                    ("name_value" variable
+                       (:dereference 1
+                        :type ("CfgSvrNameTypeValue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4078 4114])
+                    ("name_value_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [4116 4147]))                  
+                :type "struct")
+                nil [4024 4150])
+            ("ClientInfo" type
+               (:members 
+                  ( ("company_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4193 4218])
+                    ("contact_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4231 4256])
+                    ("contact_phone" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4269 4295])
+                    ("app_key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4321 4341])
+                    ("public_pem" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4366 4389])
+                    ("private_pem" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4414 4438])
+                    ("modulus" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4463 4483])
+                    ("app_secret_key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4507 4534]))                  
+                :type "struct")
+                nil [4163 4538])
+            ("SDKVerifyCommInfo" type
+               (:members 
+                  ( ("device_platform" variable (:type "unsigned int") (reparse-symbol classsubparts) [4603 4632])
+                    ("sys_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4644 4665])
+                    ("sys_version" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4678 4702])
+                    ("ym_sdk_version" variable (:type "unsigned int") (reparse-symbol classsubparts) [4719 4747])
+                    ("ym_version_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4761 4789])
+                    ("device_urn" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4802 4825])
+                    ("device_imei" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4839 4863])
+                    ("cpu_arch" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4879 4900])
+                    ("package_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4911 4936])
+                    ("uuid" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4950 4967])
+                    ("app_key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5015 5035])
+                    ("brand" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5053 5071])
+                    ("model" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5089 5107])
+                    ("update_flag" variable (:type "unsigned short") (reparse-symbol classsubparts) [5122 5149]))                  
+                :type "struct")
+                nil [4560 5152])
+            ("SDKVerifyAllInfo" type
+               (:members 
+                  ( ("comm_info" variable (:type ("SDKVerifyCommInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5218 5246])
+                    ("name_value" variable
+                       (:dereference 1
+                        :type ("NameTypeValue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5248 5281])
+                    ("name_value_length" variable (:type "unsigned int") (reparse-symbol classsubparts) [5283 5319]))                  
+                :type "struct")
+                nil [5188 5322])
+            ("SDKSearchCondition" type
+               (:members 
+                  ( ("device_imei" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5407 5431])
+                    ("brand" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5450 5468])
+                    ("model" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5473 5491])
+                    ("app_key" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5542 5562])
+                    ("package_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5567 5592])
+                    ("device_platform" variable (:type "unsigned int") (reparse-symbol classsubparts) [5601 5630])
+                    ("sys_version" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5635 5659])
+                    ("cpu_arch" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5678 5699])
+                    ("ym_sdk_version" variable (:type "unsigned int") (reparse-symbol classsubparts) [5719 5747]))                  
+                :type "struct")
+                nil [5357 5781])
+            ("CFGSVR_MONITOR_ARRAY" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    \"cfgsvr_server_tcp_request_count\", 
+    \"cfgsvr_web_operation_count\",
+    \"cfgsvr_server_config_request_count\",
+    \"cfgsvr_server_heartbeat_count\",
+    \"cfgsvr_server_db_request_count\",
+    \"cfgsvr_server_config_request_succ_count\",
+    \"cfgsvr_server_config_request_fail_count\",
+    \"cfgsvr_server_db_default_config_count\",
+    \"cfgsvr_server_db_default_config_succ_count\",
+    \"cfgsvr_server_db_default_config_fail_count\",
+    \"cfgsvr_server_db_config_svctype_and_ip_count\",
+    \"cfgsvr_server_db_config_svctype_and_ip_succ_count\",
+    \"cfgsvr_server_db_config_svctype_and_ip_fail_count\",
+    \"cfgsvr_web_operation_update_count\",
+    \"cfgsvr_web_operation_delete_count\",
+    \"cfgsvr_web_operation_update_succ_count\",
+    \"cfgsvr_web_operation_update_fail_count\",
+    \"cfgsvr_web_operation_delete_succ_count\",
+    \"cfgsvr_web_operation_delete_fail_count\",
+    \"cfgsvr_web_operation_status_count\",
+    \"cfgsvr_web_operation_status_update_count\",
+    \"cfgsvr_web_operation_status_update_succ_count\",
+    \"cfgsvr_web_operation_status_update_fail_count\",
+    \"cfgsvr_web_operation_status_delete_succ_count\",
+    \"cfgsvr_web_operation_status_delete_fail_count\",
+    \"cfgsvr_web_operation_status_redis_count\",
+    \"cfgsvr_web_operation_status_redis_succ_count\",
+    \"cfgsvr_web_operation_status_redis_fail_count\",
+    \"cfgsvr_web_operation_status_redis_update_count\",
+    \"cfgsvr_web_operation_status_redis_update_succ_count\",
+    \"cfgsvr_web_operation_status_redis_update_fail_count\",
+    \"cfgsvr_web_operation_status_redis_delete_count\",
+    \"cfgsvr_web_operation_status_redis_delete_succ_count\",
+    \"cfgsvr_web_operation_status_redis_delete_fail_count\",
+    \"cfgsvr_server_config_reqeust_decode_count\",
+    \"cfgsvr_server_config_request_decode_succ_count\",
+    \"cfgsvr_server_config_request_decode_fail_count\",
+    \"cfgsvr_web_operation_decode_count\",
+    \"cfgsvr_web_operation_decode_succ_count\",
+    \"cfgsvr_web_operation_decode_fail_count\",
+    \"sdkverify_udp_request_count\",
+    \"sdkverify_udp_request_succ_count\",
+    \"sdkverify_udp_request_fail_count\",
+    \"sdkverify_request_decode_count\",
+    \"sdkverify_request_decode_succ_count\",
+    \"sdkverify_request_decode_fail_count\",
+    \"sdkverify_request_server_busy_count\",
+    \"sdkverify_request_query_appkey_count\",
+    \"sdkverify_request_query_appkey_succ_count\",
+    \"sdkverify_request_query_appkey_fail_count\",
+    \"sdkverify_request_query_appkey_default_count\",
+    \"sdkverify_request_query_appkey_default_succ_count\",
+    \"sdkverify_request_query_appkey_default_fail_count\",
+    \"sdkverify_request_query_client_info_by_appkey_count\",
+    \"sdkverify_request_query_client_info_by_appkey_succ_count\",
+    \"sdkverify_request_query_client_info_by_appkey_fail_count\",
+    \"sdkverify_request_set_privatekey_count\",
+    \"sdkveriy_request_set_privatekey_succ_count\",
+    \"sdkverify_request_set_privatekey_fail_count\",
+    \"sdkverify_request_privatekey_decode_count\",
+    \"sdkverify_request_privatekey_decode_succ_count\",
+    \"sdkverify_request_privatekey_decode_fail_count\",
+    \"sdkverify_request_db_config_query_count\",
+    \"sdkverify_request_db_config_query_succ_count\",
+    \"sdkverify_request_db_config_query_fail_count\",
+    \"sdkverify_request_db_default_config_query_count\",
+    \"sdkverify_request_db_default_config_query_succ_count\",
+    \"sdkverify_request_db_default_config_query_fail_count\",
+    \"sdkverify_request_db_config_ymsdkversion_query_count\",
+    \"sdkverify_request_db_config_ymsdkversion_query_succ_count\",
+    \"sdkverify_request_db_config_ymsdkversion_query_fail_count\",
+    \"sdkverify_request_db_config_cpuarch_query_count\",
+    \"sdkverify_request_db_config_cpuarch_query_succ_count\",
+    \"sdkverify_request_db_config_cpuarch_query_fail_count\",
+    \"sdkverify_request_db_config_deviceplatform_query_count\",
+    \"sdkverify_request_db_config_deviceplatform_query_succ_count\",
+    \"sdkverify_request_db_config_deviceplatform_query_fail_count\",
+    \"sdkverify_request_db_config_sysversion_query_count\",
+    \"sdkverify_request_db_config_sysversion_query_succ_count\",
+    \"sdkverify_request_db_config_sysversion_query_fail_count\",
+    \"sdkverify_request_db_config_sysversion_and_deviceplatform_query_count\",
+    \"sdkverify_request_db_config_sysversion_and_deviceplatform_query_succ_count\",
+    \"sdkverify_request_db_config_sysversion_and_deviceplatform_query_fail_count\",
+    \"sdkverify_request_db_config_appkey_query_count\",
+    \"sdkverify_request_db_config_appkey_query_succ_count\",
+    \"sdkverify_request_db_config_appkey_query_fail_count\",
+    \"sdkverify_request_db_config_packagename_query_count\",
+    \"sdkverify_request_db_config_packagename_query_succ_count\",
+    \"sdkverify_request_db_config_packagename_query_fail_count\",
+    \"sdkverify_request_db_config_appkey_and_packagename_query_count\",
+    \"sdkverify_request_db_config_appkey_and_packagename_query_succ_count\",
+    \"sdkverify_request_db_config_appkey_and_packagename_query_fail_count\",
+    \"sdkverify_request_db_config_brand_query_count\",
+    \"sdkverify_request_db_config_brand_query_succ_count\",
+    \"sdkverify_request_db_config_brand_query_fail_count\",
+    \"sdkverify_request_db_config_model_query_count\",
+    \"sdkverify_request_db_config_model_query_succ_count\",
+    \"sdkverify_request_db_config_model_query_fail_count\",
+    \"sdkverify_request_db_config_brand_and_model_query_count\",
+    \"sdkverify_request_db_config_brand_and_model_query_succ_count\",
+    \"sdkverify_request_db_config_brand_and_model_query_fail_count\",
+    \"sdkverify_request_db_config_deviceimei_query_count\",
+    \"sdkverify_request_db_config_deviceimei_query_succ_count\",
+    \"sdkverify_request_db_config_deviceimei_query_fail_count\",
+    \"sdkverify_request_redis_redirect_query_count\",
+    \"sdkverify_request_redis_redirect_query_succ_count\",
+    \"sdkverify_request_redis_redirect_query_fail_count\",
+    \"sdkverify_request_privatekey_encode_count\",
+    \"sdkverify_request_privatekey_encode_succ_count\",
+    \"sdkverify_request_privatekey_encode_fail_count\"
+}"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [5796 11808]))          
+      :file "cfgsvr_common.h"
+      :pointmax 11931
+      :fsize 12917
+      :lastmodtime '(22440 34310 86495 900000)
+      :unmatched-syntax '((punctuation 11922 . 11923) (semantic-list 11909 . 11922) (SIZEOF 11903 . 11909) (punctuation 11901 . 11902) (semantic-list 11878 . 11900) (SIZEOF 11872 . 11878) (punctuation 11870 . 11871) (symbol 11842 . 11869) (symbol 11835 . 11841) (CONST 11829 . 11834) (STATIC 11822 . 11828) (punctuation 1801 . 1802) (semantic-list 1788 . 1801) (SIZEOF 1782 . 1788) (punctuation 1781 . 1782) (semantic-list 1763 . 1781) (SIZEOF 1757 . 1763) (punctuation 1755 . 1756) (symbol 1731 . 1754) (INT 1727 . 1730) (STATIC 1720 . 1726))
+      :lexical-table 
+        '(("CFGSVR_COMMON_H_")
+          ("SERVER_TCP_PORT" . ((number "8006" 640 . 644)))
+          ("SERVER_WEB_PORT" . ((number "8007" 669 . 673)))
+          ("SERVER_UDP_PORT" . ((number "8008" 698 . 702)))
+          ("CLIENT_TCP_PORT" . ((number "8010" 727 . 731)))
+          ("SDK_VERIFY_OLD_MSG_VERSION" . ((number "1" 809 . 810)))
+          ("SDK_VERIFY_NEW_MSG_VERSION" . ((number "2" 846 . 847)))
+          ("CLIENT_UDP_PORT" . ((number "8012" 756 . 760)))
+          )
+)
+    (semanticdb-table "cfgsvr_conf_mgr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_conf_mgr.h" include nil nil [510 538])
+            ("cfgsvr_spp_container.h" include nil nil [539 572])
+            ("CfgSvrConfMgr::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                nil [574 621])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrConfMgr"
+                :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                nil [623 770])
+            ("clean_instance" function
+               (:parent "CfgSvrConfMgr"
+                :type "void")
+                nil [772 895])
+            ("CfgSvrConfMgr" function
+               (:constructor-flag t
+                :parent "CfgSvrConfMgr"
+                :type ("CfgSvrConfMgr" type (:type "class") nil nil))
+                nil [897 1203])
+            ("CfgSvrConfMgr" function
+               (:destructor-flag t
+                :parent "CfgSvrConfMgr"
+                :type "void")
+                nil [1205 1240])
+            ("init_config" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("config_path" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1274 1299]))                  
+                :type "void")
+                nil [1242 11323])
+            ("reload_config" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("config_path" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11359 11379]))                  
+                :type "void")
+                nil [11325 11617])
+            ("set_server_tcp_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [11659 11679]))                  
+                :type "void")
+                nil [11619 11894])
+            ("get_server_tcp_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [11896 12175])
+            ("set_server_web_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [12217 12237]))                  
+                :type "void")
+                nil [12177 12452])
+            ("get_server_web_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [12454 12733])
+            ("set_server_udp_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [12775 12795]))                  
+                :type "void")
+                nil [12735 13010])
+            ("get_server_udp_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [13012 13291])
+            ("set_client_tcp_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [13333 13353]))                  
+                :type "void")
+                nil [13293 13568])
+            ("get_client_tcp_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [13570 13849])
+            ("set_client_udp_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [13891 13911]))                  
+                :type "void")
+                nil [13851 14126])
+            ("get_client_udp_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [14128 14407])
+            ("set_db_host" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("host" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14441 14459]))                  
+                :type "void")
+                nil [14409 14667])
+            ("get_db_host" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [14669 14926])
+            ("set_db_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [14960 14980]))                  
+                :type "void")
+                nil [14928 15184])
+            ("get_db_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [15186 15434])
+            ("set_db_user" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("user" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15468 15486]))                  
+                :type "void")
+                nil [15436 15694])
+            ("get_db_user" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [15696 15953])
+            ("set_db_password" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("password" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15991 16013]))                  
+                :type "void")
+                nil [15955 16236])
+            ("get_db_password" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [16238 16506])
+            ("set_timer_task_interval" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("interval" variable (:type "int") (reparse-symbol arg-sub-list) [16552 16565]))                  
+                :type "void")
+                nil [16508 16797])
+            ("get_timer_task_interval" function
+               (:parent "CfgSvrConfMgr"
+                :type "int")
+                nil [16799 17083])
+            ("set_sdk_need_encrypt_data" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17131 17149]))                  
+                :type "void")
+                nil [17085 17385])
+            ("get_sdk_need_encrypt_data" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [17387 17699])
+            ("set_sdk_max_package_count" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17747 17766]))                  
+                :type "void")
+                nil [17701 17995])
+            ("get_sdk_max_package_count" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned int")
+                nil [17997 18299])
+            ("set_client_retry_time" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("retry_time" variable (:type "int") (reparse-symbol arg-sub-list) [18343 18358]))                  
+                :type "void")
+                nil [18301 18589])
+            ("get_client_retry_time" function
+               (:parent "CfgSvrConfMgr"
+                :type "int")
+                nil [18591 18867])
+            ("set_redis_host" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("host" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18904 18922]))                  
+                :type "void")
+                nil [18869 19137])
+            ("get_redis_host" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [19139 19405])
+            ("set_redis_port" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [19442 19462]))                  
+                :type "void")
+                nil [19407 19669])
+            ("get_redis_port" function
+               (:parent "CfgSvrConfMgr"
+                :type "unsigned short")
+                nil [19671 19931])
+            ("set_redirect_host_name" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19977 19995]))                  
+                :type "void")
+                nil [19934 20225])
+            ("get_redirect_host_name" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [20227 20529])
+            ("set_redirect_port_name" function
+               (:parent "CfgSvrConfMgr"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20574 20592]))                  
+                :type "void")
+                nil [20531 20822])
+            ("get_redirect_port_name" function
+               (:parent "CfgSvrConfMgr"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [20824 21126]))          
+      :file "cfgsvr_conf_mgr.cpp"
+      :pointmax 21128
+      :fsize 22222
+      :lastmodtime '(22440 34310 85495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_db_process.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_db_process.h" include nil nil [512 542])
+            ("cfgsvr_spp_container.h" include nil nil [543 576])
+            ("common/zen_mysql_process.h" include nil nil [577 614])
+            ("CfgSvrDBProcess::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrDBProcess" type (:type "class") nil nil))
+                nil [616 667])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrDBProcess"
+                :type ("CfgSvrDBProcess" type (:type "class") nil nil))
+                nil [669 826])
+            ("clean_instance" function
+               (:parent "CfgSvrDBProcess"
+                :type "void")
+                nil [828 947])
+            ("CfgSvrDBProcess" function
+               (:constructor-flag t
+                :parent "CfgSvrDBProcess"
+                :type ("CfgSvrDBProcess" type (:type "class") nil nil))
+                nil [949 988])
+            ("CfgSvrDBProcess" function
+               (:destructor-flag t
+                :parent "CfgSvrDBProcess"
+                :type "void")
+                nil [990 1066])
+            ("db_init" function
+               (:parent "CfgSvrDBProcess"
+                :arguments 
+                  ( ("ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1097 1112])
+                    ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1138 1158])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1184 1201])
+                    ("password" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1227 1248]))                  
+                :type "int")
+                nil [1068 1820])
+            ("db_exit" function
+               (:parent "CfgSvrDBProcess"
+                :type "void")
+                nil [1822 1902])
+            ("db_query" function
+               (:parent "CfgSvrDBProcess"
+                :arguments 
+                  ( ("sql_cmd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1934 1954])
+                    ("num_affect" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1982 2007])
+                    ("db_result" variable
+                       (:reference 1
+                        :type ("ZEN_Mysql_Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2036 2064])
+                    ("sql_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2092 2113]))                  
+                :type "int")
+                nil [1904 2503])
+            ("db_update" function
+               (:parent "CfgSvrDBProcess"
+                :arguments 
+                  ( ("sql_cmd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2536 2556])
+                    ("sql_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2557 2581])
+                    ("num_affect" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2582 2607])
+                    ("insertid" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [2608 2631]))                  
+                :type "int")
+                nil [2505 3102]))          
+      :file "cfgsvr_db_process.cpp"
+      :pointmax 3102
+      :fsize 3270
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_mcu_svr_mgr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_mcu_svr_mgr.h" include nil nil [511 542])
+            ("cfgsvr_spp_container.h" include nil nil [543 576])
+            ("cfgsvr_redis_process.h" include nil nil [577 610])
+            ("cfgsvr_monitor_handler.h" include nil nil [611 646])
+            ("CfgSvrMcuSvrMgr::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrMcuSvrMgr" type (:type "class") nil nil))
+                nil [648 699])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrMcuSvrMgr"
+                :type ("CfgSvrMcuSvrMgr" type (:type "class") nil nil))
+                nil [701 855])
+            ("clean_instance" function
+               (:parent "CfgSvrMcuSvrMgr"
+                :type "void")
+                nil [857 982])
+            ("CfgSvrMcuSvrMgr" function
+               (:constructor-flag t
+                :parent "CfgSvrMcuSvrMgr"
+                :type ("CfgSvrMcuSvrMgr" type (:type "class") nil nil))
+                nil [984 1022])
+            ("CfgSvrMcuSvrMgr" function
+               (:destructor-flag t
+                :parent "CfgSvrMcuSvrMgr"
+                :type "void")
+                nil [1024 1085])
+            ("set_mcu_status" function
+               (:parent "CfgSvrMcuSvrMgr"
+                :arguments 
+                  ( ("ip" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1123 1139])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1140 1160]))                  
+                :type "int")
+                nil [1087 3216])
+            ("delete_mcu_status" function
+               (:parent "CfgSvrMcuSvrMgr"
+                :arguments 
+                  ( ("ip" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3257 3273])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3274 3294]))                  
+                :type "int")
+                nil [3218 5276]))          
+      :file "cfgsvr_mcu_svr_mgr.cpp"
+      :pointmax 5277
+      :fsize 5518
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_monitor_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_monitor_handler.h" include nil nil [516 551])
+            ("cfgsvr_spp_container.h" include nil nil [552 585])
+            ("cfgsvr_conf_mgr.h" include nil nil [586 614])
+            ("CfgSvrMonitorHandler::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrMonitorHandler" type (:type "class") nil nil))
+                nil [616 677])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrMonitorHandler"
+                :type ("CfgSvrMonitorHandler" type (:type "class") nil nil))
+                nil [679 847])
+            ("clean_instance" function
+               (:parent "CfgSvrMonitorHandler"
+                :type "void")
+                nil [849 979])
+            ("CfgSvrMonitorHandler" function
+               (:constructor-flag t
+                :parent "CfgSvrMonitorHandler"
+                :type ("CfgSvrMonitorHandler" type (:type "class") nil nil))
+                nil [981 1033])
+            ("CfgSvrMonitorHandler" function
+               (:destructor-flag t
+                :parent "CfgSvrMonitorHandler"
+                :type "void")
+                nil [1035 1084])
+            ("init_monitor" function
+               (:parent "CfgSvrMonitorHandler"
+                :type "void")
+                nil [1086 1685])
+            ("reset_monitor" function
+               (:parent "CfgSvrMonitorHandler"
+                :type "void")
+                nil [1687 2394])
+            ("report_monitor" function
+               (:parent "CfgSvrMonitorHandler"
+                :type "int")
+                nil [2396 3763])
+            ("add_monitor_item_value" function
+               (:parent "CfgSvrMonitorHandler"
+                :arguments 
+                  ( ("item" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3814 3832]))                  
+                :type "int")
+                nil [3765 4629]))          
+      :file "cfgsvr_monitor_handler.cpp"
+      :pointmax 4631
+      :fsize 4868
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_redirect_svr_mgr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_redirect_svr_mgr.h" include nil nil [517 553])
+            ("cfgsvr_spp_container.h" include nil nil [554 587])
+            ("cfgsvr_redis_process.h" include nil nil [588 621])
+            ("cfgsvr_monitor_handler.h" include nil nil [622 657])
+            ("CfgSvrRedirectSvrMgr::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                nil [659 720])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrRedirectSvrMgr"
+                :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                nil [722 891])
+            ("clean_instance" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :type "void")
+                nil [893 1023])
+            ("CfgSvrRedirectSvrMgr" function
+               (:constructor-flag t
+                :parent "CfgSvrRedirectSvrMgr"
+                :type ("CfgSvrRedirectSvrMgr" type (:type "class") nil nil))
+                nil [1025 1136])
+            ("CfgSvrRedirectSvrMgr" function
+               (:destructor-flag t
+                :parent "CfgSvrRedirectSvrMgr"
+                :type "void")
+                nil [1138 1209])
+            ("get_redirect_server" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :arguments 
+                  ( ("ip" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1273])
+                    ("port" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1274 1292])
+                    ("is_tcp" variable (:type "bool") (reparse-symbol arg-sub-list) [1293 1305]))                  
+                :type "int")
+                nil [1211 5168])
+            ("get_random_index" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :arguments 
+                  ( ("elements" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5213 5229]))                  
+                :type "int")
+                nil [5170 5511])
+            ("filter_redirect_server" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :arguments 
+                  ( ("redirect_vector" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5562 5599])
+                    ("redirect_reply" variable
+                       (:pointer 1
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5600 5627]))                  
+                :type "int")
+                nil [5513 8082])
+            ("set_redirect_status" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :arguments 
+                  ( ("ip" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8130 8146])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8147 8167]))                  
+                :type "int")
+                nil [8084 9589])
+            ("delete_redirect_status" function
+               (:parent "CfgSvrRedirectSvrMgr"
+                :arguments 
+                  ( ("ip" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9640 9656])
+                    ("status" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9657 9677]))                  
+                :type "int")
+                nil [9591 11056]))          
+      :file "cfgsvr_redirect_svr_mgr.cpp"
+      :pointmax 11056
+      :fsize 11721
+      :lastmodtime '(22440 34310 86495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_redis_process.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_redis_process.h" include nil nil [515 548])
+            ("cfgsvr_spp_container.h" include nil nil [549 582])
+            ("cfgsvr_conf_mgr.h" include nil nil [583 611])
+            ("CfgSvrRedisProcess::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrRedisProcess" type (:type "class") nil nil))
+                nil [613 670])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrRedisProcess"
+                :type ("CfgSvrRedisProcess" type (:type "class") nil nil))
+                nil [672 834])
+            ("clean_instance" function
+               (:parent "CfgSvrRedisProcess"
+                :type "void")
+                nil [836 964])
+            ("CfgSvrRedisProcess" function
+               (:constructor-flag t
+                :parent "CfgSvrRedisProcess"
+                :type ("CfgSvrRedisProcess" type (:type "class") nil nil))
+                nil [966 1086])
+            ("CfgSvrRedisProcess" function
+               (:destructor-flag t
+                :parent "CfgSvrRedisProcess"
+                :type "void")
+                nil [1088 1174])
+            ("redis_init" function
+               (:parent "CfgSvrRedisProcess"
+                :arguments 
+                  ( ("host" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1212 1230])
+                    ("port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1231 1251]))                  
+                :type "int")
+                nil [1177 2069])
+            ("redis_reinit" function
+               (:parent "CfgSvrRedisProcess"
+                :type "int")
+                nil [2071 3037])
+            ("select_database" function
+               (:pointer 1
+                :parent "CfgSvrRedisProcess"
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("redisContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3089 3111]))                  
+                :type ("redisContext" type (:type "class") nil nil))
+                nil [3039 3853])
+            ("redis_exit" function
+               (:parent "CfgSvrRedisProcess"
+                :type "int")
+                nil [3855 4726])
+            ("process_command" function
+               (:pointer 1
+                :parent "CfgSvrRedisProcess"
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4776 4797]))                  
+                :type ("redisReply" type (:type "class") nil nil))
+                nil [4728 6624])
+            ("free_redis_reply" function
+               (:parent "CfgSvrRedisProcess"
+                :arguments 
+                  ( ("reply" variable
+                       (:pointer 1
+                        :type ("redisReply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6667 6685]))                  
+                :type "int")
+                nil [6626 7153]))          
+      :file "cfgsvr_redis_process.cpp"
+      :pointmax 7153
+      :fsize 7562
+      :lastmodtime '(22440 34310 87495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_sdk_verify.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_sdk_verify.h" include nil nil [512 542])
+            ("cfgsvr_spp_container.h" include nil nil [543 576])
+            ("cfgsvr_db_process.h" include nil nil [577 607])
+            ("cfgsvr_redirect_svr_mgr.h" include nil nil [608 644])
+            ("cfgsvr_conf_mgr.h" include nil nil [645 673])
+            ("cfgsvr_monitor_handler.h" include nil nil [674 709])
+            ("CfgSvrSDKVerify::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [711 762])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrSDKVerify"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [764 917])
+            ("clean_instance" function
+               (:parent "CfgSvrSDKVerify"
+                :type "void")
+                nil [919 1038])
+            ("CfgSvrSDKVerify" function
+               (:constructor-flag t
+                :parent "CfgSvrSDKVerify"
+                :type ("CfgSvrSDKVerify" type (:type "class") nil nil))
+                nil [1040 1135])
+            ("CfgSvrSDKVerify" function
+               (:destructor-flag t
+                :parent "CfgSvrSDKVerify"
+                :type "void")
+                nil [1137 1198])
+            ("search_client_info" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("sdk_condi" variable
+                       (:reference 1
+                        :type ("SDKSearchCondition" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1240 1270])
+                    ("client_info" variable
+                       (:reference 1
+                        :type ("ClientInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1271 1295]))                  
+                :type "int")
+                nil [1200 11041])
+            ("search_client_info_by_appkey" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("app_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11093 11109])
+                    ("client_info" variable
+                       (:reference 1
+                        :type ("ClientInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11110 11134]))                  
+                :type "int")
+                nil [11043 11661])
+            ("search_sdk_verify_info" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("sdk_condi" variable
+                       (:reference 1
+                        :type ("SDKSearchCondition" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11708 11738])
+                    ("sdk_verify_info" variable
+                       (:reference 1
+                        :type ("SDKVerifyAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11739 11773])
+                    ("is_tcp" variable (:type "bool") (reparse-symbol arg-sub-list) [11774 11786]))                  
+                :type "int")
+                nil [11664 39735])
+            ("process_sdk_verify_info" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("sql" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39783 39799])
+                    ("sql_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [39853 39877])
+                    ("sdk_verify_info" variable
+                       (:reference 1
+                        :type ("SDKVerifyAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39931 39965])
+                    ("flag" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [40019 40030]))                  
+                :type "int")
+                nil [39738 42076])
+            ("set_name_value" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42115 42133])
+                    ("value" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42134 42153]))                  
+                :type "void")
+                nil [42078 42878])
+            ("set_name_type" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42916 42934])
+                    ("type" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [42935 42954]))                  
+                :type "void")
+                nil [42880 43646])
+            ("rsa_generate_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("output_public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43686 43712])
+                    ("output_private_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43713 43740])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43741 43757]))                  
+                :type "int")
+                nil [43648 45311])
+            ("rsa_set_public_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45353 45372])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45373 45389]))                  
+                :type "int")
+                nil [45313 45926])
+            ("rsa_set_private_key" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("public_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45969 45988])
+                    ("private_key" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45989 46009])
+                    ("modulus" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46010 46026]))                  
+                :type "int")
+                nil [45928 47456])
+            ("rsa_public_key_encrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47502 47519])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [47520 47540])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47541 47561]))                  
+                :type "int")
+                nil [47458 48501])
+            ("rsa_private_key_encrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48548 48565])
+                    ("iBufferLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48566 48590])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48591 48611]))                  
+                :type "int")
+                nil [48503 49858])
+            ("rsa_public_key_decrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49904 49921])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [49922 49942])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49943 49963]))                  
+                :type "int")
+                nil [49860 50957])
+            ("rsa_private_key_decrypt" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51004 51021])
+                    ("iBufferLen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [51022 51046])
+                    ("output_result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51047 51067]))                  
+                :type "int")
+                nil [50959 52058])
+            ("base64_encode" function
+               (:pointer 1
+                :parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("bindata" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [52097 52126])
+                    ("base64" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52127 52140])
+                    ("binlength" variable (:type "int") (reparse-symbol arg-sub-list) [52141 52155]))                  
+                :type "char")
+                nil [52060 53181])
+            ("base64_decode" function
+               (:parent "CfgSvrSDKVerify"
+                :arguments 
+                  ( ("base64" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53218 53237])
+                    ("bindata" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [53237 53260]))                  
+                :type "int")
+                nil [53183 54352]))          
+      :file "cfgsvr_sdk_verify.cpp"
+      :pointmax 54352
+      :fsize 57082
+      :lastmodtime '(22440 34310 81495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_server_info_mgr.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_server_info_mgr.h" include nil nil [517 552])
+            ("cfgsvr_spp_container.h" include nil nil [553 586])
+            ("cfgsvr_db_process.h" include nil nil [587 617])
+            ("cfgsvr_monitor_handler.h" include nil nil [618 653])
+            ("CfgSvrServerInfoMgr::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrServerInfoMgr" type (:type "class") nil nil))
+                nil [655 714])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrServerInfoMgr"
+                :type ("CfgSvrServerInfoMgr" type (:type "class") nil nil))
+                nil [716 878])
+            ("clean_instance" function
+               (:parent "CfgSvrServerInfoMgr"
+                :type "void")
+                nil [880 1003])
+            ("CfgSvrServerInfoMgr" function
+               (:constructor-flag t
+                :parent "CfgSvrServerInfoMgr"
+                :type ("CfgSvrServerInfoMgr" type (:type "class") nil nil))
+                nil [1005 1052])
+            ("CfgSvrServerInfoMgr" function
+               (:destructor-flag t
+                :parent "CfgSvrServerInfoMgr"
+                :type "void")
+                nil [1054 1123])
+            ("search_server_info" function
+               (:parent "CfgSvrServerInfoMgr"
+                :arguments 
+                  ( ("svc_type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1169 1191])
+                    ("svc_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1232 1252])
+                    ("internal_ip" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1293 1317])
+                    ("bind_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1358 1383])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1424 1451]))                  
+                :type "int")
+                nil [1125 6230])
+            ("search_server_info_by_ip" function
+               (:parent "CfgSvrServerInfoMgr"
+                :arguments 
+                  ( ("internal_ip" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6282 6307])
+                    ("bind_port" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [6355 6380])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6428 6455]))                  
+                :type "int")
+                nil [6232 6938])
+            ("search_server_info_by_id" function
+               (:parent "CfgSvrServerInfoMgr"
+                :arguments 
+                  ( ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6990 7006])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7006 7033]))                  
+                :type "int")
+                nil [6940 9408])
+            ("search_server_info_by_sql" function
+               (:parent "CfgSvrServerInfoMgr"
+                :arguments 
+                  ( ("sql_cmd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9461 9481])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9483 9503])
+                    ("server_info" variable
+                       (:reference 1
+                        :type ("ServerAllInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9504 9531])
+                    ("flag" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [9532 9543]))                  
+                :type "int")
+                nil [9410 11323]))          
+      :file "cfgsvr_server_info_mgr.cpp"
+      :pointmax 11324
+      :fsize 11912
+      :lastmodtime '(22440 34310 84495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cfgsvr_timer_handler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cfgsvr_timer_handler.h" include nil nil [515 548])
+            ("cfgsvr_spp_container.h" include nil nil [549 582])
+            ("cfgsvr_monitor_handler.h" include nil nil [583 618])
+            ("CfgSvrTimerHandler::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("CfgSvrTimerHandler" type (:type "class") nil nil))
+                nil [620 677])
+            ("instance" function
+               (:pointer 1
+                :parent "CfgSvrTimerHandler"
+                :type ("CfgSvrTimerHandler" type (:type "class") nil nil))
+                nil [679 841])
+            ("clean_instance" function
+               (:parent "CfgSvrTimerHandler"
+                :type "void")
+                nil [843 969])
+            ("CfgSvrTimerHandler" function
+               (:constructor-flag t
+                :parent "CfgSvrTimerHandler"
+                :type ("CfgSvrTimerHandler" type (:type "class") nil nil))
+                nil [971 1016])
+            ("CfgSvrTimerHandler" function
+               (:destructor-flag t
+                :parent "CfgSvrTimerHandler"
+                :type "void")
+                nil [1018 1085])
+            ("handle_timer_task" function
+               (:parent "CfgSvrTimerHandler"
+                :type "void")
+                nil [1087 1462]))          
+      :file "cfgsvr_timer_handler.cpp"
+      :pointmax 1462
+      :fsize 1539
+      :lastmodtime '(22440 34310 83495 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "zerg_buf_storage.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("zerg_buf_storage.h" include nil nil [512 541])
+            ("ZBuffer_Storage::instance_" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("ZBuffer_Storage" type (:type "class") nil nil))
+                nil [766 817])
+            ("ZByteBuffer" function
+               (:constructor-flag t
+                :parent "ZByteBuffer"
+                :type ("ZByteBuffer" type (:type "class") nil nil))
+                nil [819 894])
+            ("ZByteBuffer" function
+               (:destructor-flag t
+                :parent "ZByteBuffer"
+                :type "void")
+                nil [899 930])
+            ("fill_write_data" function
+               (:parent "ZByteBuffer"
+                :arguments 
+                  ( ("szdata" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [968 988])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [989 1006]))                  
+                :type "int")
+                nil [935 1289])
+            ("get_read_data" function
+               (:parent "ZByteBuffer"
+                :arguments 
+                  ( ("szdata" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1325 1339])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1340 1351]))                  
+                :type "int")
+                nil [1294 1667])
+            ("adjust_buffer" function
+               (:parent "ZByteBuffer"
+                :type "void")
+                nil [1669 1978])
+            ("clear_buffer" function
+               (:parent "ZByteBuffer"
+                :type "void")
+                nil [1980 2064])
+            ("ZBuffer_Storage" function
+               (:constructor-flag t
+                :parent "ZBuffer_Storage"
+                :type ("ZBuffer_Storage" type (:type "class") nil nil))
+                nil [2292 2392])
+            ("ZBuffer_Storage" function
+               (:destructor-flag t
+                :parent "ZBuffer_Storage"
+                :type "void")
+                nil [2396 2461])
+            ("init_buflist_by_hdlnum" function
+               (:parent "ZBuffer_Storage"
+                :arguments 
+                  ( ("num_of_hdl" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2546 2564]))                  
+                :type "void")
+                nil [2501 2859])
+            ("init_buffer_list" function
+               (:parent "ZBuffer_Storage"
+                :arguments 
+                  ( ("szlist" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2917]))                  
+                :type "void")
+                nil [2864 2952])
+            ("uninit_buffer_list" function
+               (:parent "ZBuffer_Storage"
+                :type "void")
+                nil [2957 3260])
+            ("allocate_buffer" function
+               (:pointer 1
+                :parent "ZBuffer_Storage"
+                :type ("ZByteBuffer" type (:type "class") nil nil))
+                nil [3263 3535])
+            ("free_byte_buffer" function
+               (:parent "ZBuffer_Storage"
+                :arguments 
+                  ( ("ptrbuf" variable
+                       (:pointer 1
+                        :type ("ZByteBuffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3579 3599]))                  
+                :type "void")
+                nil [3540 3688])
+            ("extend_bufferlist" function
+               (:parent "ZBuffer_Storage"
+                :arguments 
+                  ( ("szlist" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3731 3745]))                  
+                :type "void")
+                nil [3691 4017])
+            ("instance" function
+               (:pointer 1
+                :parent "ZBuffer_Storage"
+                :type ("ZBuffer_Storage" type (:type "class") nil nil))
+                nil [4031 4184])
+            ("clean_instance" function
+               (:parent "ZBuffer_Storage"
+                :type "void")
+                nil [4195 4329]))          
+      :file "zerg_buf_storage.cpp"
+      :pointmax 4331
+      :fsize 4612
+      :lastmodtime '(22440 34310 83495 900000)
+      :unmatched-syntax nil))
+  :file "!data!home!coolor!src!RTC2.0!spp_2.10.4_final!module!confserver!src!cfgsvr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
