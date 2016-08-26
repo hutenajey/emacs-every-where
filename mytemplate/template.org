@@ -1,0 +1,9 @@
+#name: head
+# --
+#+TITLE: $1
+#+AUTHOR: Coolor (nanju huang)
+#+DATE: `(format-time-string "%Y-%m-%d %H:%M:%S" (current-time))`
+#+EMAIL: 721268547@qq.com
+#+STARTUP: indent showall
+
+$2

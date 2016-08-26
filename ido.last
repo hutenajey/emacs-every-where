@@ -68,6 +68,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/data/home/coolor/"
  "/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/"
  "/data/home/coolor/.emacs.d/lisp/"
  "/data/home/coolor/.emacs.d/"
@@ -114,6 +115,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "todo.org"
+ "hello.org"
  "stgysvr_spp_main.cpp"
  "stgysvr_conf_mgr.h"
  "init-desktop.el"
@@ -122,27 +125,27 @@
  "init-session.el"
  "stgysvr_process.cpp"
  "redis_helper.cpp"
- "stgysvr_msg_handler.h"
- "youme_common.proto"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/data/home/coolor/" (22463 50269 67923 869000) "../" "RTC2.0/" ".bashrc" ".pki/" "package/" "tools/" ".bash_logout" "todo.org" ".bash_history" ".subversion/" ".#hello.org" ".emacs.d/" "todo.org_archive" ".gnupg/" "src/" "./" "obj/" ".dir_colors" ".vim/" ".viminfo" ".bash_profile")
+
+ ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/" (22451 53673 413808 655000) "OTMonitor.cpp" "OTBridgeInfo.h" "OTCodec.h" "cfg/" "OTObject.cpp" "../" "OTCommon.h" "OTRole.h" "OTObject.h" "mcu_audio_session_handler.cpp" "room.cpp" "OTRedisReport.h" "tinywrap/" "OTMutex.cpp" "OTProcess.h" "YoumeCallSession.cpp" "OTMonitor.h" "McuMonitorHandle.h" "OTMutex.h" "room.h" "mcu_seq_generator.cpp" "OTSessionInfo.h" "OTWrap.h" "mcu_call_session_object_mgr.cpp" "OTCodec.cpp" "OTBridge.h" "OTBridge.cpp" "OpenTelepresenceAPI.h" "mcu_audio_session_handler.h" "patterns/" "YoumeCallSession.h" "OTEngine.h" ".svn/" "OTBridgeInfo.cpp" "platforms/" "OTEngine.cpp" "protobuf/" "OTRedisReport.cpp" "mcu_seq_generator.h" "OpenTelepresenceConfig.h" "mcu_common.h" "OTWrap.cpp" "OTProcess.cpp" "McuMonitorHandle.cpp" "mcu_predefine.h" "./" "mcu_call_session_object_mgr.h" "Makefile" "main.cpp" "OTSessionInfo.cpp")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/protobuf/" (22462 27712 353678 479000) "../" "youme_server_common.proto" "youme_client_common.proto" "youme_mcu_strategy.proto" "youme_client_common.pb.h" "youme_common.proto" ".svn/" "youme_common.pb.h" "youme_mcu_strategy.pb.cpp" "youme_mcu_room.pb.h" "youme_server_common.pb.cpp" "youme_mcu_strategy.pb.h" "youme_client_common.pb.cpp" "youme_mcu_room.proto" "./" "youme_common.pb.cpp" "youme_mcu_room.pb.cpp" "youme_server_common.pb.h")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/common/" (22462 27712 323678 479000) "zen_mysql_process.h" "zen_mysql_command.cpp" "zen_mysql_predefine.h" "../" "zen_mysql_result.h" "zen_boost_lord_rings.h" "rapidxml_iterators.hpp" "zen_boost_non_copyable.h" "zen_mysql_command.h" "rapidxml_utils.hpp" "zen_mysql_field.h" ".svn/" "zen_mysql_result.cpp" "zen_mysql_connect.h" "zen_mysql_connect.cpp" "rapidxml_print.hpp" "rapidxml.hpp" "zen_mysql_field.cpp" "zen_mysql_process.cpp" "./")
+
+ ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/" (22462 27712 377678 479000) "stgysvr_msg_handler.cpp" "redis_dao_interface.h" "redis_dao_interface.cpp" "stgysvr_room_session.cpp" "youme_db_process.h" "youme_utils.h" "youme_db_process.cpp" "../" "stgysvr_conf_mgr.cpp" "#stgysvr_spp_main.cpp#" "stgysvr_room_session.h" "stgysvr_conf_mgr.h" "youme_spp_container.cpp" "stgysvr_common.h" "stgysvr_room_mgr.h" "common/" "stgysvr_spp_main.cpp" "youme_spp_container.h" "tcp_manager.h" "config/" "stgysvr_room_mgr.cpp" ".svn/" "youme_utils.cpp" "protobuf/" "stgysvr_msg_handler.h" "youme_redis_helper.h" "./" "Makefile" "stgysvr_predefine.h" "tcp_manager.cpp" "youme_redis_helper.cpp")
+
+ ("/data/home/coolor/.emacs.d/" (22463 49982 211414 137000) "lisp/" ".gitignore" "recentf" "../" ".git/" "ido.last~" "snippets/" "recentf~" "README.md" "LICENSE" "elpa/" "ac-comphist.dat" "init.el" "mytemplate/" "auto-save-list/" "ede-projects.el" ".mc-lists.el" "ido.last" "custom.el~" "custom.el" "./" "semanticdb/" "smex-items" "srecode-map.el")
+
+ ("/data/home/coolor/.emacs.d/lisp/" (22463 50225 581923 910000) "custom-themes/" "init-ido.el" "init-auctex.el" "../" "init-cscope.el" "init-ecb.el" "init-helm.el" "init-git.el" "init-cedet.el" "init-session.el" "init-haskell.el" "init-helm-gtags.el" "init-fonts.el" "custom-dicts/" "init-hippie-expand.el" "init-recentf.el" "elpa/" "editing-utils/" "init-themes.el" "init-markdown.el" "init-security.el" "init-gtags.el" "init-auto-complete.el" "init-dired.el" "init-ac-source.el" "init-utils.el" "init-matlab.el" "init-yasnippet.el" "init-editing-utils.el" "init-org.el" "init-desktop.el" "init-desktop.el~" "init-slime.el" "./" "init-tabbar.el" "init-exec-path.el" "init-elpa.el" "init-evil.el")
+
  ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/src/cfgsvr/" (22444 8894 343475 555000) "cfgsvr_monitor_handler.cpp" "../" "cfgsvr_db_process.cpp" "cfgsvr_spp_container.cpp" "zerg_buf_storage.h" "cfgsvr_conf_mgr.cpp" "cfgsvr_timer_handler.cpp" "cfgsvr_server_info_mgr.h" "common/" "cfgsvr_service.cpp" "cfgsvr_redis_process.h" "cfgsvr_sdk_verify.cpp" "cfgsvr_msg_handler.cpp" "cfgsvr_conf_mgr.h" "config/" ".svn/" "cfgsvr_db_process.h" "cfgsvr_mcu_svr_mgr.h" "cfgsvr_redirect_svr_mgr.h" "protobuf/" "cfgsvr_timer_handler.h" "cfgsvr_mcu_svr_mgr.cpp" "cfgsvr_redis_process.cpp" "cfgsvr_predefine.h" "cfgsvr_monitor_handler.h" "cfgsvr_spp_container.h" "cfgsvr_sdk_verify.h" "cfgsvr_common.h" "cfgsvr_server_info_mgr.cpp" "./" "cfgsvr_msg_handler.h" "cfgsvr_redirect_svr_mgr.cpp" "Makefile" "zerg_buf_storage.cpp")
 
- ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/common/" (22444 27231 292577 897000) "zen_mysql_process.h" "redis_helper.h" "zen_mysql_command.cpp" "zen_mysql_predefine.h" "../" "zen_mysql_result.h" "zen_boost_lord_rings.h" "rapidxml_iterators.hpp" "zen_boost_non_copyable.h" "zen_mysql_command.h" "rapidxml_utils.hpp" "redis_helper.cpp" "zen_mysql_field.h" ".svn/" "zen_mysql_result.cpp" "zen_mysql_connect.h" "zen_mysql_connect.cpp" "rapidxml_print.hpp" "rapidxml.hpp" "zen_mysql_field.cpp" "zen_mysql_process.cpp" "./")
-
- ("/data/home/coolor/.emacs.d/lisp/" (22445 30035 703908 682000) "custom-themes/" "init-ido.el" "init-auctex.el" "../" "init-cscope.el" "init-ecb.el" "init-helm.el" "init-git.el" "init-cedet.el" "init-session.el" "init-haskell.el" "init-helm-gtags.el" "init-fonts.el" "custom-dicts/" "init-hippie-expand.el" "init-recentf.el" "elpa/" "editing-utils/" "init-themes.el" "init-markdown.el" "init-security.el" "init-gtags.el" "init-auto-complete.el" "init-dired.el" "init-ac-source.el" "init-utils.el" "init-matlab.el" "init-yasnippet.el" "init-editing-utils.el" "init-org.el" "init-desktop.el" "init-desktop.el~" "init-slime.el" "./" "init-tabbar.el" "init-exec-path.el" "init-elpa.el" "init-evil.el")
-
- ("/data/home/coolor/.emacs.d/" (22445 30075 372908 646000) "lisp/" ".gitignore" "recentf" "../" "ido.last~" "snippets/" "recentf~" "README.md" ".session" "elpa/" "ac-comphist.dat" "init.el" "auto-save-list/" "ede-projects.el" ".mc-lists.el" "ido.last" "custom.el~" "custom.el" "./" "semanticdb/" "smex-items" "srecode-map.el")
-
- ("/data/home/coolor/" (22445 29323 566909 322000) "../" ".bashrc" "package/" "tools/" ".bash_logout" ".bash_history" ".subversion/" ".emacs.d/" ".gnupg/" "src/" "./" ".dir_colors" ".vim/" ".viminfo" ".bash_profile")
-
- ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/" (22445 21123 311089 801000) "stgysvr_msg_handler.cpp" "stgysvr_room_session.cpp" "stgysvr_session_mgr.h" "#stgysvr_conf_mgr.cpp#" "../" "stgysvr_conf_mgr.cpp" "stgysvr_room_session.h" "stgysvr_process.cpp" "stgysvr_conf_mgr.h" "stgysvr_common.h" "stgysvr_session_mgr.cpp" "stgysvr_room_mgr.h" "stgysvr_spp_container.h" "common/" "stgysvr_spp_main.cpp" "#stgysvr_msg_handler.h#" "config/" "stgysvr_room_mgr.cpp" ".svn/" "protobuf/" "stgysvr_spp_container.cpp" "stgysvr_process.h" "stgysvr_msg_handler.h" "./" "Makefile" "stgysvr_predefine.h")
-
  ("/data/home/coolor/src/" (22440 34239 669495 965000) "../" "RTC2.0/" "./")
-
- ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/stgysvr/protobuf/" (22444 31533 807573 912000) "../" "youme_server_common.proto" "youme_client_common.proto" "youme_mcu_strategy.proto" "youme_client_common.pb.h" "youme_common.proto" ".svn/" "youme_common.pb.h" "youme_mcu_strategy.pb.cpp" "youme_mcu_room.pb.h" "youme_server_common.pb.cpp" "youme_mcu_strategy.pb.h" "youme_client_common.pb.cpp" "youme_mcu_room.proto" "./" "youme_common.pb.cpp" "youme_mcu_room.pb.cpp" "youme_server_common.pb.h")
 
  ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/mcustrategysvr/src/" (22443 64897 734339 933000) "stgysvr/" "../" "build/" ".svn/" "version/" "./")
 
@@ -159,8 +162,6 @@
  ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/confserver/" (22440 34314 385495 896000) "../" ".svn/" "script/" "sql/" "src/" "./" "import/")
 
  ("/data/home/coolor/src/RTC2.0/spp_2.10.4_final/module/strategysvr/src/" (22442 44032 255942 495000) "stgysvr/" "../" "build/" ".svn/" "version/" "./")
-
- ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/" (22442 38834 381868 337000) "OTMonitor.cpp" "OTBridgeInfo.h" "OTCodec.h" "cfg/" "OTObject.cpp" "../" "OTCommon.h" "OTRole.h" "OTObject.h" "mcu_audio_session_handler.cpp" "room.cpp" "OTRedisReport.h" "tinywrap/" "OTMutex.cpp" "OTProcess.h" "YoumeCallSession.cpp" "OTMonitor.h" "McuMonitorHandle.h" "OTMutex.h" "room.h" "mcu_seq_generator.cpp" "OTSessionInfo.h" "OTWrap.h" "mcu_call_session_object_mgr.cpp" "OTCodec.cpp" "OTBridge.h" "OTBridge.cpp" "OpenTelepresenceAPI.h" "mcu_audio_session_handler.h" "patterns/" "YoumeCallSession.h" "OTEngine.h" ".svn/" "OTBridgeInfo.cpp" "platforms/" "OTEngine.cpp" "protobuf/" "OTRedisReport.cpp" "mcu_seq_generator.h" "OpenTelepresenceConfig.h" "mcu_common.h" "OTWrap.cpp" "OTProcess.cpp" "McuMonitorHandle.cpp" "mcu_predefine.h" "./" "mcu_call_session_object_mgr.h" "Makefile" "main.cpp" "OTSessionInfo.cpp")
 
  ("/data/home/coolor/src/RTC2.0/roomsvr/src/telepresence/platforms/generic/" (22442 38758 989868 407000) "../" "OTEngineGen.cpp" ".svn/" "OTEngineGen.h" "./")
 
