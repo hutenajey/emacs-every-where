@@ -267,7 +267,7 @@
   (find-file-match file-name "\.cpp$" "\\(.*\\)\.cpp$" "\\1.h"))
 
 
-(global-set-key [f11] 'switch-source-file)
+(global-set-key (kbd "<f9>") 'switch-source-file)
 
 (global-set-key (kbd "<f12>") 'tabbar-backward-tab)
 
