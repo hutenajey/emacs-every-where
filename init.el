@@ -213,6 +213,7 @@
 (require 'init-themes)
 (require 'init-helm)
 (require 'init-helm-gtags)
+(require 'init-unicad)
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Allow access from emacsclient
 ;; ;;----------------------------------------------------------------------------
