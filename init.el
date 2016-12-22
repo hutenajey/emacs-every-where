@@ -179,8 +179,8 @@
 ;; (require 'init-python-mode)
 (require 'init-slime)
 (require 'init-gtags)
-;; (require 'init-cedet)
-;; (require 'init-ecb)
+(require 'init-cedet)
+(require 'init-ecb)
 (require 'init-haskell)
 ;; (require 'init-ruby-mode)
 ;; (require 'init-rails)
@@ -215,6 +215,7 @@
 (require 'init-helm-gtags)
 (require 'init-unicad)
 (require 'init-editing-utils)
+(require 'init-fold)
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Allow access from emacsclient
 ;; ;;----------------------------------------------------------------------------

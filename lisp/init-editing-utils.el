@@ -308,6 +308,7 @@ Now it correctly stops at the beginning of the line when the pointer is at the f
 
 
 
+
 ;; For my language code setting (UTF-8)
 (set-language-environment 'Chinese-GB)
 (set-keyboard-coding-system 'utf-8)
@@ -327,30 +328,6 @@ Now it correctly stops at the beginning of the line when the pointer is at the f
 ;;    (append '((org-mode . "template.org"))
 ;;        auto-insert-alist))
 
-;; define add statement current
-(defun add-monitor-statement()
-  (interactive) 
-  (let ((start)
-        (value (read-from-minibuffer "Enter attr id: ")))
-      (back-to-indentation)
-      (setq start (current-column))
-      (move-end-of-line nil)
-      (insert "\n")
-      (move-to-column start t)
-      (insert (concatenate 'string "Attr_API(" value ", 1);"))))
 
-(defun wrap-region-into-code-block(start end)
-  "Custom method, wrap selected region into #+BEGIN_SRC emacs-lisp ... #+END_SRC"
-  (interactive "r")
-  (let ((region-content (buffer-substring start end))
-        (leftstr (read-from-minibuffer "Enter begin str: "))
-        (rightstr (read-from-minibuffer "Enter end str: ")))
-    (progn (kill-region start end)
-           (deactivate-mark)
-           (insert-string (format
-           				(concatenate 'string leftstr "\n%s\n" rightstr "\n")
-                        region-content))
-	   (forward-line -2)
-	   (indent-region (point-min) (point-max))
-       (forward-line 2))))
+
 
