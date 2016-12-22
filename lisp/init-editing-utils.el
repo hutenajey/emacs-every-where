@@ -154,9 +154,116 @@
 (setq tab-stop-list ())
 (loop for x downfrom 40 to 1 do
       (setq tab-stop-list (cons (* x 4) tab-stop-list)))
+;; turn on transient mark mode
+;;(that is, we highlight the selected text)
+(transient-mark-mode t)
 
-(defconst my-c-style
-  '((c-tab-always-indent        . t)
+(setq my-tab-width 4)
+
+(defun indent-block()
+  (shift-region my-tab-width)
+  (setq deactivate-mark nil))
+
+(defun unindent-block()
+  (shift-region (- my-tab-width))
+  (setq deactivate-mark nil))
+
+(defun shift-region(numcols)
+  " my trick to expand the region to the beginning and end of the area selected
+ much in the handy way I liked in the Dreamweaver editor."
+  (if (< (point)(mark))
+      (if (not(bolp))    (progn (beginning-of-line)(exchange-point-and-mark) (end-of-line)))
+    (progn (end-of-line)(exchange-point-and-mark)(beginning-of-line)))
+  (setq region-start (region-beginning))
+  (setq region-finish (region-end))
+  (save-excursion
+    (if (< (point) (mark)) (exchange-point-and-mark))
+    (let ((save-mark (mark)))
+      (indent-rigidly region-start region-finish numcols))))
+
+(defun indent-or-complete ()
+    "Indent region selected as a block; if no selection present either indent according to mode,
+or expand the word preceding point. "
+    (interactive)
+    (if  mark-active
+        (indent-block)
+      (if (looking-at "\\>")
+          (hippie-expand nil)
+        (insert "\t"))))
+
+(defun my-unindent()
+    "Unindent line, or block if it's a region selected.
+When pressing Shift+tab, erase words backward (one at a time) up to the beginning of line.
+Now it correctly stops at the beginning of the line when the pointer is at the first char of an indented line. Before the command would (unconveniently)  kill all the white spaces, as well as the last word of the previous line."
+
+    (interactive)
+    (if mark-active
+        (unindent-block)
+      (progn
+        (unless(bolp)
+          (if (looking-back "^[ \t]*")
+              (progn
+                ;;"a" holds how many spaces are there to the beginning of the line
+                (let ((a (length(buffer-substring-no-properties (point-at-bol) (point)))))
+                  (progn
+                    ;; delete backwards progressively in my-tab-width steps, but without going further of the beginning of line.
+                    (if (> a my-tab-width)
+                        (delete-backward-char my-tab-width)
+                      (backward-delete-char a)))))
+            ;; delete tab and spaces first, if at least 2 exist, before removing words
+            (progn
+              (if(looking-back "[ \t]\\{2,\\}")
+                  (delete-horizontal-space)
+                (backward-kill-word 1))))))))
+
+(add-hook 'find-file-hooks (function (lambda ()
+                                       (unless (eq major-mode 'org-mode)
+                                         (local-set-key (kbd "<tab>") 'indent-or-complete)))))
+
+(if (not (eq  major-mode 'org-mode))
+    (progn
+      (define-key global-map "\t" 'indent-or-complete) ;; with this you have to force tab (C-q-tab) to insert a tab after a word
+      (define-key global-map [S-tab] 'my-unindent)))
+
+;; mac and pc users would like selecting text this way
+(defun dave-shift-mouse-select (event)
+   "Set the mark and then move point to the position clicked on with
+ the mouse. This should be bound to a mouse click event type."
+   (interactive "e")
+   (mouse-minibuffer-check event)
+   (if mark-active (exchange-point-and-mark))
+   (set-mark-command nil)
+   ;; Use event-end in case called from mouse-drag-region.
+   ;; If EVENT is a click, event-end and event-start give same value.
+   (posn-set-point (event-end event)))
+
+;; be aware that this overrides the function for picking a font. you can still call the command
+;; directly from the minibufer doing: "M-x mouse-set-font"
+(define-key global-map [S-down-mouse-1] 'dave-shift-mouse-select)
+
+;; to use in into emacs for  unix I  needed this instead
+                                        ; define-key global-map [S-mouse-1] 'dave-shift-mouse-select)
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; this final line is only necessary to escape the *scratch* fundamental-mode
+;; and let this demonstration work
+(text-mode)
+
+(c-add-style "microsoft"
+             '("stroustrup"
+               (c-basic-offset . 4)
+               (c-offsets-alist
+                (innamespace . -)
+                (inline-open . 0)
+                (inher-cont . c-lineup-multi-inher)
+                (arglist-cont-nonempty . +)
+                (template-args-cont . +))))
+
+
+
+(c-add-style "my-c-style"
+  '("awk"
+    (c-tab-always-indent        . t)
     (c-comment-only-line-offset . 4)
     (c-hanging-braces-alist     . ((substatement-open after)
                                    (brace-list-open)))
@@ -173,30 +280,32 @@
                                    (case-label        . 4)
                                    (block-open        . 0)
                                    (knr-argdecl-intro . -)))
-    (c-echo-syntactic-information-p . t)
-    )
-  "My C Programming Style")
+    (c-echo-syntactic-information-p . t)))
 
-;; offset customizations not in my-c-style
-(setq c-offsets-alist '((member-init-intro . ++)))
 
 ;; Customizations for all modes in CC Mode.
 (defun my-c-mode-common-hook ()
   ;; add my personal style and set it for the current buffer
-  (c-add-style "PERSONAL" my-c-style t)
   ;; other customizations
   (setq tab-width 4
         ;; this will make sure spaces are used instead of tabs
         indent-tabs-mode nil)
   ;; we like auto-newline and hungry-delete
   (c-toggle-auto-hungry-state 1)
-  ;; key bindings for all supported languages.  We can put these in
-  ;; c-mode-base-map because c-mode-map, c++-mode-map, objc-mode-map,
-  ;; java-mode-map, idl-mode-map, and pike-mode-map inherit from it.
-  (define-key c-mode-base-map "/C-m" 'c-context-line-break)
-  )
+  (setq c-default-style "my-c-style")
+  (c-set-style "my-c-style"))
+
+(setq auto-mode-alist
+      (cons '("\\.h$" . c++-mode) auto-mode-alist))
+(setq auto-mode-alist
+      (cons '("\\.c$" . c++-mode) auto-mode-alist))
+(setq auto-mode-alist
+            (cons '("\\.cpp$" . c++-mode) auto-mode-alist))
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+(add-hook 'c++-mode-hook 'my-c-mode-common-hook)
+
 
 
 ;; For my language code setting (UTF-8)
@@ -210,10 +319,38 @@
 (setq default-process-coding-system '(utf-8 . utf-8))
 (setq-default pathname-coding-system 'utf-8)
 
-(auto-insert-mode)  ;;; Adds hook to find-files-hook
-(setq auto-insert-directory "~/.emacs.d/mytemplate/") ;;; Or use custom, *NOTE* Trailing slash important
-(setq auto-insert-query nil) ;;; If you don't want to be prompted before insertion
+;;(auto-insert-mode)  ;;; Adds hook to find-files-hook
+;;(setq auto-insert-directory "~/.emacs.d/mytemplate/") ;;; Or use custom, *NOTE* Trailing slash important
+;;(setq auto-insert-query nil) ;;; If you don't want to be prompted before insertion
  
-(setq auto-insert-alist
-    (append '((org-mode . "template.org"))
-        auto-insert-alist))
+;;(setq auto-insert-alist
+;;    (append '((org-mode . "template.org"))
+;;        auto-insert-alist))
+
+;; define add statement current
+(defun add-monitor-statement()
+  (interactive) 
+  (let ((start)
+        (value (read-from-minibuffer "Enter attr id: ")))
+      (back-to-indentation)
+      (setq start (current-column))
+      (move-end-of-line nil)
+      (insert "\n")
+      (move-to-column start t)
+      (insert (concatenate 'string "Attr_API(" value ", 1);"))))
+
+(defun wrap-region-into-code-block(start end)
+  "Custom method, wrap selected region into #+BEGIN_SRC emacs-lisp ... #+END_SRC"
+  (interactive "r")
+  (let ((region-content (buffer-substring start end))
+        (leftstr (read-from-minibuffer "Enter begin str: "))
+        (rightstr (read-from-minibuffer "Enter end str: ")))
+    (progn (kill-region start end)
+           (deactivate-mark)
+           (insert-string (format
+           				(concatenate 'string leftstr "\n%s\n" rightstr "\n")
+                        region-content))
+	   (forward-line -2)
+	   (indent-region (point-min) (point-max))
+       (forward-line 2))))
+
