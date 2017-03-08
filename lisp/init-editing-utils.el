@@ -283,10 +283,12 @@ Now it correctly stops at the beginning of the line when the pointer is at the f
 ;; to use in into emacs for  unix I  needed this instead
                                         ; define-key global-map [S-mouse-1] 'dave-shift-mouse-select)
 
+
 (if (not (eq  major-mode 'org-mode))
     (progn
-      (define-key global-map "\t" 'indent-or-complete) ;; with this you have to force tab (C-q-tab) to insert a tab after a word
+      (define-key global-map [tab] 'indent-or-complete) ;; with this you have to force tab (C-q-tab) to insert a tab after a word
       (define-key global-map [S-tab] 'my-unindent)))
+
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; this final line is only necessary to escape the *scratch* fundamental-mode
