@@ -48,6 +48,12 @@
 ;; Removes clocked tasks with 0:00 duration
 (setq org-clock-out-remove-zero-time-clocks t)
 
+;;footnote not [n]
+(setq org-footnote-definition-re "^\\[fn:[-_[:word:]]+\\]"
+      org-footnote-re            (concat "\\[\\(?:fn:\\([-_[:word:]]+\\)?:"
+                                         "\\|"
+                                         "\\(fn:[-_[:word:]]+\\)\\)"))
+
 ;; Show the clocked-in task - if any - in the header line
 (defun sanityinc/show-org-clock-in-header-line ()
   (setq-default header-line-format '((" " org-mode-line-string " "))))
