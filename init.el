@@ -191,6 +191,7 @@
 (require 'init-editing-utils)
 (require 'init-fold)
 (require 'init-htmlize)
+(require 'init-py3)
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Allow access from emacsclient
 ;; ;;----------------------------------------------------------------------------
@@ -258,3 +259,10 @@
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
+(add-to-list 'package-archives'
+             ("elpa" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives'
+             ("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives'
+             ("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
