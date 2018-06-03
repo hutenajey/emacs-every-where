@@ -82,4 +82,14 @@ the mru bookmark stack."
       ad-do-it)
 
 (global-set-key (kbd "C-c .") 'global-edebug-prefix)
+
+;; 折叠和展开
+(require 'semantic-tag-folding nil 'noerror)
+;;(setq global-semantic-tag-folding-mode 1)
+;;(define-key semantic-tag-folding-mode-map (kbd "C-c , -") 'semantic-tag-folding-fold-block)
+;;(define-key semantic-tag-folding-mode-map (kbd "C-c , =") 'semantic-tag-folding-show-block)
+;; 整个buffer所有函数折叠与展开
+;;(define-key semantic-tag-folding-mode-map (kbd "C-c . -") 'semantic-tag-folding-fold-all)
+;;(define-key semantic-tag-folding-mode-map (kbd "C-c . =") 'semantic-tag-folding-show-all)  
+
 (provide 'init-cedet)

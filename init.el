@@ -1,30 +1,4 @@
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
-;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
@@ -155,7 +129,7 @@
 (require 'init-desktop)
 
 
-(require 'init-editing-utils)
+
 (require 'init-evil)
 (require 'init-matlab)
 
@@ -213,6 +187,11 @@
 (require 'init-themes)
 (require 'init-helm)
 (require 'init-helm-gtags)
+(require 'init-unicad)
+(require 'init-editing-utils)
+(require 'init-fold)
+(require 'init-htmlize)
+(require 'init-py3)
 ;; ;;----------------------------------------------------------------------------
 ;; ;; Allow access from emacsclient
 ;; ;;----------------------------------------------------------------------------
@@ -267,7 +246,7 @@
   (find-file-match file-name "\.cpp$" "\\(.*\\)\.cpp$" "\\1.h"))
 
 
-(global-set-key [f11] 'switch-source-file)
+(global-set-key (kbd "<f9>") 'switch-source-file)
 
 (global-set-key (kbd "<f12>") 'tabbar-backward-tab)
 
@@ -280,3 +259,10 @@
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
+(add-to-list 'package-archives'
+             ("elpa" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives'
+             ("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives'
+             ("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
